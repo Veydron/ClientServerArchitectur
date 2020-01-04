@@ -1,0 +1,2 @@
+# ClientServerArchitectur
+ A architectur test for a mmo framework. With a client in unity, a server in c# console and a Redis or Cassandra database. The goal ist to start a server, let login multiple clients and implement a authoritive movement system with interpolarisation. Optional is A*Pathfinding and client side animation. The Ressources are youtube tutorials from Tom Weiland and Sebastian League. This is a hobby project to learn coding.
