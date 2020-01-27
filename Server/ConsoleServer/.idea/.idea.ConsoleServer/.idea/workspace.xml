@@ -25,14 +25,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///C# Console" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Telepathy-master/Telepathy-master/Telepathy/Server.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/AD7B606C-4876-4671-9C09-2D2B92FD7AA1/c9/e7cd9052/Telepathy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleServer/Server.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ConsoleServer/Program.cs" />
         <option value="$PROJECT_DIR$/ConsoleServer/Server.cs" />
+        <option value="$PROJECT_DIR$/ConsoleServer/Program.cs" />
       </list>
     </option>
   </component>
@@ -54,6 +57,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
   </component>
   <component name="RunManager">
     <configuration name="ConsoleServer" type="DotNetProject" factoryName=".NET Project">
@@ -99,6 +103,7 @@
       <updated>1578223410633</updated>
       <workItem from="1578223411924" duration="2266000" />
       <workItem from="1580055994019" duration="211000" />
+      <workItem from="1580067801433" duration="2080000" />
     </task>
     <servers />
   </component>
@@ -121,25 +126,34 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="224" key="GridCell.Tab.0.bottom" timestamp="1578256481067">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1580069208507">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="224" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1578256481067" />
-    <state width="1493" height="224" key="GridCell.Tab.0.center" timestamp="1578256481066">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580069208507" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1580069208507">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="224" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1578256481066" />
-    <state width="1493" height="224" key="GridCell.Tab.0.left" timestamp="1578256481066">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580069208507" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1580069208507">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="224" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1578256481066" />
-    <state width="1493" height="224" key="GridCell.Tab.0.right" timestamp="1578256481066">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580069208507" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1580069208507">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="224" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1578256481066" />
-    <state x="361" y="163" key="Rider.ProjectTemplateDialog.Size" timestamp="1578223982487">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580069208507" />
+    <state x="451" y="204" key="Rider.ProjectTemplateDialog.Size" timestamp="1580069275930">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="361" y="163" key="Rider.ProjectTemplateDialog.Size/0.0.1536.864@0.0.1536.864" timestamp="1578223982487" />
+    <state x="451" y="204" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1580069275930" />
+    <state x="461" y="181" key="SettingsEditor" timestamp="1580069104090">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="181" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1580069104090" />
   </component>
 </project>

@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using Telepathy;
 
-namespace ConsoleServer
+namespace ConsoleApplication2
 {
     internal class Program
     {
@@ -12,10 +13,11 @@ namespace ConsoleServer
             Console.WriteLine("Hello im your server Console !qww");
             Console.ReadKey();
 
-            Telepathy.Server mainserver = new Telepathy.Server();
-            mainserver.start(1337);
-            Console.WriteLine("Hello im your server Console !qww");
+            var server = new Telepathy.Server();
+            server.Start(7171);
+            Console.WriteLine("Server has started");
             Console.ReadKey();      
         }
     }
+    
 }
