@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using Telepathy;
 using System.Diagnostics;
+using MessagePack;
 
 namespace ConsoleApplication2
 {
@@ -77,7 +78,7 @@ namespace ConsoleApplication2
         {
             try
             {
-                Console.WriteLine($"OnClientConnected: {connectionId}");
+                Console.WriteLine("Verbundene Clients:" + (networkPlayersDictionary.Count+1));
 
                 //TODO Serialzing 
                 //var message = new NetworkMessage();
@@ -92,7 +93,7 @@ namespace ConsoleApplication2
                 foreach (var player in networkPlayersDictionary)
                 {
                     //TODO Send for every player a Instantiate and the Position.
-                    server.Send(player.Value.ConnectionID, new byte[]{0x42, 0x13, 0x37});
+                    server.Send(connectionId, MessagePackSerializer.Serialize(player.Value));
                 }
                 //server.Send(0, new byte[]{0x14, 0x13, 0x17});
                 //networkPlayersDictionary[connectionId].Moved = true;
@@ -112,6 +113,7 @@ namespace ConsoleApplication2
                 //entfernt den disconnecteten spieler aus der NetworkPlayer Bibliothek
                 if (networkPlayersDictionary.ContainsKey(connectionId))
                     networkPlayersDictionary.Remove(connectionId);
+                    Console.WriteLine("ConnectionID removed from networkPlayerDictionary");
             }
             catch (Exception ex)
             {

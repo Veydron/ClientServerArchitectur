@@ -18,8 +18,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ConsoleApplication2/NetworkPlayer.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/EventMSG.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/NetworkPlayer.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/Program.cs" />
       </list>
     </option>
@@ -88,6 +88,7 @@
       <updated>1580069275801</updated>
       <workItem from="1580069277086" duration="619000" />
       <workItem from="1580130419888" duration="10993000" />
+      <workItem from="1580574355740" duration="5753000" />
     </task>
     <servers />
   </component>
@@ -110,25 +111,37 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1071" height="290" key="GridCell.Tab.0.bottom" timestamp="1580150063506">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="963" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580574527302">
+      <screen x="0" y="0" width="3840" height="1080" />
+    </state>
+    <state x="963" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3840.1080@0.0.3840.1080" timestamp="1580574527302" />
+    <state width="870" height="292" key="GridCell.Tab.0.bottom" timestamp="1580580171166">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state width="1071" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580150063506" />
-    <state width="1071" height="290" key="GridCell.Tab.0.center" timestamp="1580150063506">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="870" height="292" key="GridCell.Tab.0.bottom/0.0.3840.1080@0.0.3840.1080" timestamp="1580580171166" />
+    <state width="870" height="292" key="GridCell.Tab.0.center" timestamp="1580580171166">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state width="1071" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580150063506" />
-    <state width="1071" height="290" key="GridCell.Tab.0.left" timestamp="1580150063506">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="870" height="292" key="GridCell.Tab.0.center/0.0.3840.1080@0.0.3840.1080" timestamp="1580580171166" />
+    <state width="870" height="292" key="GridCell.Tab.0.left" timestamp="1580580171166">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state width="1071" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580150063506" />
-    <state width="1071" height="290" key="GridCell.Tab.0.right" timestamp="1580150063506">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="870" height="292" key="GridCell.Tab.0.left/0.0.3840.1080@0.0.3840.1080" timestamp="1580580171166" />
+    <state width="870" height="292" key="GridCell.Tab.0.right" timestamp="1580580171166">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state width="1071" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580150063506" />
+    <state width="870" height="292" key="GridCell.Tab.0.right/0.0.3840.1080@0.0.3840.1080" timestamp="1580580171166" />
     <state x="772" y="209" key="SettingsEditor" timestamp="1580130903283">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="772" y="209" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1580130903283" />
+    <state x="1223" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1580576398581">
+      <screen x="0" y="0" width="3840" height="1080" />
+    </state>
+    <state x="1223" y="238" width="672" height="678" key="search.everywhere.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1580576398581" />
   </component>
 </project>

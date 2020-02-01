@@ -323,6 +323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66cf32a7c6537a94986c92cf11493559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  netPlayerPrefab: {fileID: 7423739864730894910, guid: 6746165706468d549ac6adede67cea07,
+    type: 3}
   ip: localhost
 --- !u!4 &2030454386
 Transform:

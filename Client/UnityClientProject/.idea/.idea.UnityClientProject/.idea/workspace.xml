@@ -79,6 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580139995908</updated>
       <workItem from="1580139997225" duration="6015000" />
+      <workItem from="1580574601043" duration="4725000" />
     </task>
     <servers />
   </component>
@@ -92,7 +93,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

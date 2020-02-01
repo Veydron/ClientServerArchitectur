@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading;
+using MessagePack;
 using UnityEngine;
 using Telepathy;
 
@@ -13,8 +16,7 @@ public class NetworkLLAPI : MonoBehaviour
     private Dictionary<long, NetworkPlayer> netPlayersDictionary;
     
     public string ip = "localhost";
-    
-    
+
     void Awake()
     {
         // update even if window isn't focused, otherwise we don't receive.
@@ -63,7 +65,11 @@ public class NetworkLLAPI : MonoBehaviour
                         Debug.Log("Connected");
                         break;
                     case Telepathy.EventType.Data:
-                        Debug.Log("Data: " + BitConverter.ToString(msg.data));
+                        //Debug.Log("Data: " + BitConverter.ToString(msg.data));
+                        Debug.Log("Data: " + MessagePackSerializer.Deserialize<NetworkPlayer>(msg.data));
+                        NetworkPlayer tempPlayer = MessagePackSerializer.Deserialize<NetworkPlayer>(msg.data);
+                        Vector3 tempVect = new Vector3(tempPlayer.X,tempPlayer.Y,tempPlayer.Z);
+                        Instantiate(netPlayerPrefab, tempVect, Quaternion.identity);
                         break;
                     case Telepathy.EventType.Disconnected:
                         Debug.Log("Disconnected");
@@ -78,9 +84,9 @@ public class NetworkLLAPI : MonoBehaviour
         // the client/server threads won't receive the OnQuit info if we are
         // running them in the Editor. they would only quit when we press Play
         // again later. this is fine, but let's shut them down here for consistency
-//        if (client != null)
-  //          if (client.Connected)
-    //            client.Disconnect();
+        if (client != null)
+            if (client.Connected)
+                client.Disconnect();
     }
     
     public void OnGUI()
