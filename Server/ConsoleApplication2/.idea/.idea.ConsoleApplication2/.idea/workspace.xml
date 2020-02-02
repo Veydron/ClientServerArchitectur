@@ -12,6 +12,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ConsoleApplication2/NetworkPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConsoleApplication2/NetworkLoop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConsoleApplication2/LogServer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConsoleApplication2/EventList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConsoleApplication2/LogClass.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CFAD036A-BC4E-4662-8835-10B1FEF450A2/fd/02cd7141/Server.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApplication2/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -20,7 +24,14 @@
       <list>
         <option value="$PROJECT_DIR$/ConsoleApplication2/EventMSG.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/NetworkPlayer.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/NetworkEvents.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/EventHandler.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/EventList.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/Logger.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/LogClass.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/LogServer.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/Program.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/NetworkLoop.cs" />
       </list>
     </option>
   </component>
@@ -89,6 +100,7 @@
       <workItem from="1580069277086" duration="619000" />
       <workItem from="1580130419888" duration="10993000" />
       <workItem from="1580574355740" duration="5753000" />
+      <workItem from="1580653711823" duration="7173000" />
     </task>
     <servers />
   </component>
