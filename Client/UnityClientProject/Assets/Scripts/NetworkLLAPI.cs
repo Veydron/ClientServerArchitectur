@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
+using DefaultNamespace;
 using MessagePack;
 using UnityEngine;
 using Telepathy;
@@ -48,8 +49,14 @@ public class NetworkLLAPI : MonoBehaviour
     void FixedUpdate()
     {
         OnNetworkReceived();
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            TestClass testClass = new TestClass(10,100,99);
+            client.Send(MessagePackSerializer.Serialize(testClass));
+        }
     }
-    
+
     private void OnNetworkReceived()
     {
         if (client != null && client.Connected)
@@ -66,10 +73,17 @@ public class NetworkLLAPI : MonoBehaviour
                         break;
                     case Telepathy.EventType.Data:
                         //Debug.Log("Data: " + BitConverter.ToString(msg.data));
-                        Debug.Log("Data: " + MessagePackSerializer.Deserialize<NetworkPlayer>(msg.data));
-                        NetworkPlayer tempPlayer = MessagePackSerializer.Deserialize<NetworkPlayer>(msg.data);
-                        Vector3 tempVect = new Vector3(tempPlayer.X,tempPlayer.Y,tempPlayer.Z);
-                        Instantiate(netPlayerPrefab, tempVect, Quaternion.identity);
+                        //Debug.Log("Data: " + MessagePackSerializer.Deserialize<NetworkPlayer>(msg.data));
+                        //NetworkPlayer tempPlayer = MessagePackSerializer.Deserialize<NetworkPlayer>(msg.data);
+                        
+                        //Debug.Log("Data: " + MessagePackSerializer.Deserialize<TestClass>(msg.data));
+                        TestClass testClass = MessagePackSerializer.Deserialize<TestClass>(msg.data);
+                        if (testClass.ActionID == 100)
+                        {
+                            Debug.Log("Ich " +testClass.PlayerID+ " bashe " +testClass.ActionID+ "auf ziel: " +testClass.TargetID);
+                        }
+                        //Vector3 tempVect = new Vector3(tempPlayer.X,tempPlayer.Y,tempPlayer.Z);
+                        //Instantiate(netPlayerPrefab, tempVect, Quaternion.identity);
                         break;
                     case Telepathy.EventType.Disconnected:
                         Debug.Log("Disconnected");

@@ -121,6 +121,7 @@
           </e>
           <e p="NetworkLLAPI.cs" t="Include" />
           <e p="NetworkPlayer.cs" t="Include" />
+          <e p="TestClass.cs" t="Include" />
         </e>
       </e>
       <e p="MessagePack.csproj" t="IncludeRecursive" />

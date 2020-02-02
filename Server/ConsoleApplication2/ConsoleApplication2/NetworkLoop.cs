@@ -42,6 +42,7 @@ namespace ConsoleApplication2
                         {
                             server.Send(msg.connectionId, msg.data);
                             Console.WriteLine(msg.connectionId + " Data: " + BitConverter.ToString(msg.data));
+                            OnMessageReceived(msg);
                             //OnMessageReceived(new NetworkMessage(msg.data), msg.connectionId);
                         }
                         else if (msg.eventType == EventType.Disconnected)
@@ -57,7 +58,7 @@ namespace ConsoleApplication2
 
                     //TODO Warning System when processing loop is longer then tick rate
                     //Server Tick Rate 5 times per second
-                    System.Threading.Thread.Sleep(200);
+                    System.Threading.Thread.Sleep(1000);
                 }
             }
             
@@ -87,6 +88,17 @@ namespace ConsoleApplication2
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
+            }
+        }
+
+        private void OnMessageReceived(Telepathy.Message msg)
+        {
+            TestClass recivedmsg = MessagePackSerializer.Deserialize<TestClass>(msg.data);
+            if (recivedmsg.ActionID == 10)
+            {
+                Console.WriteLine("Player ID " + msg.connectionId + " bashed");
+                TestClass testClass = new TestClass(100,100,99);
+                server.Send(msg.connectionId, MessagePackSerializer.Serialize(testClass));
             }
         }
 
