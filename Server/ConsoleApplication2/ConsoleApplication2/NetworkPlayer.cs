@@ -17,7 +17,10 @@ namespace ConsoleApplication2
         public float Z { get; set; }
         
         [IgnoreMember]
-        public bool Moved { get; set; }
+        public bool IsConnected { get; set; }
+        
+        [IgnoreMember]
+        public int KickPlayer { get; set; }
         
         public NetworkPlayer(int connectionID)
         {
@@ -28,7 +31,8 @@ namespace ConsoleApplication2
             Y = connectionID;
             Z = connectionID;
 
-            Moved = false;
+            IsConnected = false;
+            KickPlayer = 0;
         }
     }
 }

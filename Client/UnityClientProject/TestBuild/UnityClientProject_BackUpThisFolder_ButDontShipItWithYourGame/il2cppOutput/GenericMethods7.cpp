@@ -33325,7 +33325,7 @@ IL_025e:
 	}
 }
 // System.IntPtr System.Runtime.CompilerServices.Unsafe::ByteOffset<System.Byte>(T&,T&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Unsafe_ByteOffset_TisByte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_m9CA9BB22E7EF970114733D4BC2AC07C2980F0F28_gshared (uint8_t* ___origin0, uint8_t* ___target1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Unsafe_ByteOffset_TisByte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_mAC236124F5AC9236D4E53726B54ECADDE259CFB2_gshared (uint8_t* ___origin0, uint8_t* ___target1, const RuntimeMethod* method)
 {
 	{
 		uint8_t* L_0 = ___target1;
@@ -33334,7 +33334,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Unsafe_ByteOffset_TisByte_tF87C57905
 	}
 }
 // System.IntPtr System.Runtime.CompilerServices.Unsafe::ByteOffset<System.Byte>(T&,T&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Unsafe_ByteOffset_TisByte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_mAC236124F5AC9236D4E53726B54ECADDE259CFB2_gshared (uint8_t* ___origin0, uint8_t* ___target1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Unsafe_ByteOffset_TisByte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_m9CA9BB22E7EF970114733D4BC2AC07C2980F0F28_gshared (uint8_t* ___origin0, uint8_t* ___target1, const RuntimeMethod* method)
 {
 	{
 		uint8_t* L_0 = ___target1;

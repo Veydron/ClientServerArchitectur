@@ -60,7 +60,9 @@ extern void NetworkPlayer_get_GameObjectAdded_mF11DD462C2424678912459BA6E0CA21FB
 extern void NetworkPlayer_set_GameObjectAdded_m2E489DF2EB468615B6C1FE8D4701B39FD771C1E5 ();
 // 0x00000014 System.Void NetworkPlayer::.ctor()
 extern void NetworkPlayer__ctor_mFE635853248F4D613AB299314A79B319BD74FBCC ();
-static Il2CppMethodPointer s_methodPointers[20] = 
+// 0x00000015 System.Void DefaultNamespace.TestClass::.ctor(System.Int32,System.Int32,System.Int32)
+extern void TestClass__ctor_m6AE15A766B61DAA30CB160DAF02CEB0FADA39BF2 ();
+static Il2CppMethodPointer s_methodPointers[21] = 
 {
 	NetworkLLAPI_Awake_m84D4CE70BA40694FAD6CEA759D361AF3391C2918,
 	NetworkLLAPI_Start_m4FF83771D013781FF4803C34C7DEF9B84AEF8124,
@@ -82,8 +84,9 @@ static Il2CppMethodPointer s_methodPointers[20] =
 	NetworkPlayer_get_GameObjectAdded_mF11DD462C2424678912459BA6E0CA21FB1ED0549,
 	NetworkPlayer_set_GameObjectAdded_m2E489DF2EB468615B6C1FE8D4701B39FD771C1E5,
 	NetworkPlayer__ctor_mFE635853248F4D613AB299314A79B319BD74FBCC,
+	TestClass__ctor_m6AE15A766B61DAA30CB160DAF02CEB0FADA39BF2,
 };
-static const int32_t s_InvokerIndices[20] = 
+static const int32_t s_InvokerIndices[21] = 
 {
 	23,
 	23,
@@ -105,12 +108,13 @@ static const int32_t s_InvokerIndices[20] =
 	114,
 	31,
 	23,
+	38,
 };
 extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	20,
+	21,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

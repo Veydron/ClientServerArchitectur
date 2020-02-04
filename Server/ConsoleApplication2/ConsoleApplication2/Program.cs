@@ -15,9 +15,10 @@ namespace ConsoleApplication2
             //Event System
             NetworkLoop networkLoop = new NetworkLoop();
             LogServer logServer = new LogServer();
-
             networkLoop.ClientConnected += logServer.OnPlayerConnection;
             networkLoop.ClientDisconnected += logServer.OnPlayerDisconnection;
+            networkLoop.ClientMessage += logServer.OnClientMessage;
+            networkLoop.KickPlayer += logServer.OnClientKick;
             
             //Starts the Server
             networkLoop.Run();

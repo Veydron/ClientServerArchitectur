@@ -20433,6 +20433,73 @@ IL_0014:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void Telepathy.SafeQueue`1<System.Object>::Enqueue(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeQueue_1_Enqueue_m08E80A73FE1A01A5A4AD47F19925A1C357FA1272_gshared (SafeQueue_1_t73CF4A8B82A998628569E4E7DB947BC37AF48F8D * __this, RuntimeObject * ___item0, const RuntimeMethod* method)
+{
+	Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * V_0 = NULL;
+	bool V_1 = false;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	void* __leave_targets_storage = alloca(sizeof(int32_t) * 1);
+	il2cpp::utils::LeaveTargetStack __leave_targets(__leave_targets_storage);
+	NO_UNUSED_WARNING (__leave_targets);
+	{
+		Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * L_0 = (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)__this->get_queue_0();
+		V_0 = (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_0;
+		V_1 = (bool)0;
+	}
+
+IL_000a:
+	try
+	{ // begin try (depth: 1)
+		Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * L_1 = V_0;
+		Monitor_Enter_mC5B353DD83A0B0155DF6FBCC4DF5A580C25534C5((RuntimeObject *)L_1, (bool*)(bool*)(&V_1), /*hidden argument*/NULL);
+		Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * L_2 = (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)__this->get_queue_0();
+		RuntimeObject * L_3 = ___item0;
+		NullCheck((Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_2);
+		((  void (*) (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *, RuntimeObject *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_2, (RuntimeObject *)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		IL2CPP_LEAVE(0x2F, FINALLY_0024);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0024;
+	}
+
+FINALLY_0024:
+	{ // begin finally (depth: 1)
+		{
+			bool L_4 = V_1;
+			if (!L_4)
+			{
+				goto IL_002e;
+			}
+		}
+
+IL_0027:
+		{
+			Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * L_5 = V_0;
+			Monitor_Exit_m49A1E5356D984D0B934BB97A305E2E5E207225C2((RuntimeObject *)L_5, /*hidden argument*/NULL);
+		}
+
+IL_002e:
+		{
+			IL2CPP_END_FINALLY(36)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(36)
+	{
+		IL2CPP_JUMP_TBL(0x2F, IL_002f)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_002f:
+	{
+		return;
+	}
+}
 // System.Boolean Telepathy.SafeQueue`1<System.Object>::TryDequeueAll(T[]&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SafeQueue_1_TryDequeueAll_m94EF3FBBB606A38C4D5E1083B5E1DE2876FB98AE_gshared (SafeQueue_1_t73CF4A8B82A998628569E4E7DB947BC37AF48F8D * __this, ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A** ___result0, const RuntimeMethod* method)
 {
@@ -20460,12 +20527,12 @@ IL_000a:
 		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A** L_2 = ___result0;
 		Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * L_3 = (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)__this->get_queue_0();
 		NullCheck((Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_3);
-		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_4 = ((  ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* (*) (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_4 = ((  ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* (*) (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
 		*((RuntimeObject **)L_2) = (RuntimeObject *)L_4;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject **)L_2, (void*)(RuntimeObject *)L_4);
 		Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * L_5 = (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)__this->get_queue_0();
 		NullCheck((Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_5);
-		((  void (*) (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_5, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		((  void (*) (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_5, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
 		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A** L_6 = ___result0;
 		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_7 = *((ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A**)L_6);
 		NullCheck(L_7);
@@ -20536,7 +20603,7 @@ IL_000a:
 		Monitor_Enter_mC5B353DD83A0B0155DF6FBCC4DF5A580C25534C5((RuntimeObject *)L_1, (bool*)(bool*)(&V_1), /*hidden argument*/NULL);
 		Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * L_2 = (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)__this->get_queue_0();
 		NullCheck((Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_2);
-		((  void (*) (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		((  void (*) (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
 		IL2CPP_LEAVE(0x2E, FINALLY_0023);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -20581,8 +20648,8 @@ IL_002e:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeQueue_1__ctor_mF744F2CCAFC6B253ACC98000817C52DF3B127299_gshared (SafeQueue_1_t73CF4A8B82A998628569E4E7DB947BC37AF48F8D * __this, const RuntimeMethod* method)
 {
 	{
-		Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * L_0 = (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 2));
-		((  void (*) (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 3)->methodPointer)(L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 3));
+		Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * L_0 = (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 3));
+		((  void (*) (Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 4)->methodPointer)(L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 4));
 		__this->set_queue_0(L_0);
 		NullCheck((RuntimeObject *)__this);
 		Object__ctor_m925ECA5E85CA100E3FB86A4F9E15C120E9A184C0((RuntimeObject *)__this, /*hidden argument*/NULL);

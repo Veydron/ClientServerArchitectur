@@ -740,7 +740,6 @@ IL2CPP_EXTERN_C RuntimeClass* IDisposable_t7218B22548186B208D65EA5B7870503810A2D
 IL2CPP_EXTERN_C RuntimeClass* IEnumerator_t8789118187258CC88B77AFAC6315B5AF87D3E18A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Type_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral04444310B8C9D216A6BC1D1CC9542ECC75BC02DF;
 IL2CPP_EXTERN_C String_t* _stringLiteral19EDC1210777BA4D45049C29280D9CC5E1064C25;
@@ -1300,7 +1299,6 @@ IL2CPP_EXTERN_C const uint32_t Enumerable_ToArray_TisLabel_tBF54EEA4681DBD075749
 IL2CPP_EXTERN_C const uint32_t Enumerable_ToArray_TisRuntimeObject_mF33F5D8045B820AE98F4EEE7524A58F9B52436DA_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ExpressionVisitor_VisitAndConvert_TisRuntimeObject_mAE5EFE8183BB7C7ADB3696851DB19B6FCD8C8DC9_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t LazyInitializer_EnsureInitializedCore_TisRuntimeObject_m4289829E8C0F3DA67A5B3E27721CF5D1C203CED2_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Object_Instantiate_TisRuntimeObject_mFE9C42D5336D4F9EFF8CD96E2A26962EFF523947_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ScriptableObject_CreateInstance_TisRuntimeObject_m7A8F75139352BA04C2EEC1D72D430FAC94C753DE_MetadataUsageId;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
@@ -1423,7 +1421,7 @@ public:
 
 
 // System.Collections.Generic.EnumerableHelpers
-struct  EnumerableHelpers_t91DA7E2949102CFE16D0A151F7C355F72753F1FD  : public RuntimeObject
+struct  EnumerableHelpers_t6FD61B8B7F130454C2A6BB3F03DD0DEB41904B87  : public RuntimeObject
 {
 public:
 
@@ -1432,7 +1430,7 @@ public:
 
 
 // System.Collections.Generic.EnumerableHelpers
-struct  EnumerableHelpers_t6FD61B8B7F130454C2A6BB3F03DD0DEB41904B87  : public RuntimeObject
+struct  EnumerableHelpers_t91DA7E2949102CFE16D0A151F7C355F72753F1FD  : public RuntimeObject
 {
 public:
 
@@ -6869,7 +6867,7 @@ public:
 
 
 // System.Runtime.CompilerServices.Unsafe
-struct  Unsafe_t3BA1BB563E9C478F1C0B68956081717535F38617  : public RuntimeObject
+struct  Unsafe_t67F354876E3790FFED47217FC8AA23741CE87E7D  : public RuntimeObject
 {
 public:
 
@@ -6878,7 +6876,7 @@ public:
 
 
 // System.Runtime.CompilerServices.Unsafe
-struct  Unsafe_t67F354876E3790FFED47217FC8AA23741CE87E7D  : public RuntimeObject
+struct  Unsafe_t3BA1BB563E9C478F1C0B68956081717535F38617  : public RuntimeObject
 {
 public:
 
@@ -25814,8 +25812,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvalidOperationException__ctor_m72027D5
 IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR void IntPtr__ctor_m6360250F4B87C6AE2F0389DA0DEE1983EED73FB6_inline (intptr_t* __this, void* ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.Component::GetComponentFastPath(System.Type,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Component_GetComponentFastPath_mDEB49C6B56084E436C7FC3D555339FA16949937E (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, Type_t * ___type0, intptr_t ___oneFurtherThanResultValue1, const RuntimeMethod* method);
-// UnityEngine.Object UnityEngine.Object::Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * Object_Instantiate_mAF9C2662167396DEE640598515B60BE41B9D5082 (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * ___original0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___position1, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  ___rotation2, const RuntimeMethod* method);
 // UnityEngine.ScriptableObject UnityEngine.ScriptableObject::CreateInstance(System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ScriptableObject_tAB015486CEAB714DA0D5C1BA389B84FB90427734 * ScriptableObject_CreateInstance_mDC77B7257A5E276CB272D3475B9B473B23A7128D (Type_t * ___type0, const RuntimeMethod* method);
 // System.Pinnable`1<T> System.ReadOnlySpan`1<System.Byte>::get_Pinnable()
@@ -35791,7 +35787,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * JitHelpers_UnsafeCast_TisRunt
 	}
 }
 // T System.Runtime.CompilerServices.Unsafe::As<System.Object>(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Unsafe_As_TisRuntimeObject_m9607AF79935E731F62C47AA0B5088285E027EBF6_gshared (RuntimeObject * ___o0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Unsafe_As_TisRuntimeObject_m3FB128D6DA79B4CC3E3E5A48FC6401A54C943FE3_gshared (RuntimeObject * ___o0, const RuntimeMethod* method)
 {
 	{
 		RuntimeObject * L_0 = ___o0;
@@ -35799,7 +35795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Unsafe_As_TisRuntimeObject_m9
 	}
 }
 // T System.Runtime.CompilerServices.Unsafe::As<System.Object>(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Unsafe_As_TisRuntimeObject_m3FB128D6DA79B4CC3E3E5A48FC6401A54C943FE3_gshared (RuntimeObject * ___o0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Unsafe_As_TisRuntimeObject_m9607AF79935E731F62C47AA0B5088285E027EBF6_gshared (RuntimeObject * ___o0, const RuntimeMethod* method)
 {
 	{
 		RuntimeObject * L_0 = ___o0;
@@ -36104,32 +36100,6 @@ IL_0032:
 		return L_5;
 	}
 }
-// T UnityEngine.Object::Instantiate<System.Object>(T,UnityEngine.Vector3,UnityEngine.Quaternion)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Object_Instantiate_TisRuntimeObject_mFE9C42D5336D4F9EFF8CD96E2A26962EFF523947_gshared (RuntimeObject * ___original0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___position1, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  ___rotation2, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Object_Instantiate_TisRuntimeObject_mFE9C42D5336D4F9EFF8CD96E2A26962EFF523947_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	RuntimeObject * V_0 = NULL;
-	{
-		RuntimeObject * L_0 = ___original0;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_1 = ___position1;
-		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_2 = ___rotation2;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * L_3 = Object_Instantiate_mAF9C2662167396DEE640598515B60BE41B9D5082((Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)L_0, (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 )L_1, (Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357 )L_2, /*hidden argument*/NULL);
-		V_0 = (RuntimeObject *)((RuntimeObject *)Castclass((RuntimeObject*)L_3, IL2CPP_RGCTX_DATA(method->rgctx_data, 0)));
-		goto IL_0019;
-	}
-
-IL_0019:
-	{
-		RuntimeObject * L_4 = V_0;
-		return L_4;
-	}
-}
 // T UnityEngine.ScriptableObject::CreateInstance<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * ScriptableObject_CreateInstance_TisRuntimeObject_m7A8F75139352BA04C2EEC1D72D430FAC94C753DE_gshared (const RuntimeMethod* method)
 {
@@ -36156,7 +36126,7 @@ IL_001b:
 	}
 }
 // T& System.Runtime.CompilerServices.Unsafe::Add<System.Byte>(T&,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t* Unsafe_Add_TisByte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_mA71A652D27D90FAB95D4828CB639EE5D7EFAB5C5_gshared (uint8_t* ___source0, int32_t ___elementOffset1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t* Unsafe_Add_TisByte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_mD37DB947800FD0965FE61F34576B7E9314E12D00_gshared (uint8_t* ___source0, int32_t ___elementOffset1, const RuntimeMethod* method)
 {
 	{
 		uint8_t* L_0 = ___source0;
@@ -36166,7 +36136,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t* Unsafe_Add_TisByte_tF87C579059BD4633
 	}
 }
 // T& System.Runtime.CompilerServices.Unsafe::Add<System.Byte>(T&,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t* Unsafe_Add_TisByte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_mD37DB947800FD0965FE61F34576B7E9314E12D00_gshared (uint8_t* ___source0, int32_t ___elementOffset1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t* Unsafe_Add_TisByte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_mA71A652D27D90FAB95D4828CB639EE5D7EFAB5C5_gshared (uint8_t* ___source0, int32_t ___elementOffset1, const RuntimeMethod* method)
 {
 	{
 		uint8_t* L_0 = ___source0;
@@ -36401,7 +36371,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t* Unsafe_AddByteOffset_TisInt32_t58519
 	}
 }
 // T& System.Runtime.CompilerServices.Unsafe::AddByteOffset<System.Object>(T&,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject ** Unsafe_AddByteOffset_TisRuntimeObject_mDABC620B527428C761535BF98570440DBE43AD69_gshared (RuntimeObject ** ___source0, intptr_t ___byteOffset1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject ** Unsafe_AddByteOffset_TisRuntimeObject_m8DCC48F7A02D2C107F625F5183B8BFBD8372C5C0_gshared (RuntimeObject ** ___source0, intptr_t ___byteOffset1, const RuntimeMethod* method)
 {
 	{
 		RuntimeObject ** L_0 = ___source0;
@@ -36410,7 +36380,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject ** Unsafe_AddByteOffset_TisRunt
 	}
 }
 // T& System.Runtime.CompilerServices.Unsafe::AddByteOffset<System.Object>(T&,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject ** Unsafe_AddByteOffset_TisRuntimeObject_m8DCC48F7A02D2C107F625F5183B8BFBD8372C5C0_gshared (RuntimeObject ** ___source0, intptr_t ___byteOffset1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject ** Unsafe_AddByteOffset_TisRuntimeObject_mDABC620B527428C761535BF98570440DBE43AD69_gshared (RuntimeObject ** ___source0, intptr_t ___byteOffset1, const RuntimeMethod* method)
 {
 	{
 		RuntimeObject ** L_0 = ___source0;

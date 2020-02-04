@@ -50,11 +50,11 @@ public class NetworkLLAPI : MonoBehaviour
     {
         OnNetworkReceived();
 
-        if (Input.GetKey(KeyCode.Space))
-        {
+        //if (Input.GetKey(KeyCode.Space))
+        //{
             TestClass testClass = new TestClass(10,100,99);
             client.Send(MessagePackSerializer.Serialize(testClass));
-        }
+        //}
     }
 
     private void OnNetworkReceived()

@@ -201,8 +201,11 @@ IL2CPP_EXTERN_C String_t* _stringLiteral5C0381D8F0DE8F7AEDB7644FBD418B4E17DCFCF7
 IL2CPP_EXTERN_C String_t* _stringLiteral66543C5BE27E9FC762E6F61A6DE92E339B2A8B9F;
 IL2CPP_EXTERN_C String_t* _stringLiteral74265ECE03804A284CADB382A1C43A65A3BED1D6;
 IL2CPP_EXTERN_C String_t* _stringLiteral76F1F10EB368D6EE8D808B40444B229BD727601E;
+IL2CPP_EXTERN_C String_t* _stringLiteral7E7243CD9DD6184803505D16C21ADB79BA02BF69;
 IL2CPP_EXTERN_C String_t* _stringLiteral9A9D4FB8F6DD38303AC06055F285E03378D0ED1E;
+IL2CPP_EXTERN_C String_t* _stringLiteralE37E3E600E6865074F26EF71CC45DEB5A9D1A7D7;
 IL2CPP_EXTERN_C String_t* _stringLiteralE8DF8A178D45C37CCBA3FBF4BD8950103C51ADC3;
+IL2CPP_EXTERN_C String_t* _stringLiteralF92BB9CA6048A4C6E366FCC3EC400177841151FF;
 IL2CPP_EXTERN_C String_t* _stringLiteralFF0B2412DB663B29233C65450608AE6CF9A39980;
 IL2CPP_EXTERN_C const RuntimeMethod* Action_1_Invoke_m6328F763431ED2ACDDB6ED8F0FDEA6194403E79F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Action_1__ctor_m4F1B6EE6AB328B8B63B3B2CD8FB89A119C3143F3_RuntimeMethod_var;
@@ -213,12 +216,14 @@ IL2CPP_EXTERN_C const RuntimeMethod* ConcurrentQueue_1__ctor_mE0C98FA8DF17628759
 IL2CPP_EXTERN_C const RuntimeMethod* ConcurrentQueue_1_get_Count_mE8D982D8EEBBD40AB4C45785A2A6B2D10B60D882_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Console_WriteLine_mA5F7E391799514350980A0DE16983383542CA820_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SafeQueue_1_Clear_mFD3440BCB58F0F84F0F4BEC9CF69128C9E3B231B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* SafeQueue_1_Enqueue_m82A8D4FE1BA7C08B7D64FBA7338B4EC69356EF47_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SafeQueue_1_TryDequeueAll_m25C99C52B06FCD69F34DF4AA87DB4AAC0A465595_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SafeQueue_1__ctor_m460E7015E13028426B10F3C99C741A9648354C33_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass11_0_U3CConnectU3Eb__0_mD5CB6F36326250CDC99D015E0E3F1DE60E353A38_RuntimeMethod_var;
 IL2CPP_EXTERN_C const uint32_t Client_Connect_m5A61686AC8018F73202AE1005AB4FE6889B7060A_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Client_Disconnect_m4F84F228BB93B41776E6ECDBC9D3753CE88673D3_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Client_ReceiveThreadFunction_mC2BD6BAFB0F0AFAFB27A2A1575CC5F641A2EA166_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t Client_Send_m99ADE8A1004BB6B69291E06DF4032C1C3E950B4F_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Client_U3CReceiveThreadFunctionU3Eb__10_0_m332AE09FEA6BED9159EACABA907653889E42EB0E_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Client__ctor_mCA926EB641779A5A0B7FC0A0BCC17F8E7D50796B_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Common_GetNextMessage_mFF794F304B59C60898F5F6927DD8EBD063864A28_MetadataUsageId;
@@ -2925,6 +2930,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConcurrentQueue_1_Enqueue_m6125CF593F2A8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConcurrentQueue_1__ctor_mE0C98FA8DF17628759165E71ABA079F43E138238_gshared (ConcurrentQueue_1_tF0BE801E2109C7C4BC3312B8B6B682B29A371A88 * __this, const RuntimeMethod* method);
 // System.Void Telepathy.SafeQueue`1<System.Object>::Clear()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeQueue_1_Clear_m178E43D7574D6A9FD1B84ADD1FFBAF9BF0688586_gshared (SafeQueue_1_t73CF4A8B82A998628569E4E7DB947BC37AF48F8D * __this, const RuntimeMethod* method);
+// System.Void Telepathy.SafeQueue`1<System.Object>::Enqueue(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeQueue_1_Enqueue_m08E80A73FE1A01A5A4AD47F19925A1C357FA1272_gshared (SafeQueue_1_t73CF4A8B82A998628569E4E7DB947BC37AF48F8D * __this, RuntimeObject * ___item0, const RuntimeMethod* method);
 // System.Void Telepathy.SafeQueue`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeQueue_1__ctor_mF744F2CCAFC6B253ACC98000817C52DF3B127299_gshared (SafeQueue_1_t73CF4A8B82A998628569E4E7DB947BC37AF48F8D * __this, const RuntimeMethod* method);
 // System.Boolean System.Collections.Concurrent.ConcurrentQueue`1<Telepathy.Message>::TryDequeue(!0&)
@@ -2996,6 +3003,13 @@ inline void SafeQueue_1_Clear_mFD3440BCB58F0F84F0F4BEC9CF69128C9E3B231B (SafeQue
 {
 	((  void (*) (SafeQueue_1_tFFEE4F1831828D606378CF003D0003A4A7424F10 *, const RuntimeMethod*))SafeQueue_1_Clear_m178E43D7574D6A9FD1B84ADD1FFBAF9BF0688586_gshared)(__this, method);
 }
+// System.Void Telepathy.SafeQueue`1<System.Byte[]>::Enqueue(T)
+inline void SafeQueue_1_Enqueue_m82A8D4FE1BA7C08B7D64FBA7338B4EC69356EF47 (SafeQueue_1_tFFEE4F1831828D606378CF003D0003A4A7424F10 * __this, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (SafeQueue_1_tFFEE4F1831828D606378CF003D0003A4A7424F10 *, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, const RuntimeMethod*))SafeQueue_1_Enqueue_m08E80A73FE1A01A5A4AD47F19925A1C357FA1272_gshared)(__this, ___item0, method);
+}
+// System.Boolean System.Threading.EventWaitHandle::Set()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EventWaitHandle_Set_m7959A86A39735296FC949EC86FDA42A6CFAAB94C (EventWaitHandle_t7603BF1D3D30FE42DD07A450C8D09E2684DC4D98 * __this, const RuntimeMethod* method);
 // System.Void Telepathy.SafeQueue`1<System.Byte[]>::.ctor()
 inline void SafeQueue_1__ctor_m460E7015E13028426B10F3C99C741A9648354C33 (SafeQueue_1_tFFEE4F1831828D606378CF003D0003A4A7424F10 * __this, const RuntimeMethod* method)
 {
@@ -3484,6 +3498,101 @@ IL_0035:
 IL_0052:
 	{
 		return;
+	}
+}
+// System.Boolean Telepathy.Client::Send(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Client_Send_m99ADE8A1004BB6B69291E06DF4032C1C3E950B4F (Client_t00748E10E80324FD9D1C491A162829231DB6A3FA * __this, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* ___data0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Client_Send_m99ADE8A1004BB6B69291E06DF4032C1C3E950B4F_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	{
+		bool L_0 = Client_get_Connected_m98098892072CD1FEB5926C8F0416422DAD4702FE(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_007f;
+		}
+	}
+	{
+		ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_2 = ___data0;
+		NullCheck(L_2);
+		int32_t L_3 = ((Common_tFCC994B3A027AC464326397B2D22751359949226 *)__this)->get_MaxMessageSize_3();
+		V_1 = (bool)((((int32_t)((((int32_t)(((int32_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))) > ((int32_t)L_3))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		SafeQueue_1_tFFEE4F1831828D606378CF003D0003A4A7424F10 * L_5 = __this->get_sendQueue_11();
+		ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_6 = ___data0;
+		NullCheck(L_5);
+		SafeQueue_1_Enqueue_m82A8D4FE1BA7C08B7D64FBA7338B4EC69356EF47(L_5, L_6, /*hidden argument*/SafeQueue_1_Enqueue_m82A8D4FE1BA7C08B7D64FBA7338B4EC69356EF47_RuntimeMethod_var);
+		ManualResetEvent_tDFAF117B200ECA4CCF4FD09593F949A016D55408 * L_7 = __this->get_sendPending_12();
+		NullCheck(L_7);
+		EventWaitHandle_Set_m7959A86A39735296FC949EC86FDA42A6CFAAB94C(L_7, /*hidden argument*/NULL);
+		V_2 = (bool)1;
+		goto IL_0093;
+	}
+
+IL_003c:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Logger_t2B713402D88A4DE569D1D2017C4686DF622E61F4_il2cpp_TypeInfo_var);
+		Action_1_t32A9EECF5D4397CC1B9A7C7079870875411B06D0 * L_8 = ((Logger_t2B713402D88A4DE569D1D2017C4686DF622E61F4_StaticFields*)il2cpp_codegen_static_fields_for(Logger_t2B713402D88A4DE569D1D2017C4686DF622E61F4_il2cpp_TypeInfo_var))->get_LogError_2();
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_9 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)SZArrayNew(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A_il2cpp_TypeInfo_var, (uint32_t)4);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_10 = L_9;
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, _stringLiteral7E7243CD9DD6184803505D16C21ADB79BA02BF69);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)_stringLiteral7E7243CD9DD6184803505D16C21ADB79BA02BF69);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_11 = L_10;
+		ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_12 = ___data0;
+		NullCheck(L_12);
+		int32_t L_13 = (((int32_t)((int32_t)(((RuntimeArray*)L_12)->max_length))));
+		RuntimeObject * L_14 = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &L_13);
+		NullCheck(L_11);
+		ArrayElementTypeCheck (L_11, L_14);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_14);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_15 = L_11;
+		NullCheck(L_15);
+		ArrayElementTypeCheck (L_15, _stringLiteralE37E3E600E6865074F26EF71CC45DEB5A9D1A7D7);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)_stringLiteralE37E3E600E6865074F26EF71CC45DEB5A9D1A7D7);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_16 = L_15;
+		int32_t L_17 = ((Common_tFCC994B3A027AC464326397B2D22751359949226 *)__this)->get_MaxMessageSize_3();
+		int32_t L_18 = L_17;
+		RuntimeObject * L_19 = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &L_18);
+		NullCheck(L_16);
+		ArrayElementTypeCheck (L_16, L_19);
+		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_19);
+		String_t* L_20 = String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07(L_16, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Action_1_Invoke_m6328F763431ED2ACDDB6ED8F0FDEA6194403E79F(L_8, L_20, /*hidden argument*/Action_1_Invoke_m6328F763431ED2ACDDB6ED8F0FDEA6194403E79F_RuntimeMethod_var);
+		V_2 = (bool)0;
+		goto IL_0093;
+	}
+
+IL_007f:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Logger_t2B713402D88A4DE569D1D2017C4686DF622E61F4_il2cpp_TypeInfo_var);
+		Action_1_t32A9EECF5D4397CC1B9A7C7079870875411B06D0 * L_21 = ((Logger_t2B713402D88A4DE569D1D2017C4686DF622E61F4_StaticFields*)il2cpp_codegen_static_fields_for(Logger_t2B713402D88A4DE569D1D2017C4686DF622E61F4_il2cpp_TypeInfo_var))->get_LogWarning_1();
+		NullCheck(L_21);
+		Action_1_Invoke_m6328F763431ED2ACDDB6ED8F0FDEA6194403E79F(L_21, _stringLiteralF92BB9CA6048A4C6E366FCC3EC400177841151FF, /*hidden argument*/Action_1_Invoke_m6328F763431ED2ACDDB6ED8F0FDEA6194403E79F_RuntimeMethod_var);
+		V_2 = (bool)0;
+		goto IL_0093;
+	}
+
+IL_0093:
+	{
+		bool L_22 = V_2;
+		return L_22;
 	}
 }
 // System.Void Telepathy.Client::.ctor()

@@ -131,8 +131,8 @@ static const int32_t s_InvokerIndices[41] =
 	131,
 	118,
 	118,
-	1358,
-	1359,
+	1356,
+	1357,
 	23,
 	-1,
 	-1,
@@ -173,13 +173,12 @@ static const Il2CppTokenRangePair s_rgctxIndices[4] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[24] = 
 {
-	{ (Il2CppRGCTXDataType)2, 25324 },
-	{ (Il2CppRGCTXDataType)1, 25325 },
-	{ (Il2CppRGCTXDataType)2, 25325 },
-	{ (Il2CppRGCTXDataType)3, 37764 },
+	{ (Il2CppRGCTXDataType)2, 25319 },
+	{ (Il2CppRGCTXDataType)1, 25320 },
+	{ (Il2CppRGCTXDataType)2, 25320 },
 	{ (Il2CppRGCTXDataType)3, 37765 },
-	{ (Il2CppRGCTXDataType)2, 25324 },
 	{ (Il2CppRGCTXDataType)3, 37766 },
+	{ (Il2CppRGCTXDataType)2, 25319 },
 	{ (Il2CppRGCTXDataType)3, 37767 },
 	{ (Il2CppRGCTXDataType)3, 37768 },
 	{ (Il2CppRGCTXDataType)3, 37769 },
@@ -192,11 +191,12 @@ static const Il2CppRGCTXDefinition s_rgctxValues[24] =
 	{ (Il2CppRGCTXDataType)3, 37776 },
 	{ (Il2CppRGCTXDataType)3, 37777 },
 	{ (Il2CppRGCTXDataType)3, 37778 },
-	{ (Il2CppRGCTXDataType)2, 25335 },
 	{ (Il2CppRGCTXDataType)3, 37779 },
-	{ (Il2CppRGCTXDataType)2, 25337 },
+	{ (Il2CppRGCTXDataType)2, 25330 },
 	{ (Il2CppRGCTXDataType)3, 37780 },
-	{ (Il2CppRGCTXDataType)2, 25339 },
+	{ (Il2CppRGCTXDataType)2, 25332 },
+	{ (Il2CppRGCTXDataType)3, 37781 },
+	{ (Il2CppRGCTXDataType)2, 25334 },
 };
 extern const Il2CppCodeGenModule g_System_Numerics_VectorsCodeGenModule;
 const Il2CppCodeGenModule g_System_Numerics_VectorsCodeGenModule = 
