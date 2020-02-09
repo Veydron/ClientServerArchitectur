@@ -5,6 +5,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="CustomPackets.cs" t="Include" />
           <e p="MessagePack" t="Include">
             <e p="Annotations" t="Include">
               <e p="Attributes.cs" t="Include" />

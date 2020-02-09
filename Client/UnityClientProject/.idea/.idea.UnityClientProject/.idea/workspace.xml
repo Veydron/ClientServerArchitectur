@@ -11,15 +11,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.15f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MessagePack/IFormatterResolver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkLLAPI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomPackets.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestClass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkLLAPI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MessagePack/MessagePackSerializer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/OPS/Serialization/Demo/Mesh/Demo_MeshGui.cs" />
+        <option value="$PROJECT_DIR$/Assets/OPS/Serialization/Demo/Compress and Encrypt/Demo_CnEGui.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomPackets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkLLAPI.cs" />
       </list>
     </option>
@@ -84,6 +91,13 @@
       <workItem from="1580574601043" duration="4725000" />
       <workItem from="1580662146846" duration="3202000" />
       <workItem from="1580838802950" duration="586000" />
+      <workItem from="1580842099582" duration="4000" />
+      <workItem from="1580845236948" duration="694000" />
+      <workItem from="1580848753017" duration="2875000" />
+      <workItem from="1581091245222" duration="671000" />
+      <workItem from="1581165943550" duration="2421000" />
+      <workItem from="1581170559364" duration="3635000" />
+      <workItem from="1581241036049" duration="12264000" />
     </task>
     <servers />
   </component>
@@ -106,9 +120,17 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="318" y="276" key="Rider.ProjectTemplateDialog.Size" timestamp="1580848514218">
+      <screen x="0" y="0" width="3840" height="1080" />
+    </state>
+    <state x="318" y="276" key="Rider.ProjectTemplateDialog.Size/0.0.3840.1080@0.0.3840.1080" timestamp="1580848514218" />
     <state x="597" y="210" key="RiderGenerateDialog" timestamp="1580662875507">
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state x="597" y="210" key="RiderGenerateDialog/0.0.3840.1080@0.0.3840.1080" timestamp="1580662875507" />
+    <state x="643" y="250" key="run.anything.popup" timestamp="1581255305135">
+      <screen x="0" y="0" width="3840" height="1080" />
+    </state>
+    <state x="643" y="250" key="run.anything.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1581255305135" />
   </component>
 </project>

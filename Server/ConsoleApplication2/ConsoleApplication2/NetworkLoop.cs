@@ -1,7 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Configuration;
+using System.Numerics;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
+using ConsoleApplication2.Scripts;
 using MessagePack;
 using Telepathy;
 
@@ -19,7 +24,7 @@ namespace ConsoleApplication2
         public event EventHandler<TestClass> ClientMessage;
         public event EventHandler<Telepathy.Message> KickPlayer;
 
-        private int maxMessageCounter = 10; //Maximale Anzahl an Nachrichten per Tick die Entfangen werden darf bevor der Spieler gekickt wird.
+        private int maxMessageCounter = 4; //Maximale Anzahl an Nachrichten per Tick die Entfangen werden darf bevor der Spieler gekickt wird.
         
         public void Run()
         {
@@ -38,38 +43,58 @@ namespace ConsoleApplication2
                     //reply to each incoming message
                     while (server.GetNextMessage(out msg))
                     {
-                        if (msg.eventType == EventType.Connected)
+                        switch (msg.eventType)
                         {
-                            //TODO Checken wann er das letztemal connecten wollte und einen mindest Abstand von 5 Sekunden einbauen.
+                            case Telepathy.EventType.Connected:
+                                //TODO Checken wann er das letztemal connecten wollte und einen mindest Abstand von 5 Sekunden einbauen.
+                                OnClientConnected(msg.connectionId);
+                                break;
                             
-                            OnClientConnected(msg.connectionId);
-                        }
-                        else if (msg.eventType == EventType.Data)
-                        {
-                            //Checks if the player is flagged as "Connected" then we listen to his data
-                            if (networkPlayersDictionary[msg.connectionId].IsConnected)
-                            {
-                                //Checkt wie oft in diesem Tick der Spieler eine message geschickt hat, wenn mehr kleiner als maxcounter dann wird die nachricht verarbeitet sonst gekickt
-                                if (networkPlayersDictionary[msg.connectionId].KickPlayer <= maxMessageCounter)
+                            case Telepathy.EventType.Data:
+                                //Packet Count wird dazugezählt damit nacher abgefragt werden kann wie oft per tick er was geschickt hat
+                                networkPlayersDictionary[msg.connectionId].KickPlayer += 1;
+                                //Checks if the player is flagged as "Connected" then we listen to his data
+                                if (networkPlayersDictionary[msg.connectionId].IsConnected)
                                 {
-                                    OnMessageReceived(msg);
+                                    //Checkt wie oft in diesem Tick der Spieler eine message geschickt hat, wenn mehr kleiner als maxcounter dann wird die nachricht verarbeitet sonst gekickt
+                                    if (networkPlayersDictionary[msg.connectionId].KickPlayer <= maxMessageCounter)
+                                    {
+                                        OnMessageReceived(msg);
+                                    }
+                                    else
+                                    {
+                                        OnClientKick((msg));
+                                    }
                                 }
-                                else
-                                {
-                                    OnClientKick((msg));
-                                }
-                            }
- 
+                                break;
                             
-                        }
-                        else if (msg.eventType == EventType.Disconnected)
-                        {
-                            OnClientDisconnected(msg.connectionId);
+                            case Telepathy.EventType.Disconnected:
+                                OnClientDisconnected(msg.connectionId);
+                                break;
                         }
                     }
 
                     //TODO Send Packetes to the Player, like Position
-                    //SendPlayerPositions();
+                    foreach (var networkPlayer in networkPlayersDictionary)
+                    {
+                        if (networkPlayer.Value.IsMoved)
+                        {
+                            CustomPackets clientPacket = new CustomPackets(10,networkPlayer.Value.ConnectionID,networkPlayer.Value.PlayerPosition.X, networkPlayer.Value.PlayerPosition.Y, networkPlayer.Value.PlayerPosition.Z); //neue position
+                            //Console.WriteLine("moved true,packet erstellt");
+                            foreach (var networkPlayerConnection in networkPlayersDictionary) //für jeden spieler ausser sich selber
+                            {
+                                //if (networkPlayerConnection.Key != networkPlayer.Key)
+                                //{
+                                    server.Send(networkPlayerConnection.Value.ConnectionID, MessagePackSerializer.Serialize(clientPacket)); // sende die position
+                                    Console.WriteLine("Sende Player "+networkPlayerConnection.Value.ConnectionID+" die neue Position von Player "+networkPlayer.Value.ConnectionID+" : "+networkPlayer.Value.PlayerPosition.X, networkPlayer.Value.PlayerPosition.Y, networkPlayer.Value.PlayerPosition.Z);
+                                //}
+                            }
+                            
+                            networkPlayer.Value.IsMoved = false;
+                            //TestClass testClass = new TestClass(100,100,99);
+                            //server.Send(msg.connectionId, MessagePackSerializer.Serialize(testClass));
+                        }
+                    }
                     //SendMonsterPositions();
                     //SendActions();
 
@@ -83,9 +108,9 @@ namespace ConsoleApplication2
                     }
                     
                     //Server Tick Rate 5 times per second
-                    //System.Threading.Thread.Sleep(200); //Ist die Orginal methode unten die alternative
-                    Console.WriteLine("Sleep . . .");
-                    new System.Threading.ManualResetEvent(false).WaitOne(200);
+                    System.Threading.Thread.Sleep(15); //Ist die Orginal methode unten die alternative
+                    //Console.WriteLine("Sleep . . .");
+                    //new System.Threading.ManualResetEvent(false).WaitOne(15);
                 }
             }
             
@@ -105,9 +130,10 @@ namespace ConsoleApplication2
                 {
                     networkPlayersDictionary.Add(connectionId, new NetworkPlayer(connectionId));
                     networkPlayersDictionary[connectionId].IsConnected = true;
+                    
+                    //Player wird Instantiert
+                    InstantiatePlayersOnConnect(connectionId);
                 }
-                //Todo Hier kann die Funktion aufgerufen werden zum Spieler zu Instantiaten auf dem frisch gejointen Client
-                
                 //Event Shoutout für alle die es interessiert das ein Spieler Connectet
                 if (ClientConnected != null)
                 {
@@ -130,20 +156,24 @@ namespace ConsoleApplication2
                 if (networkPlayersDictionary.ContainsKey(msg.connectionId))
                 { 
                     //Message wird in Class umgewandelt
-                TestClass recivedmsg = MessagePackSerializer.Deserialize<TestClass>(msg.data);
+                CustomPackets clientPacket = MessagePackSerializer.Deserialize<CustomPackets>(msg.data);
                 
                 //Event das des Class packet zur verfügung stellt für beispielsweise logs
                 //ClientMessage(this, recivedmsg);
-                Console.WriteLine("Player "+msg.connectionId+" sends packet: " +recivedmsg.ActionID);
-            
-                //Packet Count wird dazugezählt damit nacher abgefragt werden kann wie oft per tick er was geschickt hat
-                networkPlayersDictionary[msg.connectionId].KickPlayer += 1;
-            
-                    //TODO richtiges Auswahlsystem das abfragt was der Client möchte und entsprechend handelt
-                    if (recivedmsg.ActionID == 10)
-                    { 
-                        TestClass testClass = new TestClass(100,100,99);
-                        server.Send(msg.connectionId, MessagePackSerializer.Serialize(testClass));
+                //Console.WriteLine("Player "+msg.connectionId+" sends packet: " +recivedmsg.ActionID);
+                
+                    //TODO richtiges Auswahlsystem das abfragt was der Client möchte und entsprechend 
+                    switch (clientPacket.Action)
+                    {
+                        case 9:
+                        {
+                            //Sends die aktuelle Position und die möchte Position und zurück kommt die inframe Position die dann ins networplayerdictionary geschrieben wird
+                            Vector3 tempVector3 = new Vector3();
+                            tempVector3 = PlayerMovement.move(clientPacket.W,clientPacket.A,clientPacket.S,clientPacket.D,networkPlayersDictionary[msg.connectionId].PlayerPosition);
+                            networkPlayersDictionary[msg.connectionId].PlayerPosition = tempVector3;
+                            networkPlayersDictionary[msg.connectionId].IsMoved = true;
+                            break;
+                        }
                     }
                     //TODOENDE
                 }
@@ -169,6 +199,7 @@ namespace ConsoleApplication2
                 //entfernt den disconnecteten spieler aus der NetworkPlayer Bibliothek und setzt seine flag auf disconnected
                 if (networkPlayersDictionary.ContainsKey(connectionId))
                 {
+                    //DespawnPlayerOnDisconnect(connectionId);
                     networkPlayersDictionary.Remove(connectionId);
                 }
 
@@ -196,28 +227,65 @@ namespace ConsoleApplication2
                     KickPlayer(this, msg);
                 }
                 
-                //Setzt flag auf disconnected so das wir nicht mehr auf seine data nachrichten hören und er sich neu connecten muss
-                networkPlayersDictionary[msg.connectionId].IsConnected = false;
+                if (networkPlayersDictionary.ContainsKey(msg.connectionId))
+                {
+                    //Setzt flag auf disconnected so das wir nicht mehr auf seine data nachrichten hören und er sich neu connecten muss
+                    networkPlayersDictionary[msg.connectionId].IsConnected = false;
+                    
+                    //server sendet allen den spieler zu löschen
+                    DespawnPlayerOnDisconnect(msg.connectionId);
                 
-                //Server forced to disconnect den spieler
-                server.Disconnect(msg.connectionId);
+                    //Server forced to disconnect den spieler
+                    server.Disconnect(msg.connectionId);
+                }
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
                 Console.WriteLine("Fehler beim Spieler Kicken");
             }
-        }
+         }
+ 
+         // Zum Instantieren von spielern auf dem client
+         private void InstantiatePlayersOnConnect(int connectionId)
+         {
+             foreach (var player in networkPlayersDictionary)
+             {
+                 //Send for every player a Instantiate and the Position.
+                 CustomPackets customPackets = new CustomPackets(1,player.Value.ConnectionID, player.Value.PlayerPosition.X,player.Value.PlayerPosition.Y,player.Value.PlayerPosition.Z);
 
-        /* Zum Instantieren von spielern auf dem client
-        private void InstantiatePlayersOnConnect(int connectionId)
-        {
-            foreach (var player in networkPlayersDictionary)
-            {
-                //Send for every player a Instantiate and the Position.
-                server.Send(connectionId, MessagePackSerializer.Serialize(player.Value));
-            } 
-        }
-        */
-    }
-}
+                 Console.WriteLine(customPackets.Action +" , " +customPackets.ConnectionID +" , ");
+                 var data = MessagePackSerializer.Serialize(customPackets);
+                 Console.WriteLine("Data serialized ." +data);
+
+                 foreach (var playerclient in networkPlayersDictionary)
+                 {
+                     server.Send(playerclient.Value.ConnectionID, data);
+                 }
+                 
+                 Console.WriteLine("Player "+connectionId+" instantiated Player " +player.Value.ConnectionID);
+             } 
+         }
+
+         private void DespawnPlayerOnDisconnect(int connectionID)
+         {
+             foreach (var player in networkPlayersDictionary)
+             {
+                 //Send for every player a despawn msg.
+                 CustomPackets customPackets = new CustomPackets(2,connectionID);
+
+                 Console.WriteLine(customPackets.Action +" , " +customPackets.ConnectionID +" , ");
+                 var data = MessagePackSerializer.Serialize(customPackets);
+                 Console.WriteLine("Data serialized ." +data);
+
+                 foreach (var playerclient in networkPlayersDictionary)
+                 {
+                     server.Send(playerclient.Value.ConnectionID, data);
+                 }
+                 
+                 Console.WriteLine("Player "+connectionID+" disconnected " +player.Value.ConnectionID);
+             } 
+             
+         }
+     }
+ }

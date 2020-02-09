@@ -5,14 +5,25 @@
       <e p="ConsoleApplication2" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="ConsoleApplication2.csproj" t="IncludeRecursive" />
+        <e p="ConsoleApplication2_TemporaryKey.pfx" t="Include" />
+        <e p="CustomPackets.cs" t="Include" />
         <e p="LogServer.cs" t="Include" />
         <e p="NetworkLoop.cs" t="Include" />
         <e p="NetworkPlayer.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
+        <e p="PlayerMovement.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="jquery-2.1.1-vsdoc.js" t="Include" />
+          <e p="jquery-2.1.1.js" t="Include" />
+          <e p="jquery-2.1.1.min.js" t="Include" />
+          <e p="jquery-2.1.1.min.map" t="Include" />
+          <e p="nugetexample.js" t="Include" />
+          <e p="ServerPackets.cs" t="Include" />
         </e>
         <e p="Skills.cs" t="Include" />
         <e p="TestClass.cs" t="Include" />

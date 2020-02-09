@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using MessagePack;
 
 namespace ConsoleApplication2
@@ -10,14 +11,13 @@ namespace ConsoleApplication2
         public int ConnectionID { get; set; }
 
         [Key(1)]
-        public float X { get; set; }
-        [Key(2)]
-        public float Y { get; set; }
-        [Key(3)]
-        public float Z { get; set; }
-        
+        public Vector3 PlayerPosition;
+
         [IgnoreMember]
         public bool IsConnected { get; set; }
+        
+        [IgnoreMember]
+        public bool IsMoved { get; set; }
         
         [IgnoreMember]
         public int KickPlayer { get; set; }
@@ -27,9 +27,7 @@ namespace ConsoleApplication2
             ConnectionID = connectionID;
 
             // For Position Sepration so you can see if different clients recieve the right position
-            X = connectionID;
-            Y = connectionID;
-            Z = connectionID;
+            PlayerPosition = Vector3.Zero;
 
             IsConnected = false;
             KickPlayer = 0;

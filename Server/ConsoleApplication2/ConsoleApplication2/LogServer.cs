@@ -17,7 +17,7 @@ namespace ConsoleApplication2
 
             public void OnClientMessage(object source, TestClass msg)
             {
-                Console.WriteLine("Player "+msg.PlayerID+" sendet Packet: " +msg.ActionID);
+                //Console.WriteLine("Player "+msg.PlayerID+" sendet Packet: " +msg.ActionID);
             }
 
             public void OnClientKick(object source, Telepathy.Message msg)
