@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using AnySync;
 using UnityEngine;
 using MessagePack;
 
 public class NetworkPlayer
 {
-
+    public MotionGenerator motionGenerator = new MotionGenerator(0.2f);
     public int ConnectionID { get; set; }
 
     public Vector3 PlayerPosition;

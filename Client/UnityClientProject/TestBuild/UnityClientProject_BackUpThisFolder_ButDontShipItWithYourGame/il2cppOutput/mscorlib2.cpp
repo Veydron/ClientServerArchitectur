@@ -1068,6 +1068,7 @@ IL2CPP_EXTERN_C const uint32_t Convert_ToUInt16_mB7311DB5960043FD81C1305B69C5328
 IL2CPP_EXTERN_C const uint32_t Convert_ToUInt16_mC488D697C85EE1862D2D8FFFD30BC8E99AB73BE5_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Convert_ToUInt16_mC540754A3F101A7A13FB26FD89836025507E7E80_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Convert_ToUInt32_m2726353738A26D6688A1F8F074056C17A09B3A84_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t Convert_ToUInt32_m5CD74B1562CFEE536D3E9A9A89CEC1CB38CED427_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Convert_ToUInt32_m78245CD2AE3D0369F5A99FF013AF73FFBB8CF869_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Convert_ToUInt32_m7DC544C6EB3CA7920C82A243D9C387B462697BAC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Convert_ToUInt32_mA22ABF80925CA54B6B4869939964184C7F344B41_MetadataUsageId;
@@ -19464,6 +19465,34 @@ IL_0005:
 		RuntimeObject* L_2 = ___provider1;
 		int32_t L_3 = Int32_Parse_m17BA45CC13A0E08712F2EE60CC1356291D0592AC(L_1, 7, L_2, /*hidden argument*/NULL);
 		return L_3;
+	}
+}
+// System.UInt32 System.Convert::ToUInt32(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Convert_ToUInt32_m5CD74B1562CFEE536D3E9A9A89CEC1CB38CED427 (RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Convert_ToUInt32_m5CD74B1562CFEE536D3E9A9A89CEC1CB38CED427_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___value0;
+		if (!L_0)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		RuntimeObject * L_1 = ___value0;
+		NullCheck(((RuntimeObject*)Castclass((RuntimeObject*)L_1, IConvertible_tB52671A602A64FCCFD27EA5817E2A6C2B693D380_il2cpp_TypeInfo_var)));
+		uint32_t L_2 = InterfaceFuncInvoker1< uint32_t, RuntimeObject* >::Invoke(8 /* System.UInt32 System.IConvertible::ToUInt32(System.IFormatProvider) */, IConvertible_tB52671A602A64FCCFD27EA5817E2A6C2B693D380_il2cpp_TypeInfo_var, ((RuntimeObject*)Castclass((RuntimeObject*)L_1, IConvertible_tB52671A602A64FCCFD27EA5817E2A6C2B693D380_il2cpp_TypeInfo_var)), (RuntimeObject*)NULL);
+		return L_2;
+	}
+
+IL_0010:
+	{
+		return 0;
 	}
 }
 // System.UInt32 System.Convert::ToUInt32(System.Object,System.IFormatProvider)

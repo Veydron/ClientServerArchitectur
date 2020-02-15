@@ -100,7 +100,85 @@ extern void ContactFilter2D_SetLayerMask_mECEE981A09393F1097555D46449ED7CA4D8659
 extern void ContactFilter2D_SetDepth_mF4AB9C380EDC3726D58734010BD90AD7D36ABDB0_AdjustorThunk ();
 // 0x00000028 UnityEngine.ContactFilter2D UnityEngine.ContactFilter2D::CreateLegacyFilter(System.Int32,System.Single,System.Single)
 extern void ContactFilter2D_CreateLegacyFilter_mA52A1C54BA7C4A49094B172BE7FA6044EF346A51 ();
-static Il2CppMethodPointer s_methodPointers[40] = 
+// 0x00000029 UnityEngine.Vector2 UnityEngine.RaycastHit2D::get_point()
+extern void RaycastHit2D_get_point_mC567E234B1B673C3A9819023C3DC97C781443098_AdjustorThunk ();
+// 0x0000002A UnityEngine.Vector2 UnityEngine.RaycastHit2D::get_normal()
+extern void RaycastHit2D_get_normal_m9F0974E4514AD56C00FCF6FF4CDF10AED62FE6E4_AdjustorThunk ();
+// 0x0000002B System.Single UnityEngine.RaycastHit2D::get_distance()
+extern void RaycastHit2D_get_distance_m2D9F391717ECACFDA8E01A4126E0F8F59F7E774F_AdjustorThunk ();
+// 0x0000002C UnityEngine.Collider2D UnityEngine.RaycastHit2D::get_collider()
+extern void RaycastHit2D_get_collider_m6A7EC53B2E179C2EFF4F29018A132B2979CBE976_AdjustorThunk ();
+// 0x0000002D System.Void UnityEngine.Collider2D::.ctor()
+extern void Collider2D__ctor_m9E497E4A527D5ADD864AB3D7901A4087C45712C0 ();
+// 0x0000002E System.Single UnityEngine.Collider2D::get_density()
+extern void Collider2D_get_density_m3127E283B4E96F595E6289509FAE3093012BE838 ();
+// 0x0000002F System.Void UnityEngine.Collider2D::set_density(System.Single)
+extern void Collider2D_set_density_m061D9893DEC0B69CEABEB19E18FB158D549E4DF5 ();
+// 0x00000030 System.Boolean UnityEngine.Collider2D::get_isTrigger()
+extern void Collider2D_get_isTrigger_m72C2C32959124D4FB91A83B56E5D7D5204B87E48 ();
+// 0x00000031 System.Void UnityEngine.Collider2D::set_isTrigger(System.Boolean)
+extern void Collider2D_set_isTrigger_m15514794FC3D677B712080672EAEEA0CE2C3A20B ();
+// 0x00000032 UnityEngine.Vector2 UnityEngine.Collider2D::get_offset()
+extern void Collider2D_get_offset_mCB3DEFB9ACB05211320B8406B01F089EF7F8788D ();
+// 0x00000033 System.Void UnityEngine.Collider2D::set_offset(UnityEngine.Vector2)
+extern void Collider2D_set_offset_mC752F6CA4C47C5543538BA3BC9B04A3D267AAC6C ();
+// 0x00000034 System.Void UnityEngine.Collider2D::get_offset_Injected(UnityEngine.Vector2&)
+extern void Collider2D_get_offset_Injected_mFBEEA538206330D2D4C62A04DF339332596C0F97 ();
+// 0x00000035 System.Void UnityEngine.Collider2D::set_offset_Injected(UnityEngine.Vector2&)
+extern void Collider2D_set_offset_Injected_m98CB990275094E1261101B082C51DDD634CA0A79 ();
+// 0x00000036 System.Single UnityEngine.CircleCollider2D::get_radius()
+extern void CircleCollider2D_get_radius_m016333FD7A5A5FD84FEFD7D02B57D4CA728EFA27 ();
+// 0x00000037 System.Void UnityEngine.CircleCollider2D::set_radius(System.Single)
+extern void CircleCollider2D_set_radius_mC4F6C9D9583045A5117C269D7CF4E9E8D85D1A19 ();
+// 0x00000038 UnityEngine.Vector2 UnityEngine.CapsuleCollider2D::get_size()
+extern void CapsuleCollider2D_get_size_m2E344F2DA3881C6E8420681C40A1218DFD420A60 ();
+// 0x00000039 System.Void UnityEngine.CapsuleCollider2D::set_size(UnityEngine.Vector2)
+extern void CapsuleCollider2D_set_size_mBABB8A4E799CFC0169D82E22AB5F9E585A66C7A4 ();
+// 0x0000003A UnityEngine.CapsuleDirection2D UnityEngine.CapsuleCollider2D::get_direction()
+extern void CapsuleCollider2D_get_direction_mD58B574E6FD8F7C7D2241FFCF837C4DD6E501EA7 ();
+// 0x0000003B System.Void UnityEngine.CapsuleCollider2D::set_direction(UnityEngine.CapsuleDirection2D)
+extern void CapsuleCollider2D_set_direction_m7D4CF5762E5465DEF5096A5808FF1A09DFC42D0C ();
+// 0x0000003C System.Void UnityEngine.CapsuleCollider2D::get_size_Injected(UnityEngine.Vector2&)
+extern void CapsuleCollider2D_get_size_Injected_m595751B395DB00016B61BD538285D9A8F902064A ();
+// 0x0000003D System.Void UnityEngine.CapsuleCollider2D::set_size_Injected(UnityEngine.Vector2&)
+extern void CapsuleCollider2D_set_size_Injected_mE7DA3489AC9BDEF80F49BC28C2529815BBFDF340 ();
+// 0x0000003E System.Single UnityEngine.EdgeCollider2D::get_edgeRadius()
+extern void EdgeCollider2D_get_edgeRadius_m334999C8FC0F38B1DC2EF5D27A2F6C893075A638 ();
+// 0x0000003F System.Void UnityEngine.EdgeCollider2D::set_edgeRadius(System.Single)
+extern void EdgeCollider2D_set_edgeRadius_m40D84B21D9D0A4B6AF9B8E18E2FD2F1B05438CC1 ();
+// 0x00000040 UnityEngine.Vector2[] UnityEngine.EdgeCollider2D::get_points()
+extern void EdgeCollider2D_get_points_mC2D85B741B8BCF0CB05B129EE1EE4CA0C86E4291 ();
+// 0x00000041 System.Void UnityEngine.EdgeCollider2D::set_points(UnityEngine.Vector2[])
+extern void EdgeCollider2D_set_points_m1761864FA1EA3AAC9F3F167D614E478FF8829D2C ();
+// 0x00000042 UnityEngine.Vector2 UnityEngine.BoxCollider2D::get_size()
+extern void BoxCollider2D_get_size_m6230015317115D9BED5C61A4EDAC013C8A7664E1 ();
+// 0x00000043 System.Void UnityEngine.BoxCollider2D::set_size(UnityEngine.Vector2)
+extern void BoxCollider2D_set_size_mFA630C4BD41F786D208C1C0382A7FCF7868BA489 ();
+// 0x00000044 System.Single UnityEngine.BoxCollider2D::get_edgeRadius()
+extern void BoxCollider2D_get_edgeRadius_m95CF9B39CF125CBE980C5A27ABD10DAB02499145 ();
+// 0x00000045 System.Void UnityEngine.BoxCollider2D::set_edgeRadius(System.Single)
+extern void BoxCollider2D_set_edgeRadius_m1789BD1C47186B900D1AD48E66548FF47A483A88 ();
+// 0x00000046 System.Boolean UnityEngine.BoxCollider2D::get_autoTiling()
+extern void BoxCollider2D_get_autoTiling_mA06E05B04112BCD90D03D936D25AD632E63024D2 ();
+// 0x00000047 System.Void UnityEngine.BoxCollider2D::set_autoTiling(System.Boolean)
+extern void BoxCollider2D_set_autoTiling_mD0E49B9FCB8DEC820EC8BCFB7A22B96D0A65C1AD ();
+// 0x00000048 System.Void UnityEngine.BoxCollider2D::get_size_Injected(UnityEngine.Vector2&)
+extern void BoxCollider2D_get_size_Injected_m6E18F627969D38CF513DB4CF680ACD51810F74CD ();
+// 0x00000049 System.Void UnityEngine.BoxCollider2D::set_size_Injected(UnityEngine.Vector2&)
+extern void BoxCollider2D_set_size_Injected_mB787996D8E2E7919FE975BC435677115539A53A0 ();
+// 0x0000004A System.Boolean UnityEngine.PolygonCollider2D::get_autoTiling()
+extern void PolygonCollider2D_get_autoTiling_mB6DE2F4EF3EE6E04FCBA4D29D901B94C2B2E7119 ();
+// 0x0000004B System.Void UnityEngine.PolygonCollider2D::set_autoTiling(System.Boolean)
+extern void PolygonCollider2D_set_autoTiling_mF63DF5F0C0DAE9963F785C9C76CF3E5B16DBE455 ();
+// 0x0000004C UnityEngine.Vector2[] UnityEngine.PolygonCollider2D::get_points()
+extern void PolygonCollider2D_get_points_m65A26A2D193E9F2C0D517635B46190FF8DBD9AF2 ();
+// 0x0000004D System.Void UnityEngine.PolygonCollider2D::set_points(UnityEngine.Vector2[])
+extern void PolygonCollider2D_set_points_m07965D584971AE013C355E34939C4EAD6365674E ();
+// 0x0000004E System.Int32 UnityEngine.PolygonCollider2D::get_pathCount()
+extern void PolygonCollider2D_get_pathCount_m1EF971CEECBD2A4E152B45DE2DD840F209F5517E ();
+// 0x0000004F System.Void UnityEngine.PolygonCollider2D::set_pathCount(System.Int32)
+extern void PolygonCollider2D_set_pathCount_m271BDEBEB0C02C127FF38DAA4CE6B45457759171 ();
+static Il2CppMethodPointer s_methodPointers[79] = 
 {
 	PhysicsScene2D_ToString_m6F48AC6CE0D8540FCE4914ABB78ED0BAF0D83CBE_AdjustorThunk,
 	PhysicsScene2D_GetHashCode_mB1C0E9E977ACCBF0AA0D266E5851B4D778354467_AdjustorThunk,
@@ -142,55 +220,133 @@ static Il2CppMethodPointer s_methodPointers[40] =
 	ContactFilter2D_SetLayerMask_mECEE981A09393F1097555D46449ED7CA4D8659E6_AdjustorThunk,
 	ContactFilter2D_SetDepth_mF4AB9C380EDC3726D58734010BD90AD7D36ABDB0_AdjustorThunk,
 	ContactFilter2D_CreateLegacyFilter_mA52A1C54BA7C4A49094B172BE7FA6044EF346A51,
+	RaycastHit2D_get_point_mC567E234B1B673C3A9819023C3DC97C781443098_AdjustorThunk,
+	RaycastHit2D_get_normal_m9F0974E4514AD56C00FCF6FF4CDF10AED62FE6E4_AdjustorThunk,
+	RaycastHit2D_get_distance_m2D9F391717ECACFDA8E01A4126E0F8F59F7E774F_AdjustorThunk,
+	RaycastHit2D_get_collider_m6A7EC53B2E179C2EFF4F29018A132B2979CBE976_AdjustorThunk,
+	Collider2D__ctor_m9E497E4A527D5ADD864AB3D7901A4087C45712C0,
+	Collider2D_get_density_m3127E283B4E96F595E6289509FAE3093012BE838,
+	Collider2D_set_density_m061D9893DEC0B69CEABEB19E18FB158D549E4DF5,
+	Collider2D_get_isTrigger_m72C2C32959124D4FB91A83B56E5D7D5204B87E48,
+	Collider2D_set_isTrigger_m15514794FC3D677B712080672EAEEA0CE2C3A20B,
+	Collider2D_get_offset_mCB3DEFB9ACB05211320B8406B01F089EF7F8788D,
+	Collider2D_set_offset_mC752F6CA4C47C5543538BA3BC9B04A3D267AAC6C,
+	Collider2D_get_offset_Injected_mFBEEA538206330D2D4C62A04DF339332596C0F97,
+	Collider2D_set_offset_Injected_m98CB990275094E1261101B082C51DDD634CA0A79,
+	CircleCollider2D_get_radius_m016333FD7A5A5FD84FEFD7D02B57D4CA728EFA27,
+	CircleCollider2D_set_radius_mC4F6C9D9583045A5117C269D7CF4E9E8D85D1A19,
+	CapsuleCollider2D_get_size_m2E344F2DA3881C6E8420681C40A1218DFD420A60,
+	CapsuleCollider2D_set_size_mBABB8A4E799CFC0169D82E22AB5F9E585A66C7A4,
+	CapsuleCollider2D_get_direction_mD58B574E6FD8F7C7D2241FFCF837C4DD6E501EA7,
+	CapsuleCollider2D_set_direction_m7D4CF5762E5465DEF5096A5808FF1A09DFC42D0C,
+	CapsuleCollider2D_get_size_Injected_m595751B395DB00016B61BD538285D9A8F902064A,
+	CapsuleCollider2D_set_size_Injected_mE7DA3489AC9BDEF80F49BC28C2529815BBFDF340,
+	EdgeCollider2D_get_edgeRadius_m334999C8FC0F38B1DC2EF5D27A2F6C893075A638,
+	EdgeCollider2D_set_edgeRadius_m40D84B21D9D0A4B6AF9B8E18E2FD2F1B05438CC1,
+	EdgeCollider2D_get_points_mC2D85B741B8BCF0CB05B129EE1EE4CA0C86E4291,
+	EdgeCollider2D_set_points_m1761864FA1EA3AAC9F3F167D614E478FF8829D2C,
+	BoxCollider2D_get_size_m6230015317115D9BED5C61A4EDAC013C8A7664E1,
+	BoxCollider2D_set_size_mFA630C4BD41F786D208C1C0382A7FCF7868BA489,
+	BoxCollider2D_get_edgeRadius_m95CF9B39CF125CBE980C5A27ABD10DAB02499145,
+	BoxCollider2D_set_edgeRadius_m1789BD1C47186B900D1AD48E66548FF47A483A88,
+	BoxCollider2D_get_autoTiling_mA06E05B04112BCD90D03D936D25AD632E63024D2,
+	BoxCollider2D_set_autoTiling_mD0E49B9FCB8DEC820EC8BCFB7A22B96D0A65C1AD,
+	BoxCollider2D_get_size_Injected_m6E18F627969D38CF513DB4CF680ACD51810F74CD,
+	BoxCollider2D_set_size_Injected_mB787996D8E2E7919FE975BC435677115539A53A0,
+	PolygonCollider2D_get_autoTiling_mB6DE2F4EF3EE6E04FCBA4D29D901B94C2B2E7119,
+	PolygonCollider2D_set_autoTiling_mF63DF5F0C0DAE9963F785C9C76CF3E5B16DBE455,
+	PolygonCollider2D_get_points_m65A26A2D193E9F2C0D517635B46190FF8DBD9AF2,
+	PolygonCollider2D_set_points_m07965D584971AE013C355E34939C4EAD6365674E,
+	PolygonCollider2D_get_pathCount_m1EF971CEECBD2A4E152B45DE2DD840F209F5517E,
+	PolygonCollider2D_set_pathCount_m271BDEBEB0C02C127FF38DAA4CE6B45457759171,
 };
-static const int32_t s_InvokerIndices[40] = 
+static const int32_t s_InvokerIndices[79] = 
 {
 	14,
 	10,
 	9,
-	1463,
-	1464,
-	1465,
-	1466,
-	1467,
-	1468,
-	1467,
-	1468,
-	1469,
-	1470,
-	1471,
-	1472,
-	1472,
-	1473,
-	1474,
+	1572,
+	1573,
+	1574,
+	1575,
+	1576,
+	1577,
+	1576,
+	1577,
+	1578,
+	1579,
+	1580,
+	1581,
+	1581,
+	1582,
+	1583,
 	49,
+	1584,
+	1585,
+	1586,
+	1587,
+	1588,
+	1589,
+	1590,
+	1590,
+	1471,
+	1470,
+	1469,
+	1591,
 	1475,
-	1476,
-	1477,
-	1478,
-	1479,
-	1480,
-	1481,
-	1481,
-	1393,
-	1392,
-	1391,
-	1482,
-	1397,
-	1396,
-	1395,
+	1474,
+	1473,
 	3,
-	1483,
+	1592,
 	23,
-	1484,
-	1290,
-	1485,
+	1593,
+	1331,
+	1594,
+	1272,
+	1272,
+	699,
+	14,
+	23,
+	699,
+	298,
+	114,
+	31,
+	1272,
+	1427,
+	6,
+	6,
+	699,
+	298,
+	1272,
+	1427,
+	10,
+	32,
+	6,
+	6,
+	699,
+	298,
+	14,
+	26,
+	1272,
+	1427,
+	699,
+	298,
+	114,
+	31,
+	6,
+	6,
+	114,
+	31,
+	14,
+	26,
+	10,
+	32,
 };
 extern const Il2CppCodeGenModule g_UnityEngine_Physics2DModuleCodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_Physics2DModuleCodeGenModule = 
 {
 	"UnityEngine.Physics2DModule.dll",
-	40,
+	79,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Numerics;
 using MessagePack;
+using OPS.Serialization.Attributes;
 
 namespace ConsoleApplication2
 {
-
-    [MessagePackObject] 
+    [SerializeAbleClass]
     public class CustomPackets
     {
         
@@ -30,31 +30,31 @@ namespace ConsoleApplication2
         */
 
 
-        [Key(0)] 
+        [SerializeAbleField(0)]
         public int Action = 0;
         
-        [Key(1)]
+        [SerializeAbleField(1)]
         public int ConnectionID = 0; // Player ID zum identifizieren von welchem player das kommt
 
-        [Key(2)]
+        [SerializeAbleField(2)]
         public float PlayerPositionX = 0.0f;
         
-        [Key(3)]
+        [SerializeAbleField(3)]
         public float PlayerPositionY = 0.0f;
         
-        [Key(4)]
+        [SerializeAbleField(4)]
         public float PlayerPositionZ = 0.0f;
         
-        [Key(5)]
+        [SerializeAbleField(5)]
         public bool W = false;
         
-        [Key(6)]
+        [SerializeAbleField(6)]
         public bool A = false;
         
-        [Key(7)]
+        [SerializeAbleField(7)]
         public bool S = false;
         
-        [Key(8)]
+        [SerializeAbleField(8)]
         public bool D = false;
         
 
@@ -82,5 +82,9 @@ namespace ConsoleApplication2
             ConnectionID = connectionID;
         }
         
+        public CustomPackets()
+        {
+             
+        }
     }
 }

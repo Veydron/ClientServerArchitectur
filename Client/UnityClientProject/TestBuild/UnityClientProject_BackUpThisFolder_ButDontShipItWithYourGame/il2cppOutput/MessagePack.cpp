@@ -7539,89 +7539,89 @@ struct  HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05  : public RuntimeObj
 {
 public:
 	// System.Int32[] System.Collections.Generic.HashSet`1::_buckets
-	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* ____buckets_0;
+	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* ____buckets_7;
 	// System.Collections.Generic.HashSet`1_Slot<T>[] System.Collections.Generic.HashSet`1::_slots
-	SlotU5BU5D_t6003F350986347D18AB5D53CDF3256209293B628* ____slots_1;
+	SlotU5BU5D_t6003F350986347D18AB5D53CDF3256209293B628* ____slots_8;
 	// System.Int32 System.Collections.Generic.HashSet`1::_count
-	int32_t ____count_2;
+	int32_t ____count_9;
 	// System.Int32 System.Collections.Generic.HashSet`1::_lastIndex
-	int32_t ____lastIndex_3;
+	int32_t ____lastIndex_10;
 	// System.Int32 System.Collections.Generic.HashSet`1::_freeList
-	int32_t ____freeList_4;
+	int32_t ____freeList_11;
 	// System.Collections.Generic.IEqualityComparer`1<T> System.Collections.Generic.HashSet`1::_comparer
-	RuntimeObject* ____comparer_5;
+	RuntimeObject* ____comparer_12;
 	// System.Int32 System.Collections.Generic.HashSet`1::_version
-	int32_t ____version_6;
+	int32_t ____version_13;
 	// System.Runtime.Serialization.SerializationInfo System.Collections.Generic.HashSet`1::_siInfo
-	SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * ____siInfo_7;
+	SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * ____siInfo_14;
 
 public:
-	inline static int32_t get_offset_of__buckets_0() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____buckets_0)); }
-	inline Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* get__buckets_0() const { return ____buckets_0; }
-	inline Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83** get_address_of__buckets_0() { return &____buckets_0; }
-	inline void set__buckets_0(Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* value)
+	inline static int32_t get_offset_of__buckets_7() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____buckets_7)); }
+	inline Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* get__buckets_7() const { return ____buckets_7; }
+	inline Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83** get_address_of__buckets_7() { return &____buckets_7; }
+	inline void set__buckets_7(Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* value)
 	{
-		____buckets_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____buckets_0), (void*)value);
+		____buckets_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____buckets_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__slots_1() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____slots_1)); }
-	inline SlotU5BU5D_t6003F350986347D18AB5D53CDF3256209293B628* get__slots_1() const { return ____slots_1; }
-	inline SlotU5BU5D_t6003F350986347D18AB5D53CDF3256209293B628** get_address_of__slots_1() { return &____slots_1; }
-	inline void set__slots_1(SlotU5BU5D_t6003F350986347D18AB5D53CDF3256209293B628* value)
+	inline static int32_t get_offset_of__slots_8() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____slots_8)); }
+	inline SlotU5BU5D_t6003F350986347D18AB5D53CDF3256209293B628* get__slots_8() const { return ____slots_8; }
+	inline SlotU5BU5D_t6003F350986347D18AB5D53CDF3256209293B628** get_address_of__slots_8() { return &____slots_8; }
+	inline void set__slots_8(SlotU5BU5D_t6003F350986347D18AB5D53CDF3256209293B628* value)
 	{
-		____slots_1 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____slots_1), (void*)value);
+		____slots_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____slots_8), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__count_2() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____count_2)); }
-	inline int32_t get__count_2() const { return ____count_2; }
-	inline int32_t* get_address_of__count_2() { return &____count_2; }
-	inline void set__count_2(int32_t value)
+	inline static int32_t get_offset_of__count_9() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____count_9)); }
+	inline int32_t get__count_9() const { return ____count_9; }
+	inline int32_t* get_address_of__count_9() { return &____count_9; }
+	inline void set__count_9(int32_t value)
 	{
-		____count_2 = value;
+		____count_9 = value;
 	}
 
-	inline static int32_t get_offset_of__lastIndex_3() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____lastIndex_3)); }
-	inline int32_t get__lastIndex_3() const { return ____lastIndex_3; }
-	inline int32_t* get_address_of__lastIndex_3() { return &____lastIndex_3; }
-	inline void set__lastIndex_3(int32_t value)
+	inline static int32_t get_offset_of__lastIndex_10() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____lastIndex_10)); }
+	inline int32_t get__lastIndex_10() const { return ____lastIndex_10; }
+	inline int32_t* get_address_of__lastIndex_10() { return &____lastIndex_10; }
+	inline void set__lastIndex_10(int32_t value)
 	{
-		____lastIndex_3 = value;
+		____lastIndex_10 = value;
 	}
 
-	inline static int32_t get_offset_of__freeList_4() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____freeList_4)); }
-	inline int32_t get__freeList_4() const { return ____freeList_4; }
-	inline int32_t* get_address_of__freeList_4() { return &____freeList_4; }
-	inline void set__freeList_4(int32_t value)
+	inline static int32_t get_offset_of__freeList_11() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____freeList_11)); }
+	inline int32_t get__freeList_11() const { return ____freeList_11; }
+	inline int32_t* get_address_of__freeList_11() { return &____freeList_11; }
+	inline void set__freeList_11(int32_t value)
 	{
-		____freeList_4 = value;
+		____freeList_11 = value;
 	}
 
-	inline static int32_t get_offset_of__comparer_5() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____comparer_5)); }
-	inline RuntimeObject* get__comparer_5() const { return ____comparer_5; }
-	inline RuntimeObject** get_address_of__comparer_5() { return &____comparer_5; }
-	inline void set__comparer_5(RuntimeObject* value)
+	inline static int32_t get_offset_of__comparer_12() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____comparer_12)); }
+	inline RuntimeObject* get__comparer_12() const { return ____comparer_12; }
+	inline RuntimeObject** get_address_of__comparer_12() { return &____comparer_12; }
+	inline void set__comparer_12(RuntimeObject* value)
 	{
-		____comparer_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____comparer_5), (void*)value);
+		____comparer_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____comparer_12), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__version_6() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____version_6)); }
-	inline int32_t get__version_6() const { return ____version_6; }
-	inline int32_t* get_address_of__version_6() { return &____version_6; }
-	inline void set__version_6(int32_t value)
+	inline static int32_t get_offset_of__version_13() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____version_13)); }
+	inline int32_t get__version_13() const { return ____version_13; }
+	inline int32_t* get_address_of__version_13() { return &____version_13; }
+	inline void set__version_13(int32_t value)
 	{
-		____version_6 = value;
+		____version_13 = value;
 	}
 
-	inline static int32_t get_offset_of__siInfo_7() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____siInfo_7)); }
-	inline SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * get__siInfo_7() const { return ____siInfo_7; }
-	inline SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 ** get_address_of__siInfo_7() { return &____siInfo_7; }
-	inline void set__siInfo_7(SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * value)
+	inline static int32_t get_offset_of__siInfo_14() { return static_cast<int32_t>(offsetof(HashSet_1_tE84F3F43144CEC800A734119BDF178122DCF1B05, ____siInfo_14)); }
+	inline SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * get__siInfo_14() const { return ____siInfo_14; }
+	inline SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 ** get_address_of__siInfo_14() { return &____siInfo_14; }
+	inline void set__siInfo_14(SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * value)
 	{
-		____siInfo_7 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____siInfo_7), (void*)value);
+		____siInfo_14 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____siInfo_14), (void*)value);
 	}
 };
 

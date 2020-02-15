@@ -7,6 +7,7 @@ using System.Diagnostics.Eventing.Reader;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
+using AnySync;
 using DefaultNamespace;
 using MessagePack;
 using UnityEngine;
@@ -100,6 +101,8 @@ public class NetworkLLAPI : MonoBehaviour
             GameObject.Find(player.Value.ConnectionID.ToString()).transform.position = player.Value.PlayerPosition;
         }
 
+
+
     }
 
     void FixedUpdate()
@@ -109,7 +112,9 @@ public class NetworkLLAPI : MonoBehaviour
         if (w || a || s || d)
         {
             CustomPackets customPackets = new CustomPackets(9,w,a,s,d);
-            client.Send(MessagePackSerializer.Serialize(customPackets));
+//            client.Send(MessagePackSerializer.Serialize(customPackets));
+            client.Send(OPS.Serialization.IO.Serializer.Serialize(customPackets));
+
         }
         
     }
@@ -135,7 +140,8 @@ public class NetworkLLAPI : MonoBehaviour
                         
                         //Debug.Log("Data: " + MessagePackSerializer.Deserialize<TestClass>(msg.data));
 
-                        CustomPackets customPackets = MessagePackSerializer.Deserialize<CustomPackets>(msg.data);
+                       // CustomPackets customPackets = MessagePackSerializer.Deserialize<CustomPackets>(msg.data);
+                        CustomPackets customPackets = OPS.Serialization.IO.Serializer.DeSerialize<CustomPackets>(msg.data);
                         Console.WriteLine("Erhalte Packet mit Action: " +customPackets.Action);
                         Debug.Log("Erhalte Packet mit Action (Debug.Log)");
                         switch (customPackets.Action)

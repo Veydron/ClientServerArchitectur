@@ -1,26 +1,30 @@
 ﻿using System;
 using System.Numerics;
 using MessagePack;
+using OPS.Serialization.Attributes;
 
 namespace ConsoleApplication2
 {
-    [MessagePackObject]
+    [SerializeAbleClass]
     public class NetworkPlayer
     {
-        [Key(0)]
-        public int ConnectionID { get; set; }
+        [SerializeAbleField(0)] 
+        public int ConnectionID;
 
-        [Key(1)]
+        [SerializeAbleField(1)]
         public Vector3 PlayerPosition;
 
-        [IgnoreMember]
+      
         public bool IsConnected { get; set; }
         
-        [IgnoreMember]
+       
         public bool IsMoved { get; set; }
         
-        [IgnoreMember]
+       
         public int KickPlayer { get; set; }
+        
+       
+        public float MovementSpeed { get; set; }
         
         public NetworkPlayer(int connectionID)
         {
@@ -31,6 +35,7 @@ namespace ConsoleApplication2
 
             IsConnected = false;
             KickPlayer = 0;
+            MovementSpeed = 1f;
         }
     }
 }

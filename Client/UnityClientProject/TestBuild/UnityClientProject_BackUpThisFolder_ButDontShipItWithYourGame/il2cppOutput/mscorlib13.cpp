@@ -33617,6 +33617,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_LastIndexOfAny_mF16934C2FD438F
 		return L_3;
 	}
 }
+// System.Int32 System.String::LastIndexOfAny(System.Char[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_LastIndexOfAny_mF62DEBFAAA527076E8B6FA4225F58767BA5DC792 (String_t* __this, CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2* ___anyOf0, int32_t ___startIndex1, const RuntimeMethod* method)
+{
+	{
+		CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2* L_0 = ___anyOf0;
+		int32_t L_1 = ___startIndex1;
+		int32_t L_2 = ___startIndex1;
+		int32_t L_3 = String_LastIndexOfAny_m9B9377146D8647E41FD5FEF9FBFD4E3D1B494DA4(__this, L_0, L_1, ((int32_t)il2cpp_codegen_add((int32_t)L_2, (int32_t)1)), /*hidden argument*/NULL);
+		return L_3;
+	}
+}
 // System.Int32 System.String::LastIndexOf(System.String,System.StringComparison)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_LastIndexOf_mA235A9DBC602A4C97D8708F51720E0BAE3CD7D84 (String_t* __this, String_t* ___value0, int32_t ___comparisonType1, const RuntimeMethod* method)
 {

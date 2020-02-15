@@ -11,6 +11,123 @@
         <e p="NetworkLoop.cs" t="Include" />
         <e p="NetworkPlayer.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="OPS" t="Include">
+          <e p="Serialization" t="Include">
+            <e p="Async" t="Include">
+              <e p="dotNet3.5" t="Include">
+                <e p="SerializerAsync.cs" t="Include" />
+                <e p="SerializerAsync.cs.meta" t="Include" />
+              </e>
+              <e p="dotNet3.5.meta" t="Include" />
+              <e p="dotNet4.0" t="Include">
+                <e p="SerializerAsync.cs" t="Include" />
+                <e p="SerializerAsync.cs.meta" t="Include" />
+              </e>
+              <e p="dotNet4.0.meta" t="Include" />
+              <e p="Helper" t="Include">
+                <e p="SerializerAsyncRequest.cs" t="Include" />
+                <e p="SerializerAsyncRequest.cs.meta" t="Include" />
+                <e p="SerializerAsyncRequestFactory.cs" t="Include" />
+                <e p="SerializerAsyncRequestFactory.cs.meta" t="Include" />
+              </e>
+              <e p="Helper.meta" t="Include" />
+            </e>
+            <e p="Async.meta" t="Include" />
+            <e p="Demo.meta" t="Include" />
+            <e p="Plugin" t="Include">
+              <e p="Attributes" t="Include">
+                <e p="ClassInheritanceAttribute.cs" t="Include" />
+                <e p="ClassInheritanceAttribute.cs.meta" t="Include" />
+                <e p="SerializeAbleClassAttribute.cs" t="Include" />
+                <e p="SerializeAbleClassAttribute.cs.meta" t="Include" />
+                <e p="SerializeAbleFieldAttribute.cs" t="Include" />
+                <e p="SerializeAbleFieldAttribute.cs.meta" t="Include" />
+                <e p="SerializeAbleFieldOptionalAttribute.cs" t="Include" />
+                <e p="SerializeAbleFieldOptionalAttribute.cs.meta" t="Include" />
+              </e>
+              <e p="Attributes.meta" t="Include" />
+              <e p="Byte" t="Include">
+                <e p="Buffer.cs" t="Include" />
+                <e p="Buffer.cs.meta" t="Include" />
+                <e p="ByteReader.cs" t="Include" />
+                <e p="ByteReader.cs.meta" t="Include" />
+                <e p="ByteWriter.cs" t="Include" />
+                <e p="ByteWriter.cs.meta" t="Include" />
+                <e p="EPrimitiveType.cs" t="Include" />
+                <e p="EPrimitiveType.cs.meta" t="Include" />
+                <e p="LongDouble.cs" t="Include" />
+                <e p="LongDouble.cs.meta" t="Include" />
+                <e p="PrimitiveTypeMatcher.cs" t="Include" />
+                <e p="PrimitiveTypeMatcher.cs.meta" t="Include" />
+                <e p="UIntFloat.cs" t="Include" />
+                <e p="UIntFloat.cs.meta" t="Include" />
+              </e>
+              <e p="Byte.meta" t="Include" />
+              <e p="Compress" t="Include">
+                <e p="CompressionHelper.cs" t="Include" />
+                <e p="CompressionHelper.cs.meta" t="Include" />
+              </e>
+              <e p="Compress.meta" t="Include" />
+              <e p="IO" t="Include">
+                <e p="FieldContext.cs" t="Include" />
+                <e p="FieldContext.cs.meta" t="Include" />
+                <e p="Serializer.cs" t="Include" />
+                <e p="Serializer.cs.meta" t="Include" />
+                <e p="SerializerComponent" t="Include">
+                  <e p="ArraySerializer.cs" t="Include" />
+                  <e p="ArraySerializer.cs.meta" t="Include" />
+                  <e p="ClassSerializer.cs" t="Include" />
+                  <e p="ClassSerializer.cs.meta" t="Include" />
+                  <e p="DictionarySerializer.cs" t="Include" />
+                  <e p="DictionarySerializer.cs.meta" t="Include" />
+                  <e p="EnumSerializer.cs" t="Include" />
+                  <e p="EnumSerializer.cs.meta" t="Include" />
+                  <e p="HashSetSerializer.cs" t="Include" />
+                  <e p="HashSetSerializer.cs.meta" t="Include" />
+                  <e p="ISerializerComponent.cs" t="Include" />
+                  <e p="ISerializerComponent.cs.meta" t="Include" />
+                  <e p="ListSerializer.cs" t="Include" />
+                  <e p="ListSerializer.cs.meta" t="Include" />
+                  <e p="NullAbleSerializer.cs" t="Include" />
+                  <e p="NullAbleSerializer.cs.meta" t="Include" />
+                  <e p="PrimitiveSerializer.cs" t="Include" />
+                  <e p="PrimitiveSerializer.cs.meta" t="Include" />
+                  <e p="QueueSerializer.cs" t="Include" />
+                  <e p="QueueSerializer.cs.meta" t="Include" />
+                  <e p="Unity" t="Include">
+                    <e p="Collider2DSerializer.cs" t="Include" />
+                    <e p="Collider2DSerializer.cs.meta" t="Include" />
+                    <e p="ColliderSerializer.cs" t="Include" />
+                    <e p="ColliderSerializer.cs.meta" t="Include" />
+                    <e p="MeshSerializer.cs" t="Include" />
+                    <e p="MeshSerializer.cs.meta" t="Include" />
+                    <e p="UnitySerializer.cs" t="Include" />
+                    <e p="UnitySerializer.cs.meta" t="Include" />
+                  </e>
+                  <e p="Unity.meta" t="Include" />
+                </e>
+                <e p="SerializerComponent.meta" t="Include" />
+              </e>
+              <e p="IO.meta" t="Include" />
+              <e p="Security" t="Include">
+                <e p="SecurityHelper.cs" t="Include" />
+                <e p="SecurityHelper.cs.meta" t="Include" />
+              </e>
+              <e p="Security.meta" t="Include" />
+              <e p="Type" t="Include">
+                <e p="TypeHelper.cs" t="Include" />
+                <e p="TypeHelper.cs.meta" t="Include" />
+              </e>
+              <e p="Type.meta" t="Include" />
+            </e>
+            <e p="Plugin.meta" t="Include" />
+            <e p="ReadMe.txt" t="Include" />
+            <e p="ReadMe.txt.meta" t="Include" />
+            <e p="VersionHistory.txt" t="Include" />
+            <e p="VersionHistory.txt.meta" t="Include" />
+          </e>
+          <e p="Serialization.meta" t="Include" />
+        </e>
         <e p="packages.config" t="Include" />
         <e p="PlayerMovement.cs" t="Include" />
         <e p="Program.cs" t="Include" />
@@ -27,6 +144,7 @@
         </e>
         <e p="Skills.cs" t="Include" />
         <e p="TestClass.cs" t="Include" />
+        <e p="TimeFrame.cs" t="Include" />
       </e>
       <e p="ConsoleApplication2.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

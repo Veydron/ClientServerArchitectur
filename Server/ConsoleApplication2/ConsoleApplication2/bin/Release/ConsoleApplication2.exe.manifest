@@ -1,0 +1,707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ConsoleApplication2.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ConsoleApplication2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ConsoleApplication2.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC-Manifestoptionen
+          Wenn Sie die Zugangsebene für das Windows-Benutzerkonto ändern möchten, ersetzen Sie den 
+          requestedExecutionLevel-Knoten durch eines der folgenden Elemente.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Löschen Sie den requestedExecutionLevel-Knoten, wenn Sie 
+         zum Gewährleisten der Abwärtskompatibilität die Datei- und Registrierungsvirtualisierung verwenden möchten.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ConsoleApplication2.exe" size="54240">
+      <assemblyIdentity name="ConsoleApplication2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>B2Y407hrbCjaQC1CGPNxVBRMJB4nu9fP9wgWnjKG4XA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MessagePack.dll" size="278016">
+      <assemblyIdentity name="MessagePack" version="2.1.0.0" publicKeyToken="B4A0369545F0A1BE" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gHNoO9IMh6GH3b99Xo+VrtDuYZKl2G5h5YMUpwirTCI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MessagePack.Annotations.dll" size="8704">
+      <assemblyIdentity name="MessagePack.Annotations" version="2.1.0.0" publicKeyToken="B4A0369545F0A1BE" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>w6nAP8gx7+YPLo1bYIP8zoLJ4VH6QnfHvovoYuobd5g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Bcl.AsyncInterfaces.dll" size="20856">
+      <assemblyIdentity name="Microsoft.Bcl.AsyncInterfaces" version="1.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1Q1HucXegtVjr/IIpgDaVlZNBVz+2XQhaF5UdSMNPnA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Buffers.dll" size="27992">
+      <assemblyIdentity name="System.Buffers" version="4.0.2.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lES1pBqBaxk8AzvsGZ10zfyCmO2DAKPDmk6VPewTdJQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Memory.dll" size="148760">
+      <assemblyIdentity name="System.Memory" version="4.0.1.1" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QbXhpMWavbHOFGf1jD2f0G053/T8YdUAokEP7OgDf0s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Numerics.Vectors.dll" size="115936">
+      <assemblyIdentity name="System.Numerics.Vectors" version="4.1.3.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oETXfttujbQFO/Z8xnHnaHwibBubCWOoHr41nOed/fc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Runtime.CompilerServices.Unsafe.dll" size="23600">
+      <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" version="4.0.4.1" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GtLdciXVFioP06OzN6GUlEhSDjEwpLyOAQ7AL3YJdQA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Threading.Tasks.Extensions.dll" size="33048">
+      <assemblyIdentity name="System.Threading.Tasks.Extensions" version="4.2.0.1" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>H1Rxi7q256ZJ5GD1CX7URPM0UrFFGEH2fi4ZRkHV/M0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telepathy.dll" size="15360">
+      <assemblyIdentity name="Telepathy" version="1.0.341.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K0rIbUmYiwoPRlweSLFSemEgvtGsMvwLxd2984nslvg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UnityEngine.dll" size="3168768">
+      <assemblyIdentity name="UnityEngine" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>P3F0jrnFs8XI2fgfje6HcqNvt+jHA8ZUYWXoQRWlgts=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ConsoleApplication2.exe.config" size="445">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CgS+qoH/PNmPK/q2FNwKKmDnsMUZvNvkaRSyZiXcvj8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Tw2xVh889WXAbB5yp2+QdW/JJQyczoq3TC8W6QPbELU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Async.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Dl+jDGjdG6UBXnmiesO8qVdzRro+dgHYsQQNxSl4Y3Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Async\dotNet3.5.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JgEkUiJhnS2lAtJApS90udS/BKl/N35iLZF0iz5C7ls=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Async\dotNet3.5\SerializerAsync.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>q0ntg2CDtmlQdpeuuZi2SS0qgItbdyrlvYWVqHTHT4M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Async\dotNet4.0.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E+wpYOuljoX8exQEhrbhD9spIMojsynF9RIu1GAq4Hs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Async\dotNet4.0\SerializerAsync.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XhCgN4i89pdMQDro4xF+DUS12E9mdvU5IdDrwS5V31g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Async\Helper.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>G3kjyH2fMcH7rZrVpX43u+PMwWzLjxxsG7otFCwOZa8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Async\Helper\SerializerAsyncRequest.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4gYQCl9v4vsGbT21InYtgNzHH+hnHOf+RqHBQVi1eCY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Async\Helper\SerializerAsyncRequestFactory.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>L0GRJQhrLzwbFrfq51HW4dlav3o8VVmg8tRFkh5xZGE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Demo.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OJIkiwiaV6pBcvGlVTJz8DCqSpjivYo0VMgZnSxsfdc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pAiImtwF0u75OyNGaSw0kGRsL72Y0Cqf5iugZ422mFU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Attributes.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oSIXecqM2ViGgTKQTT4Og4KRPVstbcCbKviTqJPMzEo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Attributes\ClassInheritanceAttribute.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>o8IIRO+myEOPw0uDgL54/XJdM2qLW7PRPwiq6hkjdCY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Attributes\SerializeAbleClassAttribute.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1ztR5csXrCdvlxkzuMg85/NW/n6TJBjfVa/3bQzU+L8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Attributes\SerializeAbleFieldAttribute.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LQyGP88nu9J8my0zSrGIMlglYDkegKqzTu41wnHrBaU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Attributes\SerializeAbleFieldOptionalAttribute.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uOXTn6CDtlktKBBwSCG9dSnEUW9IblTd5pED9uutniU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Byte.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bZXPw+/Uiy8o/hcQ/CaOmk6pPjVhy0IhyPAyyYIhSRM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Byte\Buffer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HEBQOId0tTJRcbbh18fD+I94TH28/o+Lbwj0bt8g1d8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Byte\ByteReader.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Tq1kCMT/9bFMynp7KW3E2jTrliPDNMKeVc8FPErBPqc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Byte\ByteWriter.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nwxXsWh87dWKZyMWoTlsiSMjidMoueOD4xmfsRRRNGY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Byte\EPrimitiveType.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JpqIcRIZZUlY646Ry7wy3cj9SQNBciZPIA6M5aYm5P0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Byte\LongDouble.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YBywoPFk1SWgQEBKIYpKX2MCXOVX6W1aPoYD3Ya/E8E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Byte\PrimitiveTypeMatcher.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Pla1gjd0EBXdu19CWYmjw7pvmvNQyQ8yyW8oOn/5Gcg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Byte\UIntFloat.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KoveVEglIvgrsH4wEw0jLjpnV0vTyiqxDN5V8QF2OJg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Compress.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nt4IJwcLr0cojYoGGDMZRY1WaMQP/6urq4g10MklRuo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Compress\CompressionHelper.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Vsam0rajB7hMTWtisZZQOW1/1XDilZmhKD9TgXftYPk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uwzaG+lG5fHBNuOAeLZl+oYX5ajgVGb0VB1TgB74UQQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\FieldContext.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PGuHmxHvXpEVe/6c3m+/PPayuD5WBmxtAnrNK3+EKW8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\Serializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JBSUTJmGdJJnSwQpW64qwB4K6WdgUww1oy0h4vLobZo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>My2ryvbB+UZi3iwZenFp1GY2xuwZzzlmffps91yxOlw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\ArraySerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/WT//1jBIFTbfD75sPsDGz0ztASBfkmp3gU/GVF3Yug=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\ClassSerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WizkREB/w42yeIVoxz2tmoCNo5IQMNSAln32iXZWgYQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\DictionarySerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jEGNbg2AeQVIqqpynP+jVIakMVkcwYeru97cIsv6tsk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\EnumSerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MZCjqn0IDl7d6Mf+eeIrwWWcTZ89OQwKAOXuKdNJxkk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\HashSetSerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>09gwh8MopLPeXocaLquAdP9lBl+zhm+bYG7zwt63/BQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\ISerializerComponent.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1PsUHrfdiwzIN7YaDcDMWMndlujeo17nXPluvyvytVI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\ListSerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UK1zZhdyVSqlplOBdjpyM7xdVmgdMPwzaH8T/bkZjvE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\NullAbleSerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IUsbDlTtnds7cfO+RE/iVA3oPnRlA7ddfmBobQljCsI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\PrimitiveSerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/O+Z/915LXTte7BB2RwJrZEJhs7vOfehZcgNK5lPuvM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\QueueSerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2VD2nQoCQG2AokNBEbHf2idSC/uuCUrwD3MZNXI/qSs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\Unity.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cCjnrzcB7M4GxifGmidNMLuiXWHv8Yv0QLJvQ1sMKws=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\Unity\Collider2DSerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+r3NBgHFcTTSpPHXccBCJqs3P+SHYiTKPNP3h72fTLg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\Unity\ColliderSerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rPvJggyUath7zBxSLYrsWY5BdmemIex+b86nD6bnxGg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\Unity\MeshSerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8UW/KTdhGHsfvZNWFr75gFXq4qHH6yetjBZO8uo0vy8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\IO\SerializerComponent\Unity\UnitySerializer.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>y89HcldFY3ldBeW6IGBL23NSH2wglD8rcPUYp6EwE2Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Security.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nzQeUXtBoqgiqkoGFYHndE4iMvPKSlX28Qvm3uPeL10=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Security\SecurityHelper.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i+tHi4AqabqU+8eMUNpJnmEtYaFy5h/Dq8eX14tOE2Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Type.meta" size="202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WEXvz0Z8EPLWDlbpR0IQ0AmOW6dD+c66eThnXgboV8M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\Plugin\Type\TypeHelper.cs.meta" size="276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dFEbFqcxUuvmZ/3xitQZvJdJoOSJofnBLt186I/m2wg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\ReadMe.txt" size="2329">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LryvRxIQvZvb+ufrflrcyckfiwPAALM/rEzbYibeJN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\ReadMe.txt.meta" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hRqH3btAQT5vzebXwQUnXnqvJVodAzf1q5z+6CUwnQw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\VersionHistory.txt" size="1330">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eIBARFicJ7PBEFLNpv0XeMCrRWAyzn2zBLtoIws3eGI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OPS\Serialization\VersionHistory.txt.meta" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TJ5KoOPI46CsblPhs/Do6drgB8EM+tl/9HQmkzNBMAQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Scripts\jquery-2.1.1.js" size="247351">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FA/0OOqu3gRvHOuidXnRbcmAWVcJORhz+pv3TX2+U6w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Scripts\jquery-2.1.1.min.js" size="84245">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0cGsrExGgcZtSZ/fRz4AwV+Nn6Urh/3v3jFRQ0w9dQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Scripts\jquery-2.1.1.min.map" size="127335">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RCgQ+ES4NAIjY6UJmxpYtW4nbN/Yt7NOulmU/XpRmrw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Scripts\jquery-2.1.1-vsdoc.js" size="254827">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>phGzQ4w4xNWsVgHWp56RDZHzujQ53XDD+neP0sNQk4k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Scripts\nugetexample.js" size="21">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Wc6BuaZGweI02U5ijb/a/S2sif0xTMTK+97XHDDhhr4=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>

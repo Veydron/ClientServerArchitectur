@@ -4,6 +4,118 @@
     <e p="C:\GameDevelopment\ClientServerArchitectur\Client\UnityClientProject" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AnySync" t="Include">
+          <e p="InvocationSync.cs" t="Include" />
+          <e p="MotionGenerator.cs" t="Include" />
+        </e>
+        <e p="OPS" t="Include">
+          <e p="Serialization" t="Include">
+            <e p="Async" t="Include">
+              <e p="dotNet3.5" t="Include">
+                <e p="SerializerAsync.cs" t="Include" />
+              </e>
+              <e p="dotNet4.0" t="Include">
+                <e p="SerializerAsync.cs" t="Include" />
+              </e>
+              <e p="Helper" t="Include">
+                <e p="SerializerAsyncRequest.cs" t="Include" />
+                <e p="SerializerAsyncRequestFactory.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Demo" t="Include">
+              <e p="Async" t="Include">
+                <e p="Demo_CnEGui_Async.cs" t="Include" />
+                <e p="ReadMe.txt" t="Include" />
+              </e>
+              <e p="Complex Save Load" t="Include">
+                <e p="Control" t="Include">
+                  <e p="FirstPerson.cs" t="Include" />
+                </e>
+                <e p="Enemy.cs" t="Include" />
+                <e p="Entity.cs" t="Include" />
+                <e p="Gui" t="Include">
+                  <e p="Demo_SaveLoadGui.cs" t="Include" />
+                </e>
+                <e p="Player.cs" t="Include" />
+                <e p="Projectile.cs" t="Include" />
+                <e p="ReadMe.txt" t="Include" />
+                <e p="SaveLoad" t="Include">
+                  <e p="ISaveAble.cs" t="Include" />
+                  <e p="SaveMetaData.cs" t="Include" />
+                </e>
+                <e p="WorldObject.cs" t="Include" />
+                <e p="WorldObjectManager.cs" t="Include" />
+              </e>
+              <e p="Compress and Encrypt" t="Include">
+                <e p="Child.cs" t="Include" />
+                <e p="Demo_CnEGui.cs" t="Include" />
+                <e p="Employee.cs" t="Include" />
+                <e p="Person.cs" t="Include" />
+                <e p="ReadMe.txt" t="Include" />
+                <e p="Teacher.cs" t="Include" />
+              </e>
+              <e p="Mesh" t="Include">
+                <e p="Demo_MeshGui.cs" t="Include" />
+                <e p="Grid.cs" t="Include" />
+                <e p="ReadMe.txt" t="Include" />
+                <e p="Resources" t="Include">
+                  <e p="Rounded Cube Grid.shader" t="Include" />
+                </e>
+                <e p="RoundedCube.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Plugin" t="Include">
+              <e p="Attributes" t="Include">
+                <e p="ClassInheritanceAttribute.cs" t="Include" />
+                <e p="SerializeAbleClassAttribute.cs" t="Include" />
+                <e p="SerializeAbleFieldAttribute.cs" t="Include" />
+                <e p="SerializeAbleFieldOptionalAttribute.cs" t="Include" />
+              </e>
+              <e p="Byte" t="Include">
+                <e p="Buffer.cs" t="Include" />
+                <e p="ByteReader.cs" t="Include" />
+                <e p="ByteWriter.cs" t="Include" />
+                <e p="EPrimitiveType.cs" t="Include" />
+                <e p="LongDouble.cs" t="Include" />
+                <e p="PrimitiveTypeMatcher.cs" t="Include" />
+                <e p="UIntFloat.cs" t="Include" />
+              </e>
+              <e p="Compress" t="Include">
+                <e p="CompressionHelper.cs" t="Include" />
+              </e>
+              <e p="IO" t="Include">
+                <e p="FieldContext.cs" t="Include" />
+                <e p="Serializer.cs" t="Include" />
+                <e p="SerializerComponent" t="Include">
+                  <e p="ArraySerializer.cs" t="Include" />
+                  <e p="ClassSerializer.cs" t="Include" />
+                  <e p="DictionarySerializer.cs" t="Include" />
+                  <e p="EnumSerializer.cs" t="Include" />
+                  <e p="HashSetSerializer.cs" t="Include" />
+                  <e p="ISerializerComponent.cs" t="Include" />
+                  <e p="ListSerializer.cs" t="Include" />
+                  <e p="NullAbleSerializer.cs" t="Include" />
+                  <e p="PrimitiveSerializer.cs" t="Include" />
+                  <e p="QueueSerializer.cs" t="Include" />
+                  <e p="Unity" t="Include">
+                    <e p="Collider2DSerializer.cs" t="Include" />
+                    <e p="ColliderSerializer.cs" t="Include" />
+                    <e p="MeshSerializer.cs" t="Include" />
+                    <e p="UnitySerializer.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Security" t="Include">
+                <e p="SecurityHelper.cs" t="Include" />
+              </e>
+              <e p="Type" t="Include">
+                <e p="TypeHelper.cs" t="Include" />
+              </e>
+            </e>
+            <e p="ReadMe.txt" t="Include" />
+            <e p="VersionHistory.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="CustomPackets.cs" t="Include" />
           <e p="MessagePack" t="Include">
@@ -123,6 +235,7 @@
           <e p="NetworkLLAPI.cs" t="Include" />
           <e p="NetworkPlayer.cs" t="Include" />
           <e p="TestClass.cs" t="Include" />
+          <e p="TestScript.cs" t="Include" />
         </e>
       </e>
       <e p="MessagePack.csproj" t="IncludeRecursive" />

@@ -1356,6 +1356,7 @@ IL2CPP_EXTERN_C const uint32_t MCMDictionary__cctor_m2692DBAB329967E42393D39C37F
 IL2CPP_EXTERN_C const uint32_t MCMDictionary__ctor_m02A28CFFBADCD5CC83267E16B471BB453BF54D21_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t MarshalAsAttribute_Copy_m916673AE615990412F36D1F15D4B0BE9E7512B19_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t MarshalDirectiveException__ctor_m8AFC614C2C3A144DC15F821FF4592599F5A54060_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t Marshal_Copy_m0486DFF229946F0F9E6A04DDDF3BC9E5F1609A5A_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Marshal_Copy_m3556CC144C37496A15A3E10DD16D12B06BC4A000_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Marshal_Copy_m64744D9E23AFC00AA06CD6B057E19B7C0CE4C0C2_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Marshal_Release_mF0676E7B6EE181109020F407F09E1063D681B5F8_MetadataUsageId;
@@ -13978,6 +13979,8 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * List_1_get_Item_mFDB8A
 
 // System.Void System.Attribute::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Attribute__ctor_m45CAD4B01265CC84CC5A84F62EE2DBE85DE89EC0 (Attribute_tF048C13FB3C8CFCC53F82290E4A3F621089F9A74 * __this, const RuntimeMethod* method);
+// System.Void System.Runtime.InteropServices.Marshal::copy_to_unmanaged(System.Array,System.Int32,System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_copy_to_unmanaged_mDD88A668D1CD414CFB4A853565BA4667926DEEAB (RuntimeArray * ___source0, int32_t ___startIndex1, intptr_t ___destination2, int32_t ___length3, const RuntimeMethod* method);
 // System.Void System.Runtime.InteropServices.Marshal::copy_from_unmanaged(System.IntPtr,System.Int32,System.Array,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_copy_from_unmanaged_m6155CAC4E5EC6C94D165E01CFBB583B79EF25AC4 (intptr_t ___source0, int32_t ___startIndex1, RuntimeArray * ___destination2, int32_t ___length3, const RuntimeMethod* method);
 // System.Boolean System.IntPtr::op_Equality(System.IntPtr,System.IntPtr)
@@ -15036,12 +15039,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterfaceTypeAttribute__ctor_mA4753B8BDF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Runtime.InteropServices.Marshal::copy_to_unmanaged(System.Array,System.Int32,System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_copy_to_unmanaged_mDD88A668D1CD414CFB4A853565BA4667926DEEAB (RuntimeArray * ___source0, int32_t ___startIndex1, intptr_t ___destination2, int32_t ___length3, const RuntimeMethod* method)
+{
+	typedef void (*Marshal_copy_to_unmanaged_mDD88A668D1CD414CFB4A853565BA4667926DEEAB_ftn) (RuntimeArray *, int32_t, intptr_t, int32_t);
+	using namespace il2cpp::icalls;
+	 ((Marshal_copy_to_unmanaged_mDD88A668D1CD414CFB4A853565BA4667926DEEAB_ftn)mscorlib::System::Runtime::InteropServices::Marshal::copy_to_unmanaged) (___source0, ___startIndex1, ___destination2, ___length3);
+}
 // System.Void System.Runtime.InteropServices.Marshal::copy_from_unmanaged(System.IntPtr,System.Int32,System.Array,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_copy_from_unmanaged_m6155CAC4E5EC6C94D165E01CFBB583B79EF25AC4 (intptr_t ___source0, int32_t ___startIndex1, RuntimeArray * ___destination2, int32_t ___length3, const RuntimeMethod* method)
 {
 	typedef void (*Marshal_copy_from_unmanaged_m6155CAC4E5EC6C94D165E01CFBB583B79EF25AC4_ftn) (intptr_t, int32_t, RuntimeArray *, int32_t);
 	using namespace il2cpp::icalls;
 	 ((Marshal_copy_from_unmanaged_m6155CAC4E5EC6C94D165E01CFBB583B79EF25AC4_ftn)mscorlib::System::Runtime::InteropServices::Marshal::copy_from_unmanaged) (___source0, ___startIndex1, ___destination2, ___length3);
+}
+// System.Void System.Runtime.InteropServices.Marshal::Copy(System.Byte[],System.Int32,System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_Copy_m0486DFF229946F0F9E6A04DDDF3BC9E5F1609A5A (ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* ___source0, int32_t ___startIndex1, intptr_t ___destination2, int32_t ___length3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Marshal_Copy_m0486DFF229946F0F9E6A04DDDF3BC9E5F1609A5A_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_0 = ___source0;
+		int32_t L_1 = ___startIndex1;
+		intptr_t L_2 = ___destination2;
+		int32_t L_3 = ___length3;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tC795CE9CC2FFBA41EDB1AC1C0FEC04607DFA8A40_il2cpp_TypeInfo_var);
+		Marshal_copy_to_unmanaged_mDD88A668D1CD414CFB4A853565BA4667926DEEAB((RuntimeArray *)(RuntimeArray *)L_0, L_1, (intptr_t)L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
 }
 // System.Void System.Runtime.InteropServices.Marshal::Copy(System.IntPtr,System.Byte[],System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_Copy_m64744D9E23AFC00AA06CD6B057E19B7C0CE4C0C2 (intptr_t ___source0, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* ___destination1, int32_t ___startIndex2, int32_t ___length3, const RuntimeMethod* method)

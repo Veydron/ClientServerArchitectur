@@ -110,29 +110,53 @@ extern void AnimationScriptPlayable_GetHandle_mE9B490654A320F11EFBB0E3180C6CF647
 extern void AnimationScriptPlayable_Equals_m39A1F71C360404625ABD1EAD32DCAEDD7736E1B3_AdjustorThunk ();
 // 0x0000002D System.Void UnityEngine.Experimental.Animations.AnimationScriptPlayable::.cctor()
 extern void AnimationScriptPlayable__cctor_mC78B0B27BE44BD802817190E620DB326D730BF70 ();
-// 0x0000002E System.Void UnityEngine.Animations.AnimatorControllerPlayable::.ctor(UnityEngine.Playables.PlayableHandle)
+// 0x0000002E System.Void UnityEngine.Animator::SetBool(System.String,System.Boolean)
+extern void Animator_SetBool_m497805BA217139E42808899782FA05C15BC9879E ();
+// 0x0000002F System.Void UnityEngine.Animator::SetTrigger(System.String)
+extern void Animator_SetTrigger_m68D29B7FA54C2F230F5AD780D462612B18E74245 ();
+// 0x00000030 System.Void UnityEngine.Animator::ResetTrigger(System.String)
+extern void Animator_ResetTrigger_m70120C9A00EA482BF0880D2C02EC814CE3D71FD1 ();
+// 0x00000031 System.Void UnityEngine.Animator::set_speed(System.Single)
+extern void Animator_set_speed_mEA558D196D84684744A642A56AFBF22F16448813 ();
+// 0x00000032 System.Void UnityEngine.Animator::Play(System.String)
+extern void Animator_Play_m254CA699DF64E86856EC8C54D1A739E3C0A49793 ();
+// 0x00000033 System.Void UnityEngine.Animator::Play(System.String,System.Int32,System.Single)
+extern void Animator_Play_m1942D7FB37F84959D2C6A859E11F70791E95FA50 ();
+// 0x00000034 System.Void UnityEngine.Animator::Play(System.Int32,System.Int32,System.Single)
+extern void Animator_Play_m20B525F785DA59888E645125DB2DDC071E924F3E ();
+// 0x00000035 System.Boolean UnityEngine.Animator::get_hasBoundPlayables()
+extern void Animator_get_hasBoundPlayables_m283AF0BA9B841E3FD1ADC5541C41B936A9D1EB05 ();
+// 0x00000036 System.Int32 UnityEngine.Animator::StringToHash(System.String)
+extern void Animator_StringToHash_m80E4CCCB84AAD032A5D84EF5832B7F35C1E5AE3F ();
+// 0x00000037 System.Void UnityEngine.Animator::SetBoolString(System.String,System.Boolean)
+extern void Animator_SetBoolString_mA61F1A44D13EF82A7C2CAF466EBA81E65D054D46 ();
+// 0x00000038 System.Void UnityEngine.Animator::SetTriggerString(System.String)
+extern void Animator_SetTriggerString_m77CE57996467D0C973FA2D0CB4DF87BD062C8A1E ();
+// 0x00000039 System.Void UnityEngine.Animator::ResetTriggerString(System.String)
+extern void Animator_ResetTriggerString_m31B233F948D7551D220FEDA56B002E6724B89851 ();
+// 0x0000003A System.Void UnityEngine.Animations.AnimatorControllerPlayable::.ctor(UnityEngine.Playables.PlayableHandle)
 extern void AnimatorControllerPlayable__ctor_m739B1BFC592B6C160410141057F1B2BA1B971897_AdjustorThunk ();
-// 0x0000002F UnityEngine.Playables.PlayableHandle UnityEngine.Animations.AnimatorControllerPlayable::GetHandle()
+// 0x0000003B UnityEngine.Playables.PlayableHandle UnityEngine.Animations.AnimatorControllerPlayable::GetHandle()
 extern void AnimatorControllerPlayable_GetHandle_mB83731910E1534BECA36F64BA22AA68A71D08CA8_AdjustorThunk ();
-// 0x00000030 System.Void UnityEngine.Animations.AnimatorControllerPlayable::SetHandle(UnityEngine.Playables.PlayableHandle)
+// 0x0000003C System.Void UnityEngine.Animations.AnimatorControllerPlayable::SetHandle(UnityEngine.Playables.PlayableHandle)
 extern void AnimatorControllerPlayable_SetHandle_m2CAE8DABC4B19AB6BD90249D0D7FC7A9E07C3A96_AdjustorThunk ();
-// 0x00000031 System.Boolean UnityEngine.Animations.AnimatorControllerPlayable::Equals(UnityEngine.Animations.AnimatorControllerPlayable)
+// 0x0000003D System.Boolean UnityEngine.Animations.AnimatorControllerPlayable::Equals(UnityEngine.Animations.AnimatorControllerPlayable)
 extern void AnimatorControllerPlayable_Equals_m04685CCA5A5FC388A0387D3453A677C0CB47D173_AdjustorThunk ();
-// 0x00000032 System.Void UnityEngine.Animations.AnimatorControllerPlayable::.cctor()
+// 0x0000003E System.Void UnityEngine.Animations.AnimatorControllerPlayable::.cctor()
 extern void AnimatorControllerPlayable__cctor_m6FCC197F3BF33EAFC37D5217617FCDC64E8B304E ();
-// 0x00000033 System.Void UnityEngine.AnimatorOverrideController::OnInvalidateOverrideController(UnityEngine.AnimatorOverrideController)
+// 0x0000003F System.Void UnityEngine.AnimatorOverrideController::OnInvalidateOverrideController(UnityEngine.AnimatorOverrideController)
 extern void AnimatorOverrideController_OnInvalidateOverrideController_mA538F1349FCF3968C5042F2D8860114F51818CB2 ();
-// 0x00000034 System.Void UnityEngine.AnimatorOverrideController_OnOverrideControllerDirtyCallback::.ctor(System.Object,System.IntPtr)
+// 0x00000040 System.Void UnityEngine.AnimatorOverrideController_OnOverrideControllerDirtyCallback::.ctor(System.Object,System.IntPtr)
 extern void OnOverrideControllerDirtyCallback__ctor_m9277DED194C85B1C3B4C7ABBB1D54CCB43C724D8 ();
-// 0x00000035 System.Void UnityEngine.AnimatorOverrideController_OnOverrideControllerDirtyCallback::Invoke()
+// 0x00000041 System.Void UnityEngine.AnimatorOverrideController_OnOverrideControllerDirtyCallback::Invoke()
 extern void OnOverrideControllerDirtyCallback_Invoke_m002CFC2CE3C42A058380BE98F015E654D5F9F177 ();
-// 0x00000036 System.IAsyncResult UnityEngine.AnimatorOverrideController_OnOverrideControllerDirtyCallback::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x00000042 System.IAsyncResult UnityEngine.AnimatorOverrideController_OnOverrideControllerDirtyCallback::BeginInvoke(System.AsyncCallback,System.Object)
 extern void OnOverrideControllerDirtyCallback_BeginInvoke_m35CE43BF7D40E88192183CF666F2BB7EFE8C6F9D ();
-// 0x00000037 System.Void UnityEngine.AnimatorOverrideController_OnOverrideControllerDirtyCallback::EndInvoke(System.IAsyncResult)
+// 0x00000043 System.Void UnityEngine.AnimatorOverrideController_OnOverrideControllerDirtyCallback::EndInvoke(System.IAsyncResult)
 extern void OnOverrideControllerDirtyCallback_EndInvoke_m39CFD9FD2CC3035CFF6809F56447932B1394C08E ();
-// 0x00000038 System.Void UnityEngine.AnimationEvent::.ctor()
+// 0x00000044 System.Void UnityEngine.AnimationEvent::.ctor()
 extern void AnimationEvent__ctor_m6C228EB716B6B53DE2665091C056428EFB90897F ();
-static Il2CppMethodPointer s_methodPointers[56] = 
+static Il2CppMethodPointer s_methodPointers[68] = 
 {
 	StateMachineBehaviour__ctor_m60289315ADCB494227D881EEFA6C4458BACA79DB,
 	StateMachineBehaviour_OnStateEnter_mAB25325C96611ADDF93038EC6792EC4F76AEF4EE,
@@ -179,6 +203,18 @@ static Il2CppMethodPointer s_methodPointers[56] =
 	AnimationScriptPlayable_GetHandle_mE9B490654A320F11EFBB0E3180C6CF647E384C80_AdjustorThunk,
 	AnimationScriptPlayable_Equals_m39A1F71C360404625ABD1EAD32DCAEDD7736E1B3_AdjustorThunk,
 	AnimationScriptPlayable__cctor_mC78B0B27BE44BD802817190E620DB326D730BF70,
+	Animator_SetBool_m497805BA217139E42808899782FA05C15BC9879E,
+	Animator_SetTrigger_m68D29B7FA54C2F230F5AD780D462612B18E74245,
+	Animator_ResetTrigger_m70120C9A00EA482BF0880D2C02EC814CE3D71FD1,
+	Animator_set_speed_mEA558D196D84684744A642A56AFBF22F16448813,
+	Animator_Play_m254CA699DF64E86856EC8C54D1A739E3C0A49793,
+	Animator_Play_m1942D7FB37F84959D2C6A859E11F70791E95FA50,
+	Animator_Play_m20B525F785DA59888E645125DB2DDC071E924F3E,
+	Animator_get_hasBoundPlayables_m283AF0BA9B841E3FD1ADC5541C41B936A9D1EB05,
+	Animator_StringToHash_m80E4CCCB84AAD032A5D84EF5832B7F35C1E5AE3F,
+	Animator_SetBoolString_mA61F1A44D13EF82A7C2CAF466EBA81E65D054D46,
+	Animator_SetTriggerString_m77CE57996467D0C973FA2D0CB4DF87BD062C8A1E,
+	Animator_ResetTriggerString_m31B233F948D7551D220FEDA56B002E6724B89851,
 	AnimatorControllerPlayable__ctor_m739B1BFC592B6C160410141057F1B2BA1B971897_AdjustorThunk,
 	AnimatorControllerPlayable_GetHandle_mB83731910E1534BECA36F64BA22AA68A71D08CA8_AdjustorThunk,
 	AnimatorControllerPlayable_SetHandle_m2CAE8DABC4B19AB6BD90249D0D7FC7A9E07C3A96_AdjustorThunk,
@@ -191,57 +227,69 @@ static Il2CppMethodPointer s_methodPointers[56] =
 	OnOverrideControllerDirtyCallback_EndInvoke_m39CFD9FD2CC3035CFF6809F56447932B1394C08E,
 	AnimationEvent__ctor_m6C228EB716B6B53DE2665091C056428EFB90897F,
 };
-static const int32_t s_InvokerIndices[56] = 
+static const int32_t s_InvokerIndices[68] = 
 {
 	23,
-	1728,
-	1728,
-	1728,
-	1728,
-	1728,
+	1526,
+	1526,
+	1526,
+	1526,
+	1526,
 	145,
 	145,
-	1729,
-	1729,
-	1729,
-	1729,
-	1729,
-	1730,
-	1730,
-	1220,
-	1731,
-	1227,
-	1220,
-	1732,
+	1527,
+	1527,
+	1527,
+	1527,
+	1527,
+	1528,
+	1528,
+	1233,
+	1529,
+	1240,
+	1233,
+	1530,
 	3,
-	1227,
-	1220,
-	1733,
+	1240,
+	1233,
+	1531,
 	3,
-	1227,
-	1220,
-	1734,
+	1240,
+	1233,
+	1532,
 	3,
-	1227,
-	1220,
-	1735,
+	1240,
+	1233,
+	1533,
 	3,
-	1227,
-	1220,
-	1736,
+	1240,
+	1233,
+	1534,
 	3,
-	1227,
-	1220,
-	1737,
+	1240,
+	1233,
+	1535,
 	3,
-	1227,
-	1220,
-	1738,
+	1240,
+	1233,
+	1536,
 	3,
-	1227,
-	1220,
-	1227,
-	1739,
+	408,
+	26,
+	26,
+	298,
+	26,
+	1537,
+	1333,
+	114,
+	95,
+	408,
+	26,
+	26,
+	1240,
+	1233,
+	1240,
+	1538,
 	3,
 	122,
 	102,
@@ -254,7 +302,7 @@ extern const Il2CppCodeGenModule g_UnityEngine_AnimationModuleCodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_AnimationModuleCodeGenModule = 
 {
 	"UnityEngine.AnimationModule.dll",
-	56,
+	68,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

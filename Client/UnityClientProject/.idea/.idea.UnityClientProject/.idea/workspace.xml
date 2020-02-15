@@ -12,22 +12,25 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.15f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MessagePack/IFormatterResolver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkLLAPI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomPackets.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MessagePack/IFormatterResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestClass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AnySync/MotionGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkLLAPI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MessagePack/MessagePackSerializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/TestClass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/OPS/Serialization/Demo/Mesh/Demo_MeshGui.cs" />
         <option value="$PROJECT_DIR$/Assets/OPS/Serialization/Demo/Compress and Encrypt/Demo_CnEGui.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomPackets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkLLAPI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestScript.cs" />
       </list>
     </option>
   </component>
@@ -98,6 +101,15 @@
       <workItem from="1581165943550" duration="2421000" />
       <workItem from="1581170559364" duration="3635000" />
       <workItem from="1581241036049" duration="12264000" />
+      <workItem from="1581260076185" duration="1042000" />
+      <workItem from="1581262674342" duration="7000" />
+      <workItem from="1581580645260" duration="4026000" />
+      <workItem from="1581611181249" duration="695000" />
+      <workItem from="1581614932495" duration="29000" />
+      <workItem from="1581616349844" duration="4650000" />
+      <workItem from="1581623214751" duration="8000" />
+      <workItem from="1581623321483" duration="1189000" />
+      <workItem from="1581707841871" duration="2229000" />
     </task>
     <servers />
   </component>
@@ -132,5 +144,9 @@
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state x="643" y="250" key="run.anything.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1581255305135" />
+    <state x="265" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1581619717157">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="265" y="237" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1581619717157" />
   </component>
 </project>

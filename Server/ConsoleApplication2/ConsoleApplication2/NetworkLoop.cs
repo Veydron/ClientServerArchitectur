@@ -24,12 +24,15 @@ namespace ConsoleApplication2
         public event EventHandler<TestClass> ClientMessage;
         public event EventHandler<Telepathy.Message> KickPlayer;
 
-        private int maxMessageCounter = 4; //Maximale Anzahl an Nachrichten per Tick die Entfangen werden darf bevor der Spieler gekickt wird.
+        private int maxMessageCounter = 11; //Maximale Anzahl an Nachrichten per Tick die Entfangen werden darf bevor der Spieler gekickt wird.
         
         public void Run()
         {
             Console.Title = "Test Server";
             Console.WriteLine("Hello im your server Console !");
+            
+            //zumtesten
+            TimeFrame timeFrame = new TimeFrame();
 
             try
             {
@@ -40,9 +43,15 @@ namespace ConsoleApplication2
 
                 while (server.Active)
                 {
+                    
+                    //zu testzwecken
+                    //Console.WriteLine( timeFrame.ElapsedTimeForFrame());
+
+                    
                     //reply to each incoming message
                     while (server.GetNextMessage(out msg))
                     {
+
                         switch (msg.eventType)
                         {
                             case Telepathy.EventType.Connected:
@@ -81,15 +90,22 @@ namespace ConsoleApplication2
                         {
                             CustomPackets clientPacket = new CustomPackets(10,networkPlayer.Value.ConnectionID,networkPlayer.Value.PlayerPosition.X, networkPlayer.Value.PlayerPosition.Y, networkPlayer.Value.PlayerPosition.Z); //neue position
                             //Console.WriteLine("moved true,packet erstellt");
-                            foreach (var networkPlayerConnection in networkPlayersDictionary) //für jeden spieler ausser sich selber
+                            try
                             {
-                                //if (networkPlayerConnection.Key != networkPlayer.Key)
-                                //{
-                                    server.Send(networkPlayerConnection.Value.ConnectionID, MessagePackSerializer.Serialize(clientPacket)); // sende die position
-                                    Console.WriteLine("Sende Player "+networkPlayerConnection.Value.ConnectionID+" die neue Position von Player "+networkPlayer.Value.ConnectionID+" : "+networkPlayer.Value.PlayerPosition.X, networkPlayer.Value.PlayerPosition.Y, networkPlayer.Value.PlayerPosition.Z);
-                                //}
+                                foreach (var networkPlayerConnection in networkPlayersDictionary) //für jeden spieler ausser sich selber
+                                {
+
+                                        //server.Send(networkPlayerConnection.Value.ConnectionID, MessagePackSerializer.Serialize(clientPacket)); // sende die position
+                                        server.Send(networkPlayerConnection.Value.ConnectionID,
+                                            OPS.Serialization.IO.Serializer.Serialize(clientPacket));
+                                }
                             }
-                            
+                            catch (Exception playerposupdate)
+                            {
+                                Console.WriteLine(playerposupdate);
+                                throw;
+                            }
+
                             networkPlayer.Value.IsMoved = false;
                             //TestClass testClass = new TestClass(100,100,99);
                             //server.Send(msg.connectionId, MessagePackSerializer.Serialize(testClass));
@@ -108,6 +124,7 @@ namespace ConsoleApplication2
                     }
                     
                     //Server Tick Rate 5 times per second
+                    timeFrame.TimeSpanProcessWarning();
                     System.Threading.Thread.Sleep(15); //Ist die Orginal methode unten die alternative
                     //Console.WriteLine("Sleep . . .");
                     //new System.Threading.ManualResetEvent(false).WaitOne(15);
@@ -156,8 +173,8 @@ namespace ConsoleApplication2
                 if (networkPlayersDictionary.ContainsKey(msg.connectionId))
                 { 
                     //Message wird in Class umgewandelt
-                CustomPackets clientPacket = MessagePackSerializer.Deserialize<CustomPackets>(msg.data);
-                
+                //CustomPackets clientPacket = MessagePackSerializer.Deserialize<CustomPackets>(msg.data);
+                CustomPackets clientPacket = OPS.Serialization.IO.Serializer.DeSerialize<CustomPackets>(msg.data);
                 //Event das des Class packet zur verfügung stellt für beispielsweise logs
                 //ClientMessage(this, recivedmsg);
                 //Console.WriteLine("Player "+msg.connectionId+" sends packet: " +recivedmsg.ActionID);
@@ -195,7 +212,10 @@ namespace ConsoleApplication2
             {
                 //Setzt flag auf disconnected so das wir nicht mehr auf seine data nachrichten hören und er sich neu connecten muss
                 networkPlayersDictionary[connectionId].IsConnected = false;
-                
+                    
+                //server sendet allen den spieler zu löschen
+                DespawnPlayerOnDisconnect(connectionId);
+
                 //entfernt den disconnecteten spieler aus der NetworkPlayer Bibliothek und setzt seine flag auf disconnected
                 if (networkPlayersDictionary.ContainsKey(connectionId))
                 {
@@ -255,12 +275,14 @@ namespace ConsoleApplication2
                  CustomPackets customPackets = new CustomPackets(1,player.Value.ConnectionID, player.Value.PlayerPosition.X,player.Value.PlayerPosition.Y,player.Value.PlayerPosition.Z);
 
                  Console.WriteLine(customPackets.Action +" , " +customPackets.ConnectionID +" , ");
-                 var data = MessagePackSerializer.Serialize(customPackets);
+                 //var data = MessagePackSerializer.Serialize(customPackets);
+                 //var data = OPS.Serialization.IO.Serializer.Serialize(customPackets);
+                 var data = OPS.Serialization.IO.Serializer.Serialize(customPackets);
                  Console.WriteLine("Data serialized ." +data);
 
                  foreach (var playerclient in networkPlayersDictionary)
                  {
-                     server.Send(playerclient.Value.ConnectionID, data);
+                         server.Send(playerclient.Value.ConnectionID, data);
                  }
                  
                  Console.WriteLine("Player "+connectionId+" instantiated Player " +player.Value.ConnectionID);
@@ -274,16 +296,18 @@ namespace ConsoleApplication2
                  //Send for every player a despawn msg.
                  CustomPackets customPackets = new CustomPackets(2,connectionID);
 
-                 Console.WriteLine(customPackets.Action +" , " +customPackets.ConnectionID +" , ");
-                 var data = MessagePackSerializer.Serialize(customPackets);
-                 Console.WriteLine("Data serialized ." +data);
+                 //Console.WriteLine(customPackets.Action +" , " +customPackets.ConnectionID +" , ");
+//                 var data = MessagePackSerializer.Serialize(customPackets);
+                 var data = OPS.Serialization.IO.Serializer.Serialize(customPackets);
+
+                 //Console.WriteLine("Data serialized ." +data);
 
                  foreach (var playerclient in networkPlayersDictionary)
                  {
-                     server.Send(playerclient.Value.ConnectionID, data);
+                         server.Send(playerclient.Value.ConnectionID, data);
                  }
                  
-                 Console.WriteLine("Player "+connectionID+" disconnected " +player.Value.ConnectionID);
+                 //Console.WriteLine("Player "+connectionID+" disconnected " +player.Value.ConnectionID);
              } 
              
          }
