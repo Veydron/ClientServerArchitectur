@@ -14,22 +14,22 @@ namespace ConsoleApplication2
             if (W == true)
             {
                 //Console.WriteLine("Player hat W gedrückt");  
-                move = new Vector3(move.X,move.Y+0.2f,move.Z);
+                move = new Vector3(move.X,move.Y+0.4f,move.Z);
             }
             if (A == true)
             {
                 //Console.WriteLine("Player hat A gedrückt");
-                move = new Vector3(move.X-0.2f,move.Y,move.Z);
+                move = new Vector3(move.X-0.4f,move.Y,move.Z);
             }
             if (S == true)
             {
                 //Console.WriteLine("Player hat S gedrückt");
-                move = new Vector3(move.X,move.Y-0.2f,move.Z);
+                move = new Vector3(move.X,move.Y-0.4f,move.Z);
             }
             if (D == true)
             {
                 //Console.WriteLine("Player hat D gedrückt");
-                move = new Vector3(move.X+0.2f,move.Y,move.Z);
+                move = new Vector3(move.X+0.4f,move.Y,move.Z);
             }
             
             

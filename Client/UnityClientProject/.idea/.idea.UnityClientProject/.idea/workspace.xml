@@ -27,10 +27,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TestClass.cs" />
         <option value="$PROJECT_DIR$/Assets/OPS/Serialization/Demo/Mesh/Demo_MeshGui.cs" />
         <option value="$PROJECT_DIR$/Assets/OPS/Serialization/Demo/Compress and Encrypt/Demo_CnEGui.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomPackets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkLLAPI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TestScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
       </list>
     </option>
   </component>
@@ -110,6 +110,8 @@
       <workItem from="1581623214751" duration="8000" />
       <workItem from="1581623321483" duration="1189000" />
       <workItem from="1581707841871" duration="2229000" />
+      <workItem from="1581755385127" duration="5000" />
+      <workItem from="1581755822331" duration="2452000" />
     </task>
     <servers />
   </component>

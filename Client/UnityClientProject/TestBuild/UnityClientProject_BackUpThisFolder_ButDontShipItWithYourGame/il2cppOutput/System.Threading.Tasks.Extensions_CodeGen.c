@@ -279,11 +279,11 @@ static const Il2CppRGCTXDefinition s_rgctxValues[37] =
 	{ (Il2CppRGCTXDataType)2, 27674 },
 	{ (Il2CppRGCTXDataType)3, 39652 },
 	{ (Il2CppRGCTXDataType)3, 39653 },
-	{ (Il2CppRGCTXDataType)2, 31486 },
+	{ (Il2CppRGCTXDataType)2, 31488 },
 	{ (Il2CppRGCTXDataType)3, 39654 },
 	{ (Il2CppRGCTXDataType)2, 27673 },
 	{ (Il2CppRGCTXDataType)3, 39655 },
-	{ (Il2CppRGCTXDataType)2, 31487 },
+	{ (Il2CppRGCTXDataType)2, 31489 },
 	{ (Il2CppRGCTXDataType)3, 39656 },
 	{ (Il2CppRGCTXDataType)3, 39657 },
 	{ (Il2CppRGCTXDataType)3, 39658 },
@@ -306,12 +306,12 @@ static const Il2CppRGCTXDefinition s_rgctxValues[37] =
 	{ (Il2CppRGCTXDataType)3, 39672 },
 	{ (Il2CppRGCTXDataType)3, 39673 },
 	{ (Il2CppRGCTXDataType)3, 39674 },
-	{ (Il2CppRGCTXDataType)2, 31488 },
+	{ (Il2CppRGCTXDataType)2, 31490 },
 	{ (Il2CppRGCTXDataType)3, 39675 },
 	{ (Il2CppRGCTXDataType)3, 39676 },
 	{ (Il2CppRGCTXDataType)3, 39677 },
 	{ (Il2CppRGCTXDataType)3, 39678 },
-	{ (Il2CppRGCTXDataType)2, 31489 },
+	{ (Il2CppRGCTXDataType)2, 31491 },
 };
 extern const Il2CppCodeGenModule g_System_Threading_Tasks_ExtensionsCodeGenModule;
 const Il2CppCodeGenModule g_System_Threading_Tasks_ExtensionsCodeGenModule = 

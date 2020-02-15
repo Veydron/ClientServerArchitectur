@@ -56,15 +56,17 @@ namespace ConsoleApplication2
         
         [SerializeAbleField(8)]
         public bool D = false;
-        
 
-        public CustomPackets( int action, int connectionID, float playerPositionX, float playerPositionY, float playerPositionZ)
+        [SerializeAbleField(9)] public float Frame;        
+
+        public CustomPackets( int action, int connectionID, float playerPositionX, float playerPositionY, float playerPositionZ, float frame)
         {
             Action = action;
             ConnectionID = connectionID;
             PlayerPositionX = playerPositionX;
             PlayerPositionY = playerPositionY;
             PlayerPositionZ = playerPositionZ;
+            Frame = frame;
         }
         
         public CustomPackets(int action, bool w, bool a, bool s, bool d)

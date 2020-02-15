@@ -98,7 +98,12 @@ public class NetworkLLAPI : MonoBehaviour
         {
            // Debug.Log(GameObject.Find(player.Value.ConnectionID.ToString()).transform.position);
             //Debug.Log(player.Value.PlayerPosition.x + player.Value.PlayerPosition.y + player.Value.PlayerPosition.z);
-            GameObject.Find(player.Value.ConnectionID.ToString()).transform.position = player.Value.PlayerPosition;
+            if (player.Value.motionGenerator.HasKeyframes)
+            {
+                player.Value.motionGenerator.UpdatePlayback(Time.deltaTime);
+                GameObject.Find(player.Value.ConnectionID.ToString()).transform.position = player.Value.motionGenerator.Position;
+            }
+
         }
 
 
@@ -177,6 +182,7 @@ public class NetworkLLAPI : MonoBehaviour
                             case 10:
                                 
                                 netPlayersDictionary[customPackets.ConnectionID].PlayerPosition = new Vector3(customPackets.PlayerPositionX,customPackets.PlayerPositionY,customPackets.PlayerPositionZ);
+                                netPlayersDictionary[customPackets.ConnectionID].motionGenerator.AddKeyframe(customPackets.Frame,netPlayersDictionary[customPackets.ConnectionID].PlayerPosition);
                                 Debug.Log("Player "+customPackets.ConnectionID+" hat neue Position: "+customPackets.PlayerPositionX +" , " +customPackets.PlayerPositionY);
                                 break;
                         }

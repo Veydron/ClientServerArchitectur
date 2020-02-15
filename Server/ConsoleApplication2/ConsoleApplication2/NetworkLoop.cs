@@ -88,7 +88,7 @@ namespace ConsoleApplication2
                     {
                         if (networkPlayer.Value.IsMoved)
                         {
-                            CustomPackets clientPacket = new CustomPackets(10,networkPlayer.Value.ConnectionID,networkPlayer.Value.PlayerPosition.X, networkPlayer.Value.PlayerPosition.Y, networkPlayer.Value.PlayerPosition.Z); //neue position
+                            CustomPackets clientPacket = new CustomPackets(10,networkPlayer.Value.ConnectionID,networkPlayer.Value.PlayerPosition.X, networkPlayer.Value.PlayerPosition.Y, networkPlayer.Value.PlayerPosition.Z,timeFrame.ElapsedTimeForFrame()); //neue position
                             //Console.WriteLine("moved true,packet erstellt");
                             try
                             {
@@ -124,8 +124,8 @@ namespace ConsoleApplication2
                     }
                     
                     //Server Tick Rate 5 times per second
-                    timeFrame.TimeSpanProcessWarning();
-                    System.Threading.Thread.Sleep(15); //Ist die Orginal methode unten die alternative
+                    //timeFrame.TimeSpanProcessWarning();
+                    System.Threading.Thread.Sleep(5); //Ist die Orginal methode unten die alternative
                     //Console.WriteLine("Sleep . . .");
                     //new System.Threading.ManualResetEvent(false).WaitOne(15);
                 }
@@ -272,7 +272,7 @@ namespace ConsoleApplication2
              foreach (var player in networkPlayersDictionary)
              {
                  //Send for every player a Instantiate and the Position.
-                 CustomPackets customPackets = new CustomPackets(1,player.Value.ConnectionID, player.Value.PlayerPosition.X,player.Value.PlayerPosition.Y,player.Value.PlayerPosition.Z);
+                 CustomPackets customPackets = new CustomPackets(1,player.Value.ConnectionID, player.Value.PlayerPosition.X,player.Value.PlayerPosition.Y,player.Value.PlayerPosition.Z,0);
 
                  Console.WriteLine(customPackets.Action +" , " +customPackets.ConnectionID +" , ");
                  //var data = MessagePackSerializer.Serialize(customPackets);

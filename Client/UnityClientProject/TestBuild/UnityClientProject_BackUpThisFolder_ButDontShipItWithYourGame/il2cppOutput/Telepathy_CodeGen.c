@@ -139,7 +139,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[5] =
 	{ (Il2CppRGCTXDataType)3, 40199 },
 	{ (Il2CppRGCTXDataType)3, 40200 },
 	{ (Il2CppRGCTXDataType)3, 40201 },
-	{ (Il2CppRGCTXDataType)2, 31724 },
+	{ (Il2CppRGCTXDataType)2, 31726 },
 	{ (Il2CppRGCTXDataType)3, 40202 },
 };
 extern const Il2CppCodeGenModule g_TelepathyCodeGenModule;

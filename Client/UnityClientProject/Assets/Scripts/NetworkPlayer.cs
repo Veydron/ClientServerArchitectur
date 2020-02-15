@@ -10,7 +10,7 @@ public class NetworkPlayer
     public int ConnectionID { get; set; }
 
     public Vector3 PlayerPosition;
-    
+
     public GameObject GameObject { get; set; }
     
     
