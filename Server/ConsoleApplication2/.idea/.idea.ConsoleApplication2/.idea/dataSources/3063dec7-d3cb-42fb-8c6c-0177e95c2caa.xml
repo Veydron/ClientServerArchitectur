@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="AmazonCassandraService">
+  <database-model serializer="dbm" dbms="CASSANDRA" family-id="CASSANDRA" format-version="4.17">
+    <root id="1">
+      <ServerVersion>0.0</ServerVersion>
+    </root>
+    <schema id="2" parent="1">
+      <Current>1</Current>
+    </schema>
+  </database-model>
+</dataSource>

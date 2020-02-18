@@ -9,6 +9,7 @@ using System.Security.Cryptography.X509Certificates;
 using ConsoleApplication2.Scripts;
 using MessagePack;
 using Telepathy;
+using UnityEngine.UIElements;
 
 namespace ConsoleApplication2
 {
@@ -23,6 +24,7 @@ namespace ConsoleApplication2
         public event EventHandler<int> ClientDisconnected;
         public event EventHandler<TestClass> ClientMessage;
         public event EventHandler<Telepathy.Message> KickPlayer;
+        public event EventHandler<CustomPackets> OnClientLogin;
 
         private int maxMessageCounter = 11; //Maximale Anzahl an Nachrichten per Tick die Entfangen werden darf bevor der Spieler gekickt wird.
         
@@ -51,15 +53,18 @@ namespace ConsoleApplication2
                     //reply to each incoming message
                     while (server.GetNextMessage(out msg))
                     {
-
+                        
                         switch (msg.eventType)
                         {
                             case Telepathy.EventType.Connected:
                                 //TODO Checken wann er das letztemal connecten wollte und einen mindest Abstand von 5 Sekunden einbauen.
+                                
                                 OnClientConnected(msg.connectionId);
+
                                 break;
                             
                             case Telepathy.EventType.Data:
+                                
                                 //Packet Count wird dazugezählt damit nacher abgefragt werden kann wie oft per tick er was geschickt hat
                                 networkPlayersDictionary[msg.connectionId].KickPlayer += 1;
                                 //Checks if the player is flagged as "Connected" then we listen to his data
@@ -124,13 +129,15 @@ namespace ConsoleApplication2
                     }
                     
                     //Server Tick Rate 5 times per second
-                    //timeFrame.TimeSpanProcessWarning();
+                    timeFrame.TimeSpanProcessWarning();
                     System.Threading.Thread.Sleep(5); //Ist die Orginal methode unten die alternative
                     //Console.WriteLine("Sleep . . .");
                     //new System.Threading.ManualResetEvent(false).WaitOne(15);
                 }
             }
             
+            
+
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
@@ -147,9 +154,7 @@ namespace ConsoleApplication2
                 {
                     networkPlayersDictionary.Add(connectionId, new NetworkPlayer(connectionId));
                     networkPlayersDictionary[connectionId].IsConnected = true;
-                    
-                    //Player wird Instantiert
-                    InstantiatePlayersOnConnect(connectionId);
+
                 }
                 //Event Shoutout für alle die es interessiert das ein Spieler Connectet
                 if (ClientConnected != null)
@@ -182,7 +187,22 @@ namespace ConsoleApplication2
                     //TODO richtiges Auswahlsystem das abfragt was der Client möchte und entsprechend 
                     switch (clientPacket.Action)
                     {
-                        case 9:
+                        case 3: //Recive Login&Password
+                        {
+
+                            if (clientPacket.SA != "" && clientPacket.SB != "")
+                            {
+                                OnClientLogin(this,clientPacket); 
+                            }
+                            else
+                            {
+                                Console.WriteLine("Eingabe ist Leer");
+                                OnLoginFailed(this,clientPacket);
+                            }
+                            
+                            break;
+                        }
+                        case 9: //Recive player wasd input
                         {
                             //Sends die aktuelle Position und die möchte Position und zurück kommt die inframe Position die dann ins networplayerdictionary geschrieben wird
                             Vector3 tempVector3 = new Vector3();
@@ -310,6 +330,24 @@ namespace ConsoleApplication2
                  //Console.WriteLine("Player "+connectionID+" disconnected " +player.Value.ConnectionID);
              } 
              
+         }
+        
+         
+         public void OnLoginSuccsess(object source, CustomPackets customPackets)
+         {
+             //Todo: If Loginserver sends Scene Wechsel zu Charakter auswahl + List mit Playercharakter + List mit MapServerIPs
+
+             //Todo: If not Loginserver Instantiate ClientPlayer & all other Players & NPCs & Mobs
+             //Player wird Instantiert
+             InstantiatePlayersOnConnect(customPackets.ConnectionID);
+         }
+
+         public void OnLoginFailed(object source, CustomPackets customPackets)
+         {
+             //Todo: Sends Client a Message that the Login/Password is false and grey there Login Button for 3 Sec off.
+             
+             //Todo: Block connection ID so they msg.data will not get read for 3 Seconds 
+             Console.WriteLine("Login Daten sind Falsch");
          }
      }
  }

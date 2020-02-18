@@ -6,7 +6,7 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -15,7 +15,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -24,7 +24,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -33,7 +33,7 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -42,7 +42,7 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -65,7 +65,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -88,7 +88,7 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -111,7 +111,7 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -218,7 +218,7 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -227,7 +227,7 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -236,7 +236,7 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -245,7 +245,7 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -254,7 +254,7 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -263,7 +263,7 @@
             "fullManagedTypeName": "UnityEngine.SkinnedMeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -272,7 +272,7 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -281,7 +281,7 @@
             "fullManagedTypeName": "UnityEngine.AnimationClip",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -290,7 +290,7 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -299,7 +299,7 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -308,7 +308,7 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -317,7 +317,7 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -326,7 +326,25 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Canvas",
+            "fullManagedTypeName": "UnityEngine.Canvas",
+            "moduleName": "UI",
+            "usedInScenes": [
+                "Assets/LoginScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "RectTransform",
+            "fullManagedTypeName": "UnityEngine.RectTransform",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -335,7 +353,7 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -344,7 +362,7 @@
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -353,7 +371,7 @@
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -362,7 +380,7 @@
             "fullManagedTypeName": "UnityEngine.Motion",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -371,7 +389,7 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -380,7 +398,7 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -389,7 +407,7 @@
             "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -398,7 +416,7 @@
             "fullManagedTypeName": "UnityEngine.Avatar",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -407,7 +425,7 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -416,7 +434,16 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Font",
+            "fullManagedTypeName": "UnityEngine.Font",
+            "moduleName": "TextRendering",
+            "usedInScenes": [
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -425,7 +452,7 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -434,7 +461,7 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -443,16 +470,16 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Cubemap",
-            "fullManagedTypeName": "UnityEngine.Cubemap",
-            "moduleName": "Core",
+            "nativeClass": "CanvasRenderer",
+            "fullManagedTypeName": "UnityEngine.CanvasRenderer",
+            "moduleName": "UI",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -461,16 +488,7 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "LightProbes",
-            "fullManagedTypeName": "UnityEngine.LightProbes",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
@@ -479,13 +497,83 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/TestScene.unity"
+                "Assets/LoginScene.unity"
             ]
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "LoginUI",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "NetworkLLAPI",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.EventSystems.EventSystem",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.EventSystems.StandaloneInputModule",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Button",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.CanvasScaler",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.GraphicRaycaster",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Image",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.InputField",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Text",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.VerticalLayoutGroup",
             "moduleName": "",
             "usedInScenes": []
         }

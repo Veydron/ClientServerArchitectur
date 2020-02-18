@@ -40,7 +40,7 @@ static const int32_t s_InvokerIndices[4] =
 	14,
 	10,
 	14,
-	114,
+	89,
 };
 extern const Il2CppCodeGenModule g_System_Runtime_SerializationCodeGenModule;
 const Il2CppCodeGenModule g_System_Runtime_SerializationCodeGenModule = 

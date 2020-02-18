@@ -11676,23 +11676,6 @@ public:
 };
 
 
-// UnityEngine.LightProbes
-struct  LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5  : public Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0
-{
-public:
-
-public:
-};
-
-// Native definition for P/Invoke marshalling of UnityEngine.LightProbes
-struct LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshaled_pinvoke : public Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_marshaled_pinvoke
-{
-};
-// Native definition for COM marshalling of UnityEngine.LightProbes
-struct LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshaled_com : public Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_marshaled_com
-{
-};
-
 // UnityEngine.LightmapSettings
 struct  LightmapSettings_t8580EFA0C1AE55225644E52F49182DFCCEEAB794  : public Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0
 {
@@ -29873,46 +29856,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Light_get_color_Injected_m266FA6B59B6A43
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Conversion methods for marshalling of: UnityEngine.LightProbes
-IL2CPP_EXTERN_C void LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshal_pinvoke(const LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5& unmarshaled, LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshaled_pinvoke& marshaled)
-{
-	marshaled.___m_CachedPtr_0 = unmarshaled.get_m_CachedPtr_0();
-}
-IL2CPP_EXTERN_C void LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshal_pinvoke_back(const LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshaled_pinvoke& marshaled, LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5& unmarshaled)
-{
-	intptr_t unmarshaled_m_CachedPtr_temp_0;
-	memset((&unmarshaled_m_CachedPtr_temp_0), 0, sizeof(unmarshaled_m_CachedPtr_temp_0));
-	unmarshaled_m_CachedPtr_temp_0 = marshaled.___m_CachedPtr_0;
-	unmarshaled.set_m_CachedPtr_0(unmarshaled_m_CachedPtr_temp_0);
-}
-// Conversion method for clean up from marshalling of: UnityEngine.LightProbes
-IL2CPP_EXTERN_C void LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshal_pinvoke_cleanup(LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshaled_pinvoke& marshaled)
-{
-}
-// Conversion methods for marshalling of: UnityEngine.LightProbes
-IL2CPP_EXTERN_C void LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshal_com(const LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5& unmarshaled, LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshaled_com& marshaled)
-{
-	marshaled.___m_CachedPtr_0 = unmarshaled.get_m_CachedPtr_0();
-}
-IL2CPP_EXTERN_C void LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshal_com_back(const LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshaled_com& marshaled, LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5& unmarshaled)
-{
-	intptr_t unmarshaled_m_CachedPtr_temp_0;
-	memset((&unmarshaled_m_CachedPtr_temp_0), 0, sizeof(unmarshaled_m_CachedPtr_temp_0));
-	unmarshaled_m_CachedPtr_temp_0 = marshaled.___m_CachedPtr_0;
-	unmarshaled.set_m_CachedPtr_0(unmarshaled_m_CachedPtr_temp_0);
-}
-// Conversion method for clean up from marshalling of: UnityEngine.LightProbes
-IL2CPP_EXTERN_C void LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshal_com_cleanup(LightProbes_t90D0BADB8CC1158A3387FE116066F1F316FBE5C5_marshaled_com& marshaled)
-{
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -30418,7 +30361,7 @@ IL_0022:
 		int32_t L_8 = ___offset1;
 		int32_t L_9 = ___count2;
 		NullCheck(L_6);
-		int32_t L_10 = VirtFuncInvoker3< int32_t, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(23 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_6, L_7, L_8, L_9);
+		int32_t L_10 = VirtFuncInvoker3< int32_t, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_6, L_7, L_8, L_9);
 		*((int32_t*)L_5) = (int32_t)L_10;
 		return;
 	}
@@ -30456,7 +30399,7 @@ IL_0021:
 		int64_t L_7 = ___offset0;
 		uint32_t L_8 = ___origin1;
 		NullCheck(L_6);
-		int64_t L_9 = VirtFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(22 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_6, L_7, L_8);
+		int64_t L_9 = VirtFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(24 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_6, L_7, L_8);
 		*((int64_t*)L_5) = (int64_t)L_9;
 		return;
 	}
@@ -36335,6 +36278,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_DestroyImmediate_mF6F4415EF22249D
 		Object_DestroyImmediate_mFCE7947857C832BCBB366FCCE50072ACAD9A4C51(L_0, L_1, /*hidden argument*/NULL);
 		return;
 	}
+}
+// System.Void UnityEngine.Object::DontDestroyOnLoad(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_DontDestroyOnLoad_m4DC90770AD6084E4B1B8489C6B41205DC020C207 (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * ___target0, const RuntimeMethod* method)
+{
+	typedef void (*Object_DontDestroyOnLoad_m4DC90770AD6084E4B1B8489C6B41205DC020C207_ftn) (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *);
+	static Object_DontDestroyOnLoad_m4DC90770AD6084E4B1B8489C6B41205DC020C207_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Object_DontDestroyOnLoad_m4DC90770AD6084E4B1B8489C6B41205DC020C207_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Object::DontDestroyOnLoad(UnityEngine.Object)");
+	_il2cpp_icall_func(___target0);
 }
 // System.Void UnityEngine.Object::set_hideFlags(UnityEngine.HideFlags)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_set_hideFlags_mB0B45A19A5871EF407D7B09E0EB76003496BA4F0 (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * __this, int32_t ___value0, const RuntimeMethod* method)

@@ -7,6 +7,7 @@
         <e p="ConsoleApplication2.csproj" t="IncludeRecursive" />
         <e p="ConsoleApplication2_TemporaryKey.pfx" t="Include" />
         <e p="CustomPackets.cs" t="Include" />
+        <e p="DBHandler.cs" t="Include" />
         <e p="LogServer.cs" t="Include" />
         <e p="NetworkLoop.cs" t="Include" />
         <e p="NetworkPlayer.cs" t="Include" />
@@ -149,6 +150,8 @@
       <e p="ConsoleApplication2.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
+    <e p="C:\Users\mschn\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\mschn\.Rider2019.3\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\mschn\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\mschn\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ConsoleApplication2.1549355937.00" t="ExcludeRecursive" />
   </component>

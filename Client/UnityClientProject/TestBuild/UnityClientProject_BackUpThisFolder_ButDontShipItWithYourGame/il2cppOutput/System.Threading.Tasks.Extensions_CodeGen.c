@@ -102,27 +102,32 @@ extern void ConfiguredValueTaskAwaiter__ctor_m825BD4B673180D001A6B85D40CEE741A3D
 extern void ConfiguredValueTaskAwaiter_get_IsCompleted_m1BF68CFD9CA68CFF23929E10187C40C043C6F887_AdjustorThunk ();
 // 0x00000036 System.Void System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter::GetResult()
 extern void ConfiguredValueTaskAwaiter_GetResult_m91DBF8595C0BD70F2C8F92B5690C16EDC68D3698_AdjustorThunk ();
-// 0x00000037 System.Void System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter::UnsafeOnCompleted(System.Action)
+// 0x00000037 System.Void System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter::OnCompleted(System.Action)
+extern void ConfiguredValueTaskAwaiter_OnCompleted_m3383D45694A5326B01E5EF1EF09A72AE88D54A88_AdjustorThunk ();
+// 0x00000038 System.Void System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter::UnsafeOnCompleted(System.Action)
 extern void ConfiguredValueTaskAwaiter_UnsafeOnCompleted_mC7380318BD43B545EDEF1CE153DC118DFB396A14_AdjustorThunk ();
-// 0x00000038 System.Void System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1::.ctor(System.Threading.Tasks.ValueTask`1<TResult>)
-// 0x00000039 System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1_ConfiguredValueTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1::GetAwaiter()
-// 0x0000003A System.Void System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1_ConfiguredValueTaskAwaiter::.ctor(System.Threading.Tasks.ValueTask`1<TResult>)
-// 0x0000003B System.Boolean System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1_ConfiguredValueTaskAwaiter::get_IsCompleted()
-// 0x0000003C TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1_ConfiguredValueTaskAwaiter::GetResult()
-// 0x0000003D System.Void System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1_ConfiguredValueTaskAwaiter::UnsafeOnCompleted(System.Action)
-// 0x0000003E System.Void System.Runtime.CompilerServices.ValueTaskAwaiter::UnsafeOnCompleted(System.Action)
+// 0x00000039 System.Void System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1::.ctor(System.Threading.Tasks.ValueTask`1<TResult>)
+// 0x0000003A System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1_ConfiguredValueTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1::GetAwaiter()
+// 0x0000003B System.Void System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1_ConfiguredValueTaskAwaiter::.ctor(System.Threading.Tasks.ValueTask`1<TResult>)
+// 0x0000003C System.Boolean System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1_ConfiguredValueTaskAwaiter::get_IsCompleted()
+// 0x0000003D TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1_ConfiguredValueTaskAwaiter::GetResult()
+// 0x0000003E System.Void System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1_ConfiguredValueTaskAwaiter::OnCompleted(System.Action)
+// 0x0000003F System.Void System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1_ConfiguredValueTaskAwaiter::UnsafeOnCompleted(System.Action)
+// 0x00000040 System.Void System.Runtime.CompilerServices.ValueTaskAwaiter::OnCompleted(System.Action)
+extern void ValueTaskAwaiter_OnCompleted_m0216EBC6CD5945B8AC974A84AE311F917E92929B_AdjustorThunk ();
+// 0x00000041 System.Void System.Runtime.CompilerServices.ValueTaskAwaiter::UnsafeOnCompleted(System.Action)
 extern void ValueTaskAwaiter_UnsafeOnCompleted_mDFDFE4DD17CC048418089BB5BAB89151943C77D4_AdjustorThunk ();
-// 0x0000003F System.Void System.Runtime.CompilerServices.ValueTaskAwaiter::.cctor()
+// 0x00000042 System.Void System.Runtime.CompilerServices.ValueTaskAwaiter::.cctor()
 extern void ValueTaskAwaiter__cctor_m134A4F78CDAD63709C92C2F6E89A0ACA64339F19 ();
-// 0x00000040 System.Void System.Runtime.CompilerServices.ValueTaskAwaiter_<>c::.cctor()
+// 0x00000043 System.Void System.Runtime.CompilerServices.ValueTaskAwaiter_<>c::.cctor()
 extern void U3CU3Ec__cctor_m957A3C5E59D561F2742499F08B26E8B647B8C5B3 ();
-// 0x00000041 System.Void System.Runtime.CompilerServices.ValueTaskAwaiter_<>c::.ctor()
+// 0x00000044 System.Void System.Runtime.CompilerServices.ValueTaskAwaiter_<>c::.ctor()
 extern void U3CU3Ec__ctor_mF5ACB0D5E6A133FC2A07646156453F1289C42493 ();
-// 0x00000042 System.Void System.Runtime.CompilerServices.ValueTaskAwaiter_<>c::<.cctor>b__9_0(System.Object)
+// 0x00000045 System.Void System.Runtime.CompilerServices.ValueTaskAwaiter_<>c::<.cctor>b__9_0(System.Object)
 extern void U3CU3Ec_U3C_cctorU3Eb__9_0_m8C067F60B6C8FAAC024A9F64AAF8B06BC31C6D98 ();
-// 0x00000043 System.Void System.Diagnostics.StackTraceHiddenAttribute::.ctor()
+// 0x00000046 System.Void System.Diagnostics.StackTraceHiddenAttribute::.ctor()
 extern void StackTraceHiddenAttribute__ctor_m0AA6C37D2CABC6A177BE7A593338955E7193AF26 ();
-static Il2CppMethodPointer s_methodPointers[67] = 
+static Il2CppMethodPointer s_methodPointers[70] = 
 {
 	EmbeddedAttribute__ctor_mE4A4C706AE8E23B43A079494245B8D62015C4414,
 	IsReadOnlyAttribute__ctor_mDD1F71010ED5D89E804B89A4878BA491AD610F2D,
@@ -178,6 +183,7 @@ static Il2CppMethodPointer s_methodPointers[67] =
 	ConfiguredValueTaskAwaiter__ctor_m825BD4B673180D001A6B85D40CEE741A3D6F784C_AdjustorThunk,
 	ConfiguredValueTaskAwaiter_get_IsCompleted_m1BF68CFD9CA68CFF23929E10187C40C043C6F887_AdjustorThunk,
 	ConfiguredValueTaskAwaiter_GetResult_m91DBF8595C0BD70F2C8F92B5690C16EDC68D3698_AdjustorThunk,
+	ConfiguredValueTaskAwaiter_OnCompleted_m3383D45694A5326B01E5EF1EF09A72AE88D54A88_AdjustorThunk,
 	ConfiguredValueTaskAwaiter_UnsafeOnCompleted_mC7380318BD43B545EDEF1CE153DC118DFB396A14_AdjustorThunk,
 	NULL,
 	NULL,
@@ -185,6 +191,8 @@ static Il2CppMethodPointer s_methodPointers[67] =
 	NULL,
 	NULL,
 	NULL,
+	NULL,
+	ValueTaskAwaiter_OnCompleted_m0216EBC6CD5945B8AC974A84AE311F917E92929B_AdjustorThunk,
 	ValueTaskAwaiter_UnsafeOnCompleted_mDFDFE4DD17CC048418089BB5BAB89151943C77D4_AdjustorThunk,
 	ValueTaskAwaiter__cctor_m134A4F78CDAD63709C92C2F6E89A0ACA64339F19,
 	U3CU3Ec__cctor_m957A3C5E59D561F2742499F08B26E8B647B8C5B3,
@@ -192,24 +200,24 @@ static Il2CppMethodPointer s_methodPointers[67] =
 	U3CU3Ec_U3C_cctorU3Eb__9_0_m8C067F60B6C8FAAC024A9F64AAF8B06BC31C6D98,
 	StackTraceHiddenAttribute__ctor_m0AA6C37D2CABC6A177BE7A593338955E7193AF26,
 };
-static const int32_t s_InvokerIndices[67] = 
+static const int32_t s_InvokerIndices[70] = 
 {
 	23,
 	23,
-	133,
-	133,
+	173,
+	173,
 	43,
 	43,
 	43,
 	4,
 	26,
-	1518,
+	1701,
 	10,
 	9,
-	1519,
-	114,
+	1702,
+	89,
 	23,
-	1520,
+	1703,
 	3,
 	-1,
 	-1,
@@ -222,19 +230,19 @@ static const int32_t s_InvokerIndices[67] =
 	-1,
 	-1,
 	-1,
-	213,
-	1521,
-	563,
+	246,
+	1704,
+	596,
 	-1,
 	-1,
 	-1,
 	26,
-	1522,
+	1705,
 	-1,
 	26,
 	23,
 	26,
-	1523,
+	1706,
 	-1,
 	-1,
 	-1,
@@ -243,11 +251,12 @@ static const int32_t s_InvokerIndices[67] =
 	-1,
 	-1,
 	-1,
-	1524,
-	1525,
-	1524,
-	114,
+	1707,
+	1708,
+	1707,
+	89,
 	23,
+	26,
 	26,
 	-1,
 	-1,
@@ -255,6 +264,8 @@ static const int32_t s_InvokerIndices[67] =
 	-1,
 	-1,
 	-1,
+	-1,
+	26,
 	26,
 	3,
 	3,
@@ -267,64 +278,65 @@ static const Il2CppTokenRangePair s_rgctxIndices[8] =
 	{ 0x02000007, { 0, 16 } },
 	{ 0x0200000E, { 18, 7 } },
 	{ 0x02000011, { 27, 2 } },
-	{ 0x02000012, { 29, 8 } },
+	{ 0x02000012, { 29, 9 } },
 	{ 0x06000025, { 16, 1 } },
 	{ 0x0600002A, { 17, 1 } },
 	{ 0x0600002C, { 25, 1 } },
 	{ 0x06000031, { 26, 1 } },
 };
-static const Il2CppRGCTXDefinition s_rgctxValues[37] = 
+static const Il2CppRGCTXDefinition s_rgctxValues[38] = 
 {
-	{ (Il2CppRGCTXDataType)2, 27672 },
-	{ (Il2CppRGCTXDataType)2, 27674 },
-	{ (Il2CppRGCTXDataType)3, 39652 },
-	{ (Il2CppRGCTXDataType)3, 39653 },
-	{ (Il2CppRGCTXDataType)2, 31488 },
-	{ (Il2CppRGCTXDataType)3, 39654 },
-	{ (Il2CppRGCTXDataType)2, 27673 },
-	{ (Il2CppRGCTXDataType)3, 39655 },
-	{ (Il2CppRGCTXDataType)2, 31489 },
-	{ (Il2CppRGCTXDataType)3, 39656 },
-	{ (Il2CppRGCTXDataType)3, 39657 },
-	{ (Il2CppRGCTXDataType)3, 39658 },
-	{ (Il2CppRGCTXDataType)2, 27675 },
-	{ (Il2CppRGCTXDataType)3, 39659 },
-	{ (Il2CppRGCTXDataType)3, 39660 },
-	{ (Il2CppRGCTXDataType)3, 39661 },
-	{ (Il2CppRGCTXDataType)3, 39662 },
-	{ (Il2CppRGCTXDataType)3, 39663 },
-	{ (Il2CppRGCTXDataType)3, 39664 },
-	{ (Il2CppRGCTXDataType)3, 39665 },
-	{ (Il2CppRGCTXDataType)3, 39666 },
-	{ (Il2CppRGCTXDataType)2, 27705 },
-	{ (Il2CppRGCTXDataType)3, 39667 },
-	{ (Il2CppRGCTXDataType)3, 39668 },
-	{ (Il2CppRGCTXDataType)3, 39669 },
-	{ (Il2CppRGCTXDataType)3, 39670 },
-	{ (Il2CppRGCTXDataType)3, 39671 },
-	{ (Il2CppRGCTXDataType)2, 27719 },
-	{ (Il2CppRGCTXDataType)3, 39672 },
-	{ (Il2CppRGCTXDataType)3, 39673 },
-	{ (Il2CppRGCTXDataType)3, 39674 },
-	{ (Il2CppRGCTXDataType)2, 31490 },
-	{ (Il2CppRGCTXDataType)3, 39675 },
-	{ (Il2CppRGCTXDataType)3, 39676 },
-	{ (Il2CppRGCTXDataType)3, 39677 },
-	{ (Il2CppRGCTXDataType)3, 39678 },
-	{ (Il2CppRGCTXDataType)2, 31491 },
+	{ (Il2CppRGCTXDataType)2, 29599 },
+	{ (Il2CppRGCTXDataType)2, 29601 },
+	{ (Il2CppRGCTXDataType)3, 40139 },
+	{ (Il2CppRGCTXDataType)3, 40140 },
+	{ (Il2CppRGCTXDataType)2, 33443 },
+	{ (Il2CppRGCTXDataType)3, 40141 },
+	{ (Il2CppRGCTXDataType)2, 29600 },
+	{ (Il2CppRGCTXDataType)3, 40142 },
+	{ (Il2CppRGCTXDataType)2, 33444 },
+	{ (Il2CppRGCTXDataType)3, 40143 },
+	{ (Il2CppRGCTXDataType)3, 40144 },
+	{ (Il2CppRGCTXDataType)3, 40145 },
+	{ (Il2CppRGCTXDataType)2, 29602 },
+	{ (Il2CppRGCTXDataType)3, 40146 },
+	{ (Il2CppRGCTXDataType)3, 40147 },
+	{ (Il2CppRGCTXDataType)3, 40148 },
+	{ (Il2CppRGCTXDataType)3, 40149 },
+	{ (Il2CppRGCTXDataType)3, 40150 },
+	{ (Il2CppRGCTXDataType)3, 40151 },
+	{ (Il2CppRGCTXDataType)3, 40152 },
+	{ (Il2CppRGCTXDataType)3, 40153 },
+	{ (Il2CppRGCTXDataType)2, 29632 },
+	{ (Il2CppRGCTXDataType)3, 40154 },
+	{ (Il2CppRGCTXDataType)3, 40155 },
+	{ (Il2CppRGCTXDataType)3, 40156 },
+	{ (Il2CppRGCTXDataType)3, 40157 },
+	{ (Il2CppRGCTXDataType)3, 40158 },
+	{ (Il2CppRGCTXDataType)2, 29646 },
+	{ (Il2CppRGCTXDataType)3, 40159 },
+	{ (Il2CppRGCTXDataType)3, 40160 },
+	{ (Il2CppRGCTXDataType)3, 40161 },
+	{ (Il2CppRGCTXDataType)2, 33445 },
+	{ (Il2CppRGCTXDataType)3, 40162 },
+	{ (Il2CppRGCTXDataType)3, 40163 },
+	{ (Il2CppRGCTXDataType)3, 40164 },
+	{ (Il2CppRGCTXDataType)3, 40165 },
+	{ (Il2CppRGCTXDataType)2, 33446 },
+	{ (Il2CppRGCTXDataType)3, 40166 },
 };
 extern const Il2CppCodeGenModule g_System_Threading_Tasks_ExtensionsCodeGenModule;
 const Il2CppCodeGenModule g_System_Threading_Tasks_ExtensionsCodeGenModule = 
 {
 	"System.Threading.Tasks.Extensions.dll",
-	67,
+	70,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,
 	NULL,
 	8,
 	s_rgctxIndices,
-	37,
+	38,
 	s_rgctxValues,
 	NULL,
 };

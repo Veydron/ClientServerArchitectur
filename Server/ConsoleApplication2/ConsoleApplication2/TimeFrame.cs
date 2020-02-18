@@ -34,13 +34,13 @@ namespace ConsoleApplication2
             {
                 //Console.BackgroundColor = ConsoleColor.Blue;
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("PROCESS TIME WARNING -> " +tickProcessTime);
+                Console.WriteLine("PROCESS TIME WARNING -> " +different);
                 //Console.WriteLine("Another line."); // <-- This line is still white on blue.
                 Console.ResetColor();
             }
             else
             {
-                Console.WriteLine(different);
+                //Console.WriteLine(different);
             }
 
             oldTick = tickProcessTime;

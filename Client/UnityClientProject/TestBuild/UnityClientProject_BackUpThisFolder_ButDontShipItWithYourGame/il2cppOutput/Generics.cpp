@@ -530,7 +530,7 @@ struct LinkedListNode_1_t29FE2977C490DD49F9F19A1FCBD4B2510F580683;
 // System.Collections.Generic.LinkedList`1<System.Object>
 struct LinkedList_1_t53CE3B6C8AC75667A89B320FD72FAF18BAB09384;
 // System.Collections.Generic.Queue`1<System.Object>
-struct Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407;
+struct Queue_1_tCC0C12E9ABD1C1421DEDD8C737F1A87C67ACC8F0;
 // System.Collections.Generic.SortedSet`1/Node<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
 struct Node_t2467758572E5F6F74117B0EFE72DEC4632C0B5E3;
 // System.Collections.Generic.SortedSet`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
@@ -5623,7 +5623,7 @@ struct  Enumerator_t3ECF503DBE3CA5558BD9A1E41553A7F47FB3073F
 {
 public:
 	// System.Collections.Generic.Queue`1<T> System.Collections.Generic.Queue`1_Enumerator::_q
-	Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * ____q_0;
+	Queue_1_tCC0C12E9ABD1C1421DEDD8C737F1A87C67ACC8F0 * ____q_0;
 	// System.Int32 System.Collections.Generic.Queue`1_Enumerator::_version
 	int32_t ____version_1;
 	// System.Int32 System.Collections.Generic.Queue`1_Enumerator::_index
@@ -5633,9 +5633,9 @@ public:
 
 public:
 	inline static int32_t get_offset_of__q_0() { return static_cast<int32_t>(offsetof(Enumerator_t3ECF503DBE3CA5558BD9A1E41553A7F47FB3073F, ____q_0)); }
-	inline Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * get__q_0() const { return ____q_0; }
-	inline Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 ** get_address_of__q_0() { return &____q_0; }
-	inline void set__q_0(Queue_1_t8A50A615746D7B7EEF8EDBAE9F4616501F37D407 * value)
+	inline Queue_1_tCC0C12E9ABD1C1421DEDD8C737F1A87C67ACC8F0 * get__q_0() const { return ____q_0; }
+	inline Queue_1_tCC0C12E9ABD1C1421DEDD8C737F1A87C67ACC8F0 ** get_address_of__q_0() { return &____q_0; }
+	inline void set__q_0(Queue_1_tCC0C12E9ABD1C1421DEDD8C737F1A87C67ACC8F0 * value)
 	{
 		____q_0 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&____q_0), (void*)value);

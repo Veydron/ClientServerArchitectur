@@ -57,7 +57,18 @@ namespace DefaultNamespace
          [SerializeAbleField(8)]
          public bool D = false;
 
-         [SerializeAbleField(9)] public float Frame;        
+         [SerializeAbleField(9)] public float Frame;     
+                 
+         [SerializeAbleField(10)] public string SA;      
+         [SerializeAbleField(11)] public string SB;
+
+         public CustomPackets(int action, string a, string b)
+         {
+             Action = action;
+             SA = a;
+             SB = b;
+         }
+
 
          public CustomPackets( int action, int connectionID, float playerPositionX, float playerPositionY, float playerPositionZ, float frame)
          {

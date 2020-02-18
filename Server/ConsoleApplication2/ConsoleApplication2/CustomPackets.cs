@@ -19,6 +19,8 @@ namespace ConsoleApplication2
             InstantiatePlayer = 1,
             
             DespawnPlayer = 2,
+            
+            AccountLoginCheck = 3
             [Key(9)]
             MovementInput= 9,
             [Key(10)]
@@ -57,7 +59,20 @@ namespace ConsoleApplication2
         [SerializeAbleField(8)]
         public bool D = false;
 
-        [SerializeAbleField(9)] public float Frame;        
+        [SerializeAbleField(9)] public float Frame;   
+        
+        [SerializeAbleField(10)] public string SA;      
+        [SerializeAbleField(11)] public string SB;
+
+        public int AccountID = 0;
+        public string IP = "0";
+
+        public CustomPackets(int action, string a, string b)
+        {
+            Action = action;
+            SA = a;
+            SB = b;
+        }
 
         public CustomPackets( int action, int connectionID, float playerPositionX, float playerPositionY, float playerPositionZ, float frame)
         {

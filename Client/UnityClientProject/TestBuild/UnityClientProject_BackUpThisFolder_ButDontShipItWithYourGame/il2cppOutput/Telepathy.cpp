@@ -3897,7 +3897,7 @@ IL_00d7:
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_49 = ((Common_tFCC994B3A027AC464326397B2D22751359949226_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(Common_tFCC994B3A027AC464326397B2D22751359949226_il2cpp_TypeInfo_var))->get_payload_6();
 			int32_t L_50 = V_0;
 			NullCheck(L_48);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_48, L_49, 0, L_50);
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(27 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_48, L_49, 0, L_50);
 			V_8 = (bool)1;
 			goto IL_0109;
 		}
@@ -4232,7 +4232,7 @@ FINALLY_00f4:
 	{ // begin finally (depth: 1)
 		NetworkStream_t362D0CD0C74C2F5CBD02905C9422E4240872ADCA * L_41 = V_0;
 		NullCheck(L_41);
-		VirtActionInvoker0::Invoke(13 /* System.Void System.IO.Stream::Close() */, L_41);
+		VirtActionInvoker0::Invoke(15 /* System.Void System.IO.Stream::Close() */, L_41);
 		TcpClient_t8BC37A84681D1839590AE10B14C25BA473063EDB * L_42 = ___client1;
 		NullCheck(L_42);
 		TcpClient_Close_mD5023AF41D41A87FA5A946881E330E8E34F2DEFE(L_42, /*hidden argument*/NULL);
@@ -4427,7 +4427,7 @@ FINALLY_008e:
 	{ // begin finally (depth: 1)
 		NetworkStream_t362D0CD0C74C2F5CBD02905C9422E4240872ADCA * L_25 = V_0;
 		NullCheck(L_25);
-		VirtActionInvoker0::Invoke(13 /* System.Void System.IO.Stream::Close() */, L_25);
+		VirtActionInvoker0::Invoke(15 /* System.Void System.IO.Stream::Close() */, L_25);
 		TcpClient_t8BC37A84681D1839590AE10B14C25BA473063EDB * L_26 = ___client1;
 		NullCheck(L_26);
 		TcpClient_Close_mD5023AF41D41A87FA5A946881E330E8E34F2DEFE(L_26, /*hidden argument*/NULL);
@@ -4514,7 +4514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger__cctor_m41F7B2E8747B6E5497190A1B4
 		TextWriter_t92451D929322093838C41489883D5B2D7ABAF3F0 * L_2 = Console_get_Error_mE1078EFC5C7C133964838D2A72B8FB9567E4C98A_inline(/*hidden argument*/NULL);
 		TextWriter_t92451D929322093838C41489883D5B2D7ABAF3F0 * L_3 = L_2;
 		Action_1_t32A9EECF5D4397CC1B9A7C7079870875411B06D0 * L_4 = (Action_1_t32A9EECF5D4397CC1B9A7C7079870875411B06D0 *)il2cpp_codegen_object_new(Action_1_t32A9EECF5D4397CC1B9A7C7079870875411B06D0_il2cpp_TypeInfo_var);
-		Action_1__ctor_m4F1B6EE6AB328B8B63B3B2CD8FB89A119C3143F3(L_4, L_3, (intptr_t)((intptr_t)GetVirtualMethodInfo(L_3, 18)), /*hidden argument*/Action_1__ctor_m4F1B6EE6AB328B8B63B3B2CD8FB89A119C3143F3_RuntimeMethod_var);
+		Action_1__ctor_m4F1B6EE6AB328B8B63B3B2CD8FB89A119C3143F3(L_4, L_3, (intptr_t)((intptr_t)GetVirtualMethodInfo(L_3, 19)), /*hidden argument*/Action_1__ctor_m4F1B6EE6AB328B8B63B3B2CD8FB89A119C3143F3_RuntimeMethod_var);
 		((Logger_t2B713402D88A4DE569D1D2017C4686DF622E61F4_StaticFields*)il2cpp_codegen_static_fields_for(Logger_t2B713402D88A4DE569D1D2017C4686DF622E61F4_il2cpp_TypeInfo_var))->set_LogError_2(L_4);
 		return;
 	}
@@ -4639,7 +4639,7 @@ IL_0001:
 		int32_t L_2 = ___offset2;
 		int32_t L_3 = ___size3;
 		NullCheck(L_0);
-		int32_t L_4 = VirtFuncInvoker3< int32_t, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(23 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_0, L_1, L_2, L_3);
+		int32_t L_4 = VirtFuncInvoker3< int32_t, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_0, L_1, L_2, L_3);
 		V_0 = L_4;
 		goto IL_0014;
 	} // end try (depth: 1)

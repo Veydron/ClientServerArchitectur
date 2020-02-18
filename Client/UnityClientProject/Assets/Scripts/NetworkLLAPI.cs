@@ -16,6 +16,8 @@ using Debug = UnityEngine.Debug;
 
 public class NetworkLLAPI : MonoBehaviour
 {
+    public static NetworkLLAPI LLAPI;
+    
     private Telepathy.Client client;
     
     public GameObject netPlayerPrefab;
@@ -30,6 +32,14 @@ public class NetworkLLAPI : MonoBehaviour
 
     void Awake()
     {
+        void Awake () {
+            if(LLAPI == null) {
+                LLAPI = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else Destroy(this); // or gameObject
+        }
+        
         // update even if window isn't focused, otherwise we don't receive.
         Application.runInBackground = true;
 
@@ -136,7 +146,7 @@ public class NetworkLLAPI : MonoBehaviour
                 switch (msg.eventType)
                 {
                     case Telepathy.EventType.Connected:
-                        Debug.Log("Connected");
+                        Debug.Log("Connected !!!!!!!!!!!!!!!!");
                         break;
                     case Telepathy.EventType.Data:
                         //Debug.Log("Data: " + BitConverter.ToString(msg.data));
@@ -216,6 +226,12 @@ public class NetworkLLAPI : MonoBehaviour
 
         }
         netPlayersDictionary.Clear();
+    }
+
+    public void ClientSendsLogin(string a, string b)
+    {
+        CustomPackets customPackets = new CustomPackets(3,a,b);
+        client.Send(OPS.Serialization.IO.Serializer.Serialize(customPackets));
     }
     
     public void OnGUI()

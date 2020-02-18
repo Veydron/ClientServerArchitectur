@@ -11,14 +11,19 @@
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
+    <option name="GROUP_CONTENTS" value="true" />
     <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="true" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AmazonCassandraService" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
@@ -28,6 +33,7 @@
     <setting file="file://$PROJECT_DIR$/ConsoleApplication2/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApplication2/Skills.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApplication2/OPS/Serialization/Plugin/Byte/PrimitiveTypeMatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConsoleApplication2/DBHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApplication2/TimeFrame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApplication2/OPS/Serialization/Async/Helper/SerializerAsyncRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApplication2/packages.config" root0="FORCE_HIGHLIGHTING" />
@@ -59,7 +65,6 @@
         <option value="$PROJECT_DIR$/ConsoleApplication2/Logger.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/LogClass.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/Skills.cs" />
-        <option value="$PROJECT_DIR$/ConsoleApplication2/Program.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/LogServer.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/OPS/Serialization/Plugin/Byte/ByteReader.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/OPS/Serialization/Plugin/Byte/ByteWriter.cs" />
@@ -70,22 +75,28 @@
         <option value="$PROJECT_DIR$/ConsoleApplication2/OPS/Serialization/Plugin/Byte/PrimitiveTypeMatcher.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/OPS/Serialization/Async/Helper/SerializerAsyncRequest.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/NetworkPlayer.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/PlayerMovement.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3063dec7-d3cb-42fb-8c6c-0177e95c2caa/console.sql" />
+        <option value="$USER_HOME$/.aws/config" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/TimeFrame.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/CustomPackets.cs" />
-        <option value="$PROJECT_DIR$/ConsoleApplication2/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/Program.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/NetworkLoop.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/DBHandler.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1WwmxCWnPTfuRjI8YKpu5mX3HrO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="cassandra" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -95,7 +106,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected=".NET Project.ConsoleApplication2">
     <configuration name="ConsoleApplication2" type="DotNetProject" factoryName=".NET Project">
@@ -134,7 +145,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:AmazonCassandraService" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:AmazonCassandraService" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@184bb2ba" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -173,6 +194,14 @@
       <workItem from="1581623290861" duration="1314000" />
       <workItem from="1581707806086" duration="3276000" />
       <workItem from="1581755451578" duration="2812000" />
+      <workItem from="1581770072490" duration="5132000" />
+      <workItem from="1581783039718" duration="3660000" />
+      <workItem from="1581850052775" duration="5000" />
+      <workItem from="1581850110999" duration="925000" />
+      <workItem from="1581851257298" duration="15284000" />
+      <workItem from="1581884031687" duration="2706000" />
+      <workItem from="1581922185883" duration="5069000" />
+      <workItem from="1582030870996" duration="14300000" />
     </task>
     <servers />
   </component>
@@ -195,34 +224,39 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="963" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580574527302">
+    <state x="1263" y="106" width="793" height="685" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581884833155">
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
-    <state x="963" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3840.1080@0.0.3840.1080" timestamp="1580574527302" />
+    <state x="364" y="204" width="793" height="685" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1581786223855" />
+    <state x="1263" y="106" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3840.1080@0.0.3840.1080" timestamp="1581884833155" />
     <state x="2658" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581583076675">
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state x="2658" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.3840.1080@0.0.3840.1080" timestamp="1581583076675" />
-    <state width="1411" height="290" key="GridCell.Tab.0.bottom" timestamp="1581758286315">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1581852974018">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
-    <state width="1411" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581758286315" />
-    <state width="1762" height="290" key="GridCell.Tab.0.bottom/0.0.3840.1080@0.0.3840.1080" timestamp="1581263620623" />
-    <state width="1411" height="290" key="GridCell.Tab.0.center" timestamp="1581758286315">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.3840.1080@0.0.3840.1080" timestamp="1581852974018" />
+    <state width="1884" height="289" key="GridCell.Tab.0.bottom" timestamp="1582045189312">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
-    <state width="1411" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581758286315" />
-    <state width="1762" height="290" key="GridCell.Tab.0.center/0.0.3840.1080@0.0.3840.1080" timestamp="1581263620623" />
-    <state width="1411" height="290" key="GridCell.Tab.0.left" timestamp="1581758286315">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581777683631" />
+    <state width="1884" height="289" key="GridCell.Tab.0.bottom/0.0.3840.1080@0.0.3840.1080" timestamp="1582045189312" />
+    <state width="1884" height="289" key="GridCell.Tab.0.center" timestamp="1582045189312">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
-    <state width="1411" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581758286315" />
-    <state width="1762" height="290" key="GridCell.Tab.0.left/0.0.3840.1080@0.0.3840.1080" timestamp="1581263620623" />
-    <state width="1411" height="290" key="GridCell.Tab.0.right" timestamp="1581758286315">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581777683630" />
+    <state width="1884" height="289" key="GridCell.Tab.0.center/0.0.3840.1080@0.0.3840.1080" timestamp="1582045189312" />
+    <state width="1884" height="289" key="GridCell.Tab.0.left" timestamp="1582045189312">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
-    <state width="1411" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581758286315" />
-    <state width="1762" height="290" key="GridCell.Tab.0.right/0.0.3840.1080@0.0.3840.1080" timestamp="1581263620623" />
+    <state width="1293" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581777683630" />
+    <state width="1884" height="289" key="GridCell.Tab.0.left/0.0.3840.1080@0.0.3840.1080" timestamp="1582045189312" />
+    <state width="1884" height="289" key="GridCell.Tab.0.right" timestamp="1582045189312">
+      <screen x="0" y="0" width="3840" height="1080" />
+    </state>
+    <state width="1293" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581777683630" />
+    <state width="1884" height="289" key="GridCell.Tab.0.right/0.0.3840.1080@0.0.3840.1080" timestamp="1582045189312" />
     <state width="1411" height="358" key="GridCell.Tab.1.bottom" timestamp="1581713018789">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -303,10 +337,35 @@
     </state>
     <state width="1411" height="358" key="GridCell.Tab.4.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581713018794" />
     <state width="1739" height="360" key="GridCell.Tab.4.right/0.0.3840.1080@0.0.3840.1080" timestamp="1580839622636" />
-    <state x="772" y="209" key="SettingsEditor" timestamp="1580130903283">
+    <state width="194" height="462" key="HiddenNamespacesPopup" timestamp="1581785041929">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="772" y="209" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1580130903283" />
+    <state width="194" height="462" key="HiddenNamespacesPopup/0.0.1920.1080@0.0.1920.1080" timestamp="1581785041929" />
+    <state x="900" y="148" key="SettingsEditor" timestamp="1581884094672">
+      <screen x="0" y="0" width="3840" height="1080" />
+    </state>
+    <state x="450" y="148" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1581786783199" />
+    <state x="900" y="148" key="SettingsEditor/0.0.3840.1080@0.0.3840.1080" timestamp="1581884094672" />
+    <state x="540" y="194" key="com.intellij.database.dbimport.ImportDialog" timestamp="1581777362064">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="540" y="194" key="com.intellij.database.dbimport.ImportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1581777362064" />
+    <state x="690" y="344" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1581777196302">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="344" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1581777196302" />
+    <state x="714" y="293" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1581786370673">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="714" y="293" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1920.1080@0.0.1920.1080" timestamp="1581786370673" />
+    <state x="676" y="280" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1581786447689">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="676" y="280" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1581786447689" />
+    <state x="818" y="285" width="532" height="509" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1581786245124">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="818" y="285" width="532" height="509" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1581786245124" />
     <state x="1101" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581179141079">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -315,11 +374,11 @@
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state x="1936" y="312" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.3840.1080@0.0.3840.1080" timestamp="1580829627653" />
-    <state x="612" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1581615073308">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="1223" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1582039730175">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
-    <state x="612" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1581615073308" />
-    <state x="1223" y="238" width="672" height="678" key="search.everywhere.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1580827369123" />
+    <state x="612" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1581786553528" />
+    <state x="1223" y="238" width="672" height="678" key="search.everywhere.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1582039730175" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

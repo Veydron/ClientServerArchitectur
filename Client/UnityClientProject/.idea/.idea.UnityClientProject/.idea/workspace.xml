@@ -13,8 +13,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.15f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomPackets.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoginUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MessagePack/IFormatterResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestClass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OPS/Serialization/Async/dotNet4.0/SerializerAsync.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AnySync/MotionGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkLLAPI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -28,9 +30,10 @@
         <option value="$PROJECT_DIR$/Assets/OPS/Serialization/Demo/Mesh/Demo_MeshGui.cs" />
         <option value="$PROJECT_DIR$/Assets/OPS/Serialization/Demo/Compress and Encrypt/Demo_CnEGui.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomPackets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkLLAPI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoginUI.cs" />
       </list>
     </option>
   </component>
@@ -112,6 +115,8 @@
       <workItem from="1581707841871" duration="2229000" />
       <workItem from="1581755385127" duration="5000" />
       <workItem from="1581755822331" duration="2452000" />
+      <workItem from="1581933166205" duration="5087000" />
+      <workItem from="1582030999154" duration="4280000" />
     </task>
     <servers />
   </component>

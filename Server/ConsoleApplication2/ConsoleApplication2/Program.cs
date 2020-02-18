@@ -15,10 +15,20 @@ namespace ConsoleApplication2
             //Event System
             NetworkLoop networkLoop = new NetworkLoop();
             LogServer logServer = new LogServer();
+            DBHandler dbHandler = new DBHandler();
+            
             networkLoop.ClientConnected += logServer.OnPlayerConnection;
             networkLoop.ClientDisconnected += logServer.OnPlayerDisconnection;
             networkLoop.ClientMessage += logServer.OnClientMessage;
             networkLoop.KickPlayer += logServer.OnClientKick;
+            networkLoop.OnClientLogin += dbHandler.OnClientLogin;
+            dbHandler.OnLoginSuccsess += networkLoop.OnLoginSuccsess;
+            dbHandler.OnLoginFailed += networkLoop.OnLoginFailed;
+
+
+            //TestDB
+
+            dbHandler.DBRun();
             
             //Starts the Server
             networkLoop.Run();

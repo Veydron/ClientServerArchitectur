@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ConsoleApplication2.exe.manifest" size="35327">
+    <dependentAssembly dependencyType="install" codebase="ConsoleApplication2.exe.manifest" size="42342">
       <assemblyIdentity name="ConsoleApplication2.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iMF0i64wAIonmM/Gku+2reFTO5Q6VoDN+8Kjny7B3IA=</dsig:DigestValue>
+        <dsig:DigestValue>JBr1e4lOtqc5fpaYUJXLJDBMsJ9V8bCCR1l2BH7p5M0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
