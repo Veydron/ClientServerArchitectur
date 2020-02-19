@@ -12,6 +12,7 @@ namespace ConsoleApplication2
     {
         public static void Main(string[] args)
         {
+
             //Event System
             NetworkLoop networkLoop = new NetworkLoop();
             LogServer logServer = new LogServer();
@@ -24,8 +25,7 @@ namespace ConsoleApplication2
             networkLoop.OnClientLogin += dbHandler.OnClientLogin;
             dbHandler.OnLoginSuccsess += networkLoop.OnLoginSuccsess;
             dbHandler.OnLoginFailed += networkLoop.OnLoginFailed;
-
-
+            
             //TestDB
 
             dbHandler.DBRun();

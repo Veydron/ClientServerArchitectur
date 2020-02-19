@@ -14,6 +14,9 @@ namespace ConsoleApplication2
         [SerializeAbleField(1)]
         public Vector3 PlayerPosition;
 
+        public float blockedUntil;
+
+        public bool IsBlocked;
       
         public bool IsConnected { get; set; }
         

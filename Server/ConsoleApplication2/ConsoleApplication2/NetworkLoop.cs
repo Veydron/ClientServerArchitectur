@@ -3,18 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net.Configuration;
-using System.Numerics;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using ConsoleApplication2.Scripts;
 using MessagePack;
 using Telepathy;
+using UnityEngine;
 using UnityEngine.UIElements;
+using Object = UnityEngine.Object;
+using Vector3 = System.Numerics.Vector3;
 
 namespace ConsoleApplication2
 {
     public class NetworkLoop
     {
+        public bool IsLoginServer = false;
+
         private Telepathy.Server server;
         private Dictionary<long, NetworkPlayer> networkPlayersDictionary;
         private Telepathy.Message msg;
@@ -27,14 +32,14 @@ namespace ConsoleApplication2
         public event EventHandler<CustomPackets> OnClientLogin;
 
         private int maxMessageCounter = 11; //Maximale Anzahl an Nachrichten per Tick die Entfangen werden darf bevor der Spieler gekickt wird.
+
+        TimeFrame timeFrame = new TimeFrame();
         
         public void Run()
         {
             Console.Title = "Test Server";
             Console.WriteLine("Hello im your server Console !");
             
-            //zumtesten
-            TimeFrame timeFrame = new TimeFrame();
 
             try
             {
@@ -53,7 +58,6 @@ namespace ConsoleApplication2
                     //reply to each incoming message
                     while (server.GetNextMessage(out msg))
                     {
-                        
                         switch (msg.eventType)
                         {
                             case Telepathy.EventType.Connected:
@@ -67,19 +71,26 @@ namespace ConsoleApplication2
                                 
                                 //Packet Count wird dazugezählt damit nacher abgefragt werden kann wie oft per tick er was geschickt hat
                                 networkPlayersDictionary[msg.connectionId].KickPlayer += 1;
-                                //Checks if the player is flagged as "Connected" then we listen to his data
-                                if (networkPlayersDictionary[msg.connectionId].IsConnected)
+
+                                if (networkPlayersDictionary[msg.connectionId].KickPlayer >= maxMessageCounter)
                                 {
-                                    //Checkt wie oft in diesem Tick der Spieler eine message geschickt hat, wenn mehr kleiner als maxcounter dann wird die nachricht verarbeitet sonst gekickt
-                                    if (networkPlayersDictionary[msg.connectionId].KickPlayer <= maxMessageCounter)
-                                    {
-                                        OnMessageReceived(msg);
-                                    }
-                                    else
-                                    {
-                                        OnClientKick((msg));
-                                    }
+                                    // Kick weil MSG Spam
+                                    OnClientKick((msg));
                                 }
+
+                                if (networkPlayersDictionary[msg.connectionId].IsBlocked == true)
+                                {
+                                    // Kick weil blocked
+                                    OnClientKick((msg));
+                                }
+
+                                if (networkPlayersDictionary[msg.connectionId].blockedUntil > timeFrame.ElapsedTimeForFrame())
+                                {
+                                    // Warten bis Zeit abgelaufen ist
+                                    break;
+                                }
+                                
+                                OnMessageReceived(msg);
                                 break;
                             
                             case Telepathy.EventType.Disconnected:
@@ -118,9 +129,6 @@ namespace ConsoleApplication2
                     }
                     //SendMonsterPositions();
                     //SendActions();
-
-                    //TODO Warning System when processing loop is longer then tick rate
-                    //
                     
                     //Setzt Player message counter wieder auf 0
                     foreach (var Player in networkPlayersDictionary)
@@ -130,7 +138,7 @@ namespace ConsoleApplication2
                     
                     //Server Tick Rate 5 times per second
                     timeFrame.TimeSpanProcessWarning();
-                    System.Threading.Thread.Sleep(5); //Ist die Orginal methode unten die alternative
+                    System.Threading.Thread.Sleep(15); //Ist die Orginal methode unten die alternative
                     //Console.WriteLine("Sleep . . .");
                     //new System.Threading.ManualResetEvent(false).WaitOne(15);
                 }
@@ -180,10 +188,11 @@ namespace ConsoleApplication2
                     //Message wird in Class umgewandelt
                 //CustomPackets clientPacket = MessagePackSerializer.Deserialize<CustomPackets>(msg.data);
                 CustomPackets clientPacket = OPS.Serialization.IO.Serializer.DeSerialize<CustomPackets>(msg.data);
+                clientPacket.ConnectionID = msg.connectionId;
                 //Event das des Class packet zur verfügung stellt für beispielsweise logs
                 //ClientMessage(this, recivedmsg);
                 //Console.WriteLine("Player "+msg.connectionId+" sends packet: " +recivedmsg.ActionID);
-                
+
                     //TODO richtiges Auswahlsystem das abfragt was der Client möchte und entsprechend 
                     switch (clientPacket.Action)
                     {
@@ -192,18 +201,30 @@ namespace ConsoleApplication2
 
                             if (clientPacket.SA != "" && clientPacket.SB != "")
                             {
+                                Console.WriteLine("Send CLient packed from player ID :" +clientPacket.ConnectionID);
                                 OnClientLogin(this,clientPacket); 
                             }
                             else
                             {
                                 Console.WriteLine("Eingabe ist Leer");
-                                OnLoginFailed(this,clientPacket);
+                                OnLoginFailed(this,clientPacket.ConnectionID);
                             }
                             
                             break;
                         }
+
+                        case 4:
+                        {
+                            InstantiatePlayersOnConnect(clientPacket.ConnectionID);
+                             break;
+                        }
+                           
                         case 9: //Recive player wasd input
                         {
+                            if (IsLoginServer)
+                            {
+                                break;
+                            }
                             //Sends die aktuelle Position und die möchte Position und zurück kommt die inframe Position die dann ins networplayerdictionary geschrieben wird
                             Vector3 tempVector3 = new Vector3();
                             tempVector3 = PlayerMovement.move(clientPacket.W,clientPacket.A,clientPacket.S,clientPacket.D,networkPlayersDictionary[msg.connectionId].PlayerPosition);
@@ -332,22 +353,32 @@ namespace ConsoleApplication2
              
          }
         
-         
          public void OnLoginSuccsess(object source, CustomPackets customPackets)
          {
-             //Todo: If Loginserver sends Scene Wechsel zu Charakter auswahl + List mit Playercharakter + List mit MapServerIPs
+             if (IsLoginServer)
+             {
+                 //Todo: If Loginserver sends Scene Wechsel zu Charakter auswahl + List mit Playercharakter + List mit MapServerIPs
+             }
+             else
+             {
+                 //Todo: If not Loginserver Instantiate ClientPlayer & all other Players & NPCs & Mobs
+                 //Player wird Instantiert
+                 
+                 //Ausnahmseweise sende ich hier das er scene wechseln soll
+                 CustomPackets newCustomPackets = new CustomPackets(5,"TestScene","");
+                 server.Send(customPackets.ConnectionID, OPS.Serialization.IO.Serializer.Serialize(newCustomPackets));
 
-             //Todo: If not Loginserver Instantiate ClientPlayer & all other Players & NPCs & Mobs
-             //Player wird Instantiert
-             InstantiatePlayersOnConnect(customPackets.ConnectionID);
+                 //Console.WriteLine("Instantiate Player with ID : "+ customPackets.ConnectionID);
+                 //InstantiatePlayersOnConnect(customPackets.ConnectionID);
+             }
          }
-
-         public void OnLoginFailed(object source, CustomPackets customPackets)
+         
+         public void OnLoginFailed(object source, int connectionID)
          {
-             //Todo: Sends Client a Message that the Login/Password is false and grey there Login Button for 3 Sec off.
-             
-             //Todo: Block connection ID so they msg.data will not get read for 3 Seconds 
-             Console.WriteLine("Login Daten sind Falsch");
+             //Todo: If Loginserver sends Scene Wechsel zu Charakter auswahl + List mit Playercharakter + List mit MapServerIPs
+             networkPlayersDictionary[connectionID].blockedUntil = (timeFrame.ElapsedTimeForFrame() + 3f);
+
+             Console.WriteLine("Login Daten sind Falsch, blocked für 3 sec");
          }
      }
  }

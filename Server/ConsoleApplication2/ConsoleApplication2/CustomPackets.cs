@@ -21,6 +21,9 @@ namespace ConsoleApplication2
             DespawnPlayer = 2,
             
             AccountLoginCheck = 3
+        
+            SceneLoadComplete = 4
+            LoadNewScene =5
             [Key(9)]
             MovementInput= 9,
             [Key(10)]
@@ -98,7 +101,7 @@ namespace ConsoleApplication2
             Action = action;
             ConnectionID = connectionID;
         }
-        
+
         public CustomPackets()
         {
              

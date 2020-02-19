@@ -13,6 +13,7 @@ using MessagePack;
 using UnityEngine;
 using Telepathy;
 using Debug = UnityEngine.Debug;
+using UnityEngine.SceneManagement;
 
 public class NetworkLLAPI : MonoBehaviour
 {
@@ -29,13 +30,16 @@ public class NetworkLLAPI : MonoBehaviour
     public bool a;
     public bool s;
     public bool d;
+    
+    public GameObject NetworkLLAPIObj;
+    public AsyncOperation sceneAsync;
 
     void Awake()
     {
         void Awake () {
             if(LLAPI == null) {
                 LLAPI = this;
-                DontDestroyOnLoad(gameObject);
+                DontDestroyOnLoad(this);
             }
             else Destroy(this); // or gameObject
         }
@@ -157,19 +161,20 @@ public class NetworkLLAPI : MonoBehaviour
 
                        // CustomPackets customPackets = MessagePackSerializer.Deserialize<CustomPackets>(msg.data);
                         CustomPackets customPackets = OPS.Serialization.IO.Serializer.DeSerialize<CustomPackets>(msg.data);
-                        Console.WriteLine("Erhalte Packet mit Action: " +customPackets.Action);
-                        Debug.Log("Erhalte Packet mit Action (Debug.Log)");
+                        Debug.Log("Erhalte Packet mit Action: " +customPackets.Action);
+                        //Debug.Log("Erhalte Packet mit Action (Debug.Log)");
                         switch (customPackets.Action)
                         {
                             case 1:
-
+                                
                                 if (!netPlayersDictionary.ContainsKey(customPackets.ConnectionID))
                                 {
+                                    
                                     Vector3 networkPlayerPosition = new Vector3(customPackets.PlayerPositionX,customPackets.PlayerPositionY,customPackets.PlayerPositionZ); //schreibt vector 3 in temp weil system vector3 ist nicht kompatibel mit unity vertor 3
                                     NetworkPlayer networkPlayer = new NetworkPlayer(customPackets.ConnectionID, networkPlayerPosition,netPlayerPrefab); //erstellt eine neuen network player mit den empfangenen instantiate daten
                                     netPlayersDictionary.Add(customPackets.ConnectionID,networkPlayer); //addet den neu erstellten network player in die player bibliothek
                                     Console.WriteLine("Instntiate Player "+customPackets.ConnectionID);
-                                    Debug.Log("Instantiate Player (Debug.Log) "+customPackets.ConnectionID);
+                                    Debug.Log("Instantiate Player "+customPackets.ConnectionID);
                                     
                                     GameObject PlayersCube = (GameObject)Instantiate(netPlayersDictionary[customPackets.ConnectionID].GameObject,
                                         netPlayersDictionary[customPackets.ConnectionID].PlayerPosition,Quaternion.identity);
@@ -187,13 +192,19 @@ public class NetworkLLAPI : MonoBehaviour
                                 }
 
                                 break;
+                            
+                            case 5 :
+                                Debug.Log("Erhalte aufforderung scene zu wechseln nach :" +customPackets.SA);
+                                StartCoroutine(LoadYourAsyncScene(customPackets.SA));
+                                
+                                break;
                               
                                 
                             case 10:
                                 
                                 netPlayersDictionary[customPackets.ConnectionID].PlayerPosition = new Vector3(customPackets.PlayerPositionX,customPackets.PlayerPositionY,customPackets.PlayerPositionZ);
                                 netPlayersDictionary[customPackets.ConnectionID].motionGenerator.AddKeyframe(customPackets.Frame,netPlayersDictionary[customPackets.ConnectionID].PlayerPosition);
-                                Debug.Log("Player "+customPackets.ConnectionID+" hat neue Position: "+customPackets.PlayerPositionX +" , " +customPackets.PlayerPositionY);
+                                Debug.Log("Player "+customPackets.ConnectionID+" hat neue Position: "+customPackets.PlayerPositionX +" , " +customPackets.PlayerPositionZ);
                                 break;
                         }
 
@@ -234,6 +245,50 @@ public class NetworkLLAPI : MonoBehaviour
         client.Send(OPS.Serialization.IO.Serializer.Serialize(customPackets));
     }
     
+    IEnumerator LoadYourAsyncScene(string sceneName)
+    {
+        Debug.Log("Try to Load Scene: "+sceneName);
+        AsyncOperation scene = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        scene.allowSceneActivation = false;
+        sceneAsync = scene;
+
+        //Wait until we are done loading the scene
+        while (scene.progress < 0.9f)
+        {
+           // Debug.Log("Loading progress: " + (scene.progress * 100) + "%");
+           // Debug.Log("Loading scene " + " [][] Progress: " + scene.progress);
+            yield return null;
+        }
+        //Debug.Log("Loading progress2: " + (scene.progress * 100) + "%");
+        //OnFinishedLoadingAllScene(sceneName);
+
+        GameObject main = GameObject.Find("LoginSceneMain");
+        main.active = false;
+        
+        sceneAsync.allowSceneActivation = true;
+
+        while (!sceneAsync.isDone)
+        {
+            // wait until it is really finished
+            //Debug.Log("Loading progress3: " + (scene.progress * 100) + "%");
+            yield return null;
+        }
+        
+        Debug.Log("Loading progress4: " + (scene.progress * 100) + "%");
+        
+        Scene sceneToLoad = UnityEngine.SceneManagement.SceneManager.GetSceneByName(sceneName);
+        
+        if (sceneToLoad.IsValid())
+        {
+            Debug.Log("Scene is Valid");
+            UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(NetworkLLAPIObj, sceneToLoad);
+            UnityEngine.SceneManagement.SceneManager.SetActiveScene(sceneToLoad);
+            Debug.Log("Sende Packet zum objekte Instantiieren");
+            CustomPackets customPackets = new CustomPackets(4,"","");
+            client.Send(OPS.Serialization.IO.Serializer.Serialize(customPackets));
+        }
+    }
+
     public void OnGUI()
     {
         // client GUI
@@ -247,10 +302,7 @@ public class NetworkLLAPI : MonoBehaviour
             client.Disconnect();
             DestroyAllObjects();
         }
-
-
-
-
+      
         GUI.enabled = true;
     }
 }

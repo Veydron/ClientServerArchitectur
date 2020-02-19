@@ -74,14 +74,14 @@
         <option value="$PROJECT_DIR$/ConsoleApplication2/OPS/Serialization/Plugin/Byte/Buffer.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/OPS/Serialization/Plugin/Byte/PrimitiveTypeMatcher.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/OPS/Serialization/Async/Helper/SerializerAsyncRequest.cs" />
-        <option value="$PROJECT_DIR$/ConsoleApplication2/NetworkPlayer.cs" />
-        <option value="$PROJECT_DIR$/ConsoleApplication2/PlayerMovement.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3063dec7-d3cb-42fb-8c6c-0177e95c2caa/console.sql" />
         <option value="$USER_HOME$/.aws/config" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/TimeFrame.cs" />
-        <option value="$PROJECT_DIR$/ConsoleApplication2/CustomPackets.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/NetworkPlayer.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/Program.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/CustomPackets.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/NetworkLoop.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApplication2/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/ConsoleApplication2/DBHandler.cs" />
       </list>
     </option>
@@ -202,6 +202,8 @@
       <workItem from="1581884031687" duration="2706000" />
       <workItem from="1581922185883" duration="5069000" />
       <workItem from="1582030870996" duration="14300000" />
+      <workItem from="1582103503021" duration="6479000" />
+      <workItem from="1582114216200" duration="4072000" />
     </task>
     <servers />
   </component>
@@ -237,26 +239,26 @@
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.3840.1080@0.0.3840.1080" timestamp="1581852974018" />
-    <state width="1884" height="289" key="GridCell.Tab.0.bottom" timestamp="1582045189312">
+    <state width="1884" height="289" key="GridCell.Tab.0.bottom" timestamp="1582120842683">
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state width="1293" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581777683631" />
-    <state width="1884" height="289" key="GridCell.Tab.0.bottom/0.0.3840.1080@0.0.3840.1080" timestamp="1582045189312" />
-    <state width="1884" height="289" key="GridCell.Tab.0.center" timestamp="1582045189312">
+    <state width="1884" height="289" key="GridCell.Tab.0.bottom/0.0.3840.1080@0.0.3840.1080" timestamp="1582120842683" />
+    <state width="1884" height="289" key="GridCell.Tab.0.center" timestamp="1582120842683">
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state width="1293" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581777683630" />
-    <state width="1884" height="289" key="GridCell.Tab.0.center/0.0.3840.1080@0.0.3840.1080" timestamp="1582045189312" />
-    <state width="1884" height="289" key="GridCell.Tab.0.left" timestamp="1582045189312">
+    <state width="1884" height="289" key="GridCell.Tab.0.center/0.0.3840.1080@0.0.3840.1080" timestamp="1582120842683" />
+    <state width="1884" height="289" key="GridCell.Tab.0.left" timestamp="1582120842683">
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state width="1293" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581777683630" />
-    <state width="1884" height="289" key="GridCell.Tab.0.left/0.0.3840.1080@0.0.3840.1080" timestamp="1582045189312" />
-    <state width="1884" height="289" key="GridCell.Tab.0.right" timestamp="1582045189312">
+    <state width="1884" height="289" key="GridCell.Tab.0.left/0.0.3840.1080@0.0.3840.1080" timestamp="1582120842683" />
+    <state width="1884" height="289" key="GridCell.Tab.0.right" timestamp="1582120842683">
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state width="1293" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581777683630" />
-    <state width="1884" height="289" key="GridCell.Tab.0.right/0.0.3840.1080@0.0.3840.1080" timestamp="1582045189312" />
+    <state width="1884" height="289" key="GridCell.Tab.0.right/0.0.3840.1080@0.0.3840.1080" timestamp="1582120842683" />
     <state width="1411" height="358" key="GridCell.Tab.1.bottom" timestamp="1581713018789">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -374,11 +376,11 @@
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state x="1936" y="312" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.3840.1080@0.0.3840.1080" timestamp="1580829627653" />
-    <state x="1223" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1582039730175">
+    <state x="1223" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1582107482946">
       <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state x="612" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1581786553528" />
-    <state x="1223" y="238" width="672" height="678" key="search.everywhere.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1582039730175" />
+    <state x="1223" y="238" width="672" height="678" key="search.everywhere.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1582107482946" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

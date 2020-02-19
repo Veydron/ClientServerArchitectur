@@ -19,6 +19,13 @@ namespace DefaultNamespace
              InstantiatePlayer = 1,
              
              DespawnPlayer = 2,
+             
+                         AccountLoginCheck = 3
+                         
+                          SceneLoadComplete = 4
+                          
+                          LoadNewScene =5
+                         
              [Key(9)]
              MovementInput= 9,
              [Key(10)]

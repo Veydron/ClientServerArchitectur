@@ -15,10 +15,9 @@ namespace ConsoleApplication2
     public class DBHandler
     {
         public event EventHandler<CustomPackets> OnLoginSuccsess; 
-        public event EventHandler<CustomPackets> OnLoginFailed; 
+        public event EventHandler<int> OnLoginFailed; 
         
-        
-        AmazonDynamoDBClient client = new AmazonDynamoDBClient(new BasicAWSCredentials("Login", "Pass"), RegionEndpoint.USEast2);
+        AmazonDynamoDBClient client = new AmazonDynamoDBClient(new BasicAWSCredentials("login", "pass"), RegionEndpoint.USEast2);
 
         public async void DBRun()
        {
@@ -43,6 +42,7 @@ namespace ConsoleApplication2
        
        public async void OnClientLogin(object source, CustomPackets msg)
        {
+           Console.WriteLine("Recive Client Packeet with ID : "+msg.ConnectionID);
            CustomPackets custommsg = new CustomPackets();
            custommsg = msg;
            
@@ -66,7 +66,9 @@ namespace ConsoleApplication2
                if (item.Values.Count == 0)
                {
                    Console.WriteLine("Loggin Failed !");
-                   OnLoginFailed(this, msg);
+                   Console.WriteLine("On login Failed ID: " +custommsg.ConnectionID);
+                   OnLoginFailed(this, custommsg.ConnectionID);
+
                }
                else
                {

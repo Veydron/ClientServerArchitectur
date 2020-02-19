@@ -235,6 +235,7 @@
           </e>
           <e p="NetworkLLAPI.cs" t="Include" />
           <e p="NetworkPlayer.cs" t="Include" />
+          <e p="SceneManager.cs" t="Include" />
           <e p="TestClass.cs" t="Include" />
           <e p="TestScript.cs" t="Include" />
         </e>

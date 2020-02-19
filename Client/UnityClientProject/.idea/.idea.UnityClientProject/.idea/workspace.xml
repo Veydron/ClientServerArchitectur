@@ -22,6 +22,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkLLAPI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MessagePack/MessagePackSerializer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -31,9 +32,10 @@
         <option value="$PROJECT_DIR$/Assets/OPS/Serialization/Demo/Compress and Encrypt/Demo_CnEGui.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoginUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomPackets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkLLAPI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LoginUI.cs" />
       </list>
     </option>
   </component>
@@ -117,6 +119,9 @@
       <workItem from="1581755822331" duration="2452000" />
       <workItem from="1581933166205" duration="5087000" />
       <workItem from="1582030999154" duration="4280000" />
+      <workItem from="1582108474288" duration="994000" />
+      <workItem from="1582109528217" duration="2342000" />
+      <workItem from="1582114221316" duration="6585000" />
     </task>
     <servers />
   </component>
