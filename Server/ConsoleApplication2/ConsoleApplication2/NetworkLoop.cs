@@ -99,19 +99,30 @@ namespace ConsoleApplication2
                         }
                     }
 
+                    //Chaching serverprocesstime
+                    int serverTickTime = timeFrame.ServerTickSpan();
+                    
                     //TODO Send Packetes to the Player, like Position
+                    
                     foreach (var networkPlayer in networkPlayersDictionary)
                     {
-                        if (networkPlayer.Value.IsMoved)
+                        if (networkPlayer.Value.IsMoved) 
                         {
+                            //Todo zeitabfragen, bewebungsgeschwindigkeit mit serverzeit multiplizieren und dies in die nötige position adden. 
+                            //lese networkplayerposition
+                            //ermittle richtung durch last pos abfrage
+                            //multipliziere playergeschwindigkeit mit richtung und mit serverzeit dividiert in 1000
+                            //setzte aktuelle playerposition als alteposition
+                            //setzte neue playerposition mit neuer position
+                            //Todo nach pos berechnung dann is moved auf false setzen
+
                             CustomPackets clientPacket = new CustomPackets(10,networkPlayer.Value.ConnectionID,networkPlayer.Value.PlayerPosition.X, networkPlayer.Value.PlayerPosition.Y, networkPlayer.Value.PlayerPosition.Z,timeFrame.ElapsedTimeForFrame()); //neue position
                             //Console.WriteLine("moved true,packet erstellt");
                             try
                             {
                                 foreach (var networkPlayerConnection in networkPlayersDictionary) //für jeden spieler ausser sich selber
                                 {
-
-                                        //server.Send(networkPlayerConnection.Value.ConnectionID, MessagePackSerializer.Serialize(clientPacket)); // sende die position
+                                    //server.Send(networkPlayerConnection.Value.ConnectionID, MessagePackSerializer.Serialize(clientPacket)); // sende die position
                                         server.Send(networkPlayerConnection.Value.ConnectionID,
                                             OPS.Serialization.IO.Serializer.Serialize(clientPacket));
                                 }
@@ -121,12 +132,15 @@ namespace ConsoleApplication2
                                 Console.WriteLine(playerposupdate);
                                 throw;
                             }
-
+                            //Todo if playerposition is cell mittig remove flag
                             networkPlayer.Value.IsMoved = false;
                             //TestClass testClass = new TestClass(100,100,99);
                             //server.Send(msg.connectionId, MessagePackSerializer.Serialize(testClass));
                         }
                     }
+                    
+                    //TODO entferne player position packet send foreach oben raus und mach es unter der bewegungsberechunng hier rein
+                    
                     //SendMonsterPositions();
                     //SendActions();
                     
@@ -380,5 +394,11 @@ namespace ConsoleApplication2
 
              Console.WriteLine("Login Daten sind Falsch, blocked für 3 sec");
          }
+
+         public void Bewegungsberechnungs()
+         {
+             
+         }
+         
      }
  }

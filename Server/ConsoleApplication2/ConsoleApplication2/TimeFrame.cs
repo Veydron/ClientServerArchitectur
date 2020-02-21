@@ -15,6 +15,8 @@ namespace ConsoleApplication2
         long tickProcessTime = 0;
         long  oldTick = 0;
         long different = 0;
+        public int serverProcessTime = 0;
+        public int timer = 0;
         
         public float ElapsedTimeForFrame()
         {
@@ -23,18 +25,28 @@ namespace ConsoleApplication2
             float i = j / 1000;
             return i;
         }
-
-        public void TimeSpanProcessWarning()
+        
+        public int ServerProcessTime()
         {
+            //Todo hier kommt timespanprocess warning rein (nur die variabeln) Und dann ruft timespann diesen serverprcesstime auf 
             tickProcessTime = stopwatch.ElapsedMilliseconds;
 
             different = tickProcessTime - oldTick;
 
-            if (different > 100)
+            oldTick = tickProcessTime;
+
+            return (int)different;
+        }
+
+        public void TimeSpanProcessWarning()
+        {
+            serverProcessTime = ServerProcessTime();
+
+            if (serverProcessTime > 100)
             {
                 //Console.BackgroundColor = ConsoleColor.Blue;
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("PROCESS TIME WARNING -> " +different);
+                Console.WriteLine("PROCESS TIME WARNING -> " +serverProcessTime);
                 //Console.WriteLine("Another line."); // <-- This line is still white on blue.
                 Console.ResetColor();
             }
@@ -42,10 +54,13 @@ namespace ConsoleApplication2
             {
                 //Console.WriteLine(different);
             }
-
-            oldTick = tickProcessTime;
-
+            
         }
-        
+
+        public int ServerTickSpan()
+        {
+            timer = serverProcessTime;
+            return timer;
+        }
     }
 }

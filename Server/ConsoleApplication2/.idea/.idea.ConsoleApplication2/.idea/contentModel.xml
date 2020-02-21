@@ -8,6 +8,7 @@
         <e p="ConsoleApplication2_TemporaryKey.pfx" t="Include" />
         <e p="CustomPackets.cs" t="Include" />
         <e p="DBHandler.cs" t="Include" />
+        <e p="GridSystem.cs" t="Include" />
         <e p="LogServer.cs" t="Include" />
         <e p="NetworkLoop.cs" t="Include" />
         <e p="NetworkPlayer.cs" t="Include" />
